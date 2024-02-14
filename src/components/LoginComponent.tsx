@@ -32,33 +32,13 @@ export default function LoginComponent() {
       if (!email || !password) {
        
         Alert.alert(
-       
-          'Registro incompleto',
-       
+        
+          'Registro fallido',
+      
           'Por favor, completa todos los campos.',
-       
-          [
-       
-            {
-       
-              text: 'OK',
-       
-              style: 'cancel',
-       
-            },
-       
-          ],
-       
-          {
-  
-            containerStyle: styles.alertContainer,
-       
-            titleStyle: styles.alertTitle,
-       
-            messageStyle: styles.alertMessage,
-       
-          }
-       
+      
+          [{ text: 'OK', style: 'cancel' }]
+     
           );
        
           return;
@@ -74,7 +54,17 @@ export default function LoginComponent() {
         const user = userCredential.user;
   
         console.log(user);
-  
+
+        Alert.alert(
+        
+          'Registro Completo!',
+      
+          'Bienvenido a PowerUp.',
+      
+          [{ text: 'OK', style: 'cancel' }]
+     
+          );
+
       })
   
       .catch((error) => {
@@ -291,7 +281,7 @@ export default function LoginComponent() {
         />
   
         </View>
-        
+
         </KeyboardAvoidingView>
         
         </ImageBackground>
@@ -325,7 +315,7 @@ export default function LoginComponent() {
   
       color: 'white',
   
-      fontSize: 25,
+      fontSize: 23,
   
       fontWeight: 'bold',
   
@@ -349,7 +339,7 @@ export default function LoginComponent() {
       
       width: '100%',
       
-      height: '35%',
+      height: '30%',
       
       resizeMode: 'contain',
       
@@ -372,8 +362,10 @@ export default function LoginComponent() {
     },
     
     inputsContainer: {
+
+      marginLeft: '5%',
   
-      width: '100%',
+      width: '90%',
   
       marginBottom: 100,
   
@@ -407,7 +399,7 @@ export default function LoginComponent() {
     
       color: '#575756',
     
-      fontSize: 18,
+      fontSize: 17,
     
     },
   
@@ -423,9 +415,9 @@ export default function LoginComponent() {
     
     registerButton: {
     
-      marginLeft: 20,
+      marginLeft: 28,
     
-      width: '90%', 
+      width: '85%', 
     
       height: 60,
     
@@ -443,9 +435,9 @@ export default function LoginComponent() {
   
     loginButton: {
   
-      marginLeft: 20,
+      marginLeft: 28,
   
-      width: '90%',  
+      width: '85%',  
   
       height: 60, 
   
@@ -463,7 +455,7 @@ export default function LoginComponent() {
   
       color: 'black',
      
-      fontSize: 22,
+      fontSize: 20,
     
     },
   
