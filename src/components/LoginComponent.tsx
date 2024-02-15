@@ -13,15 +13,22 @@ import { firebaseConfig } from '../../firebase-config';
 
 import { useNavigation } from '@react-navigation/native';
 
+import SuccessMessage from './SuccessMessage';
+
 
 export default function LoginComponent() {
 
     const [email, setEmail] = useState('');
   
     const [password, setPassword] = useState('');
+
+    const [successMessage, setSuccessMessage] = useState('');
+
+    const [successType, setSuccessType] = useState('');
   
     const navigation = useNavigation()
   
+    
     const app = initializeApp(firebaseConfig);
   
     const auth = getAuth(app);
@@ -31,15 +38,7 @@ export default function LoginComponent() {
   
       if (!email || !password) {
        
-        Alert.alert(
-        
-          'Registro fallido',
-      
-          'Por favor, completa todos los campos.',
-      
-          [{ text: 'OK', style: 'cancel' }]
-     
-          );
+        console.error('Todos los campos deben completarse');
        
           return;
       
@@ -55,15 +54,9 @@ export default function LoginComponent() {
   
         console.log(user);
 
-        Alert.alert(
-        
-          'Registro Completo!',
-      
-          'Bienvenido a PowerUp.',
-      
-          [{ text: 'OK', style: 'cancel' }]
-     
-          );
+        setSuccessMessage('Registro Completo! Bienvenido.');
+
+        setSuccessType('signup');
 
       })
   
@@ -71,15 +64,7 @@ export default function LoginComponent() {
         
         if (error.code === 'auth/email-already-in-use') {
         
-          Alert.alert(
-        
-            'Registro fallido',
-        
-            'El correo electrónico ya está registrado.',
-        
-            [{ text: 'OK', style: 'cancel' }]
-       
-            );
+          console.error('Este correo ya está registrado');
        
         } else {
   
@@ -96,35 +81,7 @@ export default function LoginComponent() {
   
       if (!email || !password) {
        
-        Alert.alert(
-       
-          'Inicio de sesión fallido',
-       
-          'Por favor, completa todos los campos.',
-       
-          [
-       
-            {
-       
-              text: 'OK',
-       
-              style: 'cancel',
-       
-            },
-       
-          ],
-       
-          {
-  
-            containerStyle: styles.alertContainer,
-       
-            titleStyle: styles.alertTitle,
-       
-            messageStyle: styles.alertMessage,
-       
-          }
-       
-          );
+        console.error('Todos los campos deben completarse');
        
           return;
       
@@ -137,9 +94,7 @@ export default function LoginComponent() {
           console.log('Signed In');
         
           const user = userCredential.user;
-        
-          console.log(user);
-        
+                
           navigation.navigate('Home');
         
         })
@@ -207,6 +162,9 @@ export default function LoginComponent() {
           style={styles.container}
   
         >
+
+    {successMessage && successType === 'signup' && <SuccessMessage message={successMessage} />}
+
   
         <Image
             
@@ -315,16 +273,18 @@ export default function LoginComponent() {
   
       color: 'white',
   
-      fontSize: 23,
+      fontSize: 22,
   
       fontWeight: 'bold',
+
+      marginLeft: 10,
+
+      marginRight: 10,
   
       marginBottom: 30,
   
       textAlign: 'center',
-  
-      letterSpacing: 1,
-  
+    
       fontFamily: 'Arial, sans-serif',
   
       textShadowColor: 'black', 
@@ -405,7 +365,7 @@ export default function LoginComponent() {
   
     buttonContainer: {
     
-      marginTop: -90,
+      marginTop: -100,
     
       justifyContent: 'space-between',
     
