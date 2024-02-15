@@ -1,18 +1,41 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
-
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { initializeApp } from 'firebase/app';
+import { firebaseConfig } from '../../firebase-config';
 
 export default function HomeComponent() {
   const [weight, setWeight] = useState('');
   const [height, setHeight] = useState('');
   const [goal, setGoal] = useState('');
 
-  const handleSaveData = () => {
-    // Aquí puedes realizar alguna acción con los datos, como enviarlos a la base de datos, etc.
-    console.log('Datos del usuario:', { weight, height, goal });
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  const handleSaveData = async () => {
+    try {
+      // Verifica que los datos no estén vacíos
+      if (!weight || !height || !goal) {
+        console.error('Todos los campos deben completarse');
+        return;
+      }
+
+      // Guarda los datos en Cloud Firestore
+      const usersCollection = collection(db, 'users');
+      const docRef = await addDoc(usersCollection, {
+        weight,
+        height,
+        goal,
+      });
+
+      console.log('Datos del usuario guardados con éxito. ID del documento:', docRef.id);
+    } catch (error) {
+      console.error('Error al guardar los datos del usuario:', error);
+    }
   };
 
+  
   return (
     <View style={styles.container}>
 
