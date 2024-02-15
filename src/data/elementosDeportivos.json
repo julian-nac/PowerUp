@@ -1,0 +1,7 @@
+{
+    "elementosDeportivos": [
+      { "nombre": "Bandas elásticas", "ubicacion": "casa" },
+      { "nombre": "Mancuernas", "ubicacion": "gimnasio" },
+      { "nombre": "Rodillo", "ubicacion": "casa" }
+    ]
+  }
