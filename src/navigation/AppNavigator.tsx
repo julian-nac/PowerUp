@@ -12,6 +12,10 @@ import PlaceScreen from '../screens/PlaceScreen';
 
 import CasaScreen from '../screens/CasaScreen';
 
+import GymScreen from '../screens/GymScreen';
+
+import ParkScreen from '../screens/ParqueScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +34,10 @@ const AppNavigator = () => {
         <Stack.Screen name="Place" component={PlaceScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Casa" component={CasaScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="Gym" component={GymScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="Park" component={ParkScreen} options={{ headerShown: false }} />
 
       </Stack.Navigator>
 

@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity, ActivityIndicator} from 'react-native';
 
@@ -12,6 +12,8 @@ import { initializeApp } from 'firebase/app';
 import { firebaseConfig } from '../../firebase-config';
 
 import { useNavigation } from '@react-navigation/native';
+
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function HomeComponent() {
@@ -30,6 +32,24 @@ export default function HomeComponent() {
   const app = initializeApp(firebaseConfig);
   
   const db = getFirestore(app);
+
+  useEffect(() => {
+    checkUserDetails();
+  }, []); 
+
+  const checkUserDetails = async () => {
+    try {
+      const storedWeight = await AsyncStorage.getItem('userWeight')
+      const storedHeight = await AsyncStorage.getItem('userHeight');
+
+      if (storedWeight && storedHeight) {
+
+        navigation.navigate('Place')
+      }
+    } catch (error) {
+      console.error('Error al verificar detalles del usuario:', error);
+    }
+  };
 
   
   const handleSaveData = async () => {
@@ -57,6 +77,9 @@ export default function HomeComponent() {
         goal,
 
       });
+
+      await AsyncStorage.setItem('userWeight', weight);
+      await AsyncStorage.setItem('userHeight', height);
 
       console.log('Datos del usuario guardados con éxito. ID del documento:', docRef.id);
 

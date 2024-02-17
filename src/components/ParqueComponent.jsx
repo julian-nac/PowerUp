@@ -3,7 +3,7 @@ import React from 'react';
 
 import { View, Text, Image, ImageBackground, StyleSheet, ScrollView } from 'react-native';
 
-import { rutinas } from '../data/ejerciciosCasa.json';
+import { rutinas } from '../data/ejerciciosParque.json';
 
 
 const RutinaItem = ({ rutina }) => {
@@ -23,7 +23,7 @@ const RutinaItem = ({ rutina }) => {
 };
 
 
-const CasaComponente = () => {
+const ParkComponente = () => {
 
   const rutinasPorCategoria = rutinas.reduce((acc, rutina) => {
 
@@ -200,4 +200,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default CasaComponente;
+export default ParkComponente;

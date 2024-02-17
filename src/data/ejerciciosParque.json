@@ -1,0 +1,138 @@
+{
+    "rutinas": [
+      {
+        "categoria": "Barras Paralelas",
+        "zona": "Cardio",
+        "imagen": "https://i.postimg.cc/JnT9fQ6x/Imagen2.png",
+        "ejercicios": [
+          {
+            "nombre": "Saltos En Tijera",
+            "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
+            "duracion": "x20"
+          },
+          {
+            "nombre": "Burpees",
+            "descripcion": "Para realizar el ejercicio de burpees se parte de una posición inicial en cuclillas (o sentadillas), se colocan las manos en el suelo y se mantiene la cabeza erguida. Después se desplazan las piernas hacia atrás con los pies juntos y se hace una flexión de pecho (también conocida como flexión de codos).",
+            "duracion": "x24"
+          },
+          {
+            "nombre": "Plancha",
+            "descripcion": "Consiste en apoyar las rodillas en el suelo (preferiblemente sobre una alfombra), apoyar los antebrazos también sobre el suelo mientras mantienes la espalda totalmente recta e intentando mantener el core estable. Se recomienda mantener la posición entre 30 segundos y 1 minuto.",
+            "duracion": "30 seg"
+          },
+          {
+            "nombre": "Sentadillas",
+            "descripcion": "Ejercicio para piernas y glúteos",
+            "duracion": "3 series de 15 repeticiones"
+          }
+        ]
+      },
+      {
+        "categoria": "Máquina Press De Pierna",
+        "zona": "Pecho",
+        "imagen": "https://i.postimg.cc/J4CLMs6N/maquina.png",
+        "ejercicios": [
+          {
+            "nombre": "Burpees",
+            "descripcion": "Ejercicio cardiovascular",
+            "duracion": "3 series de 15 repeticiones"
+          },
+          {
+            "nombre": "Mountain Climbers",
+            "descripcion": "Ejercicio para abdomen",
+            "duracion": "3 series de 20 repeticiones"
+          },
+          {
+            "nombre": "Lunges",
+            "descripcion": "Ejercicio para piernas",
+            "duracion": "3 series de 12 repeticiones por pierna"
+          }
+        ]
+      },
+      {
+        "categoria": "Máquina De Pectorales",
+        "imagen": "https://i.postimg.cc/P5wKhMxy/Imagen3.png",
+        "ejercicios": [
+          {
+            "nombre": "Abducciones de cadera",
+            "descripcion": "Ejercicio para glúteos",
+            "duracion": "3 series de 15 repeticiones"
+          },
+          {
+            "nombre": "Curl de bíceps",
+            "descripcion": "Ejercicio para bíceps",
+            "duracion": "3 series de 12 repeticiones"
+          },
+          {
+            "nombre": "Press de hombros",
+            "descripcion": "Ejercicio para hombros",
+            "duracion": "3 series de 10 repeticiones"
+          }
+        ]
+      },
+      {
+        "categoria": "Máquina De Péndulo",
+        "imagen": "https://i.postimg.cc/kXzNGtR5/Imagen4.png",
+        "ejercicios": [
+          {
+            "nombre": "Abducciones de cadera",
+            "descripcion": "Ejercicio para glúteos",
+            "duracion": "3 series de 15 repeticiones"
+          },
+          {
+            "nombre": "Curl de bíceps",
+            "descripcion": "Ejercicio para bíceps",
+            "duracion": "3 series de 12 repeticiones"
+          },
+          {
+            "nombre": "Press de hombros",
+            "descripcion": "Ejercicio para hombros",
+            "duracion": "3 series de 10 repeticiones"
+          }
+        ]
+      },
+      {
+        "categoria": "Máquina Esquí",
+        "imagen": "https://i.postimg.cc/tTJwyxVz/Imagen5.png",
+        "ejercicios": [
+          {
+            "nombre": "Abducciones de cadera",
+            "descripcion": "Ejercicio para glúteos",
+            "duracion": "3 series de 15 repeticiones"
+          },
+          {
+            "nombre": "Curl de bíceps",
+            "descripcion": "Ejercicio para bíceps",
+            "duracion": "3 series de 12 repeticiones"
+          },
+          {
+            "nombre": "Press de hombros",
+            "descripcion": "Ejercicio para hombros",
+            "duracion": "3 series de 10 repeticiones"
+          }
+        ]
+      },
+      {
+        "categoria": "Caminador Aéreo",
+        "imagen": "https://i.postimg.cc/pr0RBFnh/Imagen6.png",
+        "ejercicios": [
+          {
+            "nombre": "Abducciones de cadera",
+            "descripcion": "Ejercicio para glúteos",
+            "duracion": "3 series de 15 repeticiones"
+          },
+          {
+            "nombre": "Curl de bíceps",
+            "descripcion": "Ejercicio para bíceps",
+            "duracion": "3 series de 12 repeticiones"
+          },
+          {
+            "nombre": "Press de hombros",
+            "descripcion": "Ejercicio para hombros",
+            "duracion": "3 series de 10 repeticiones"
+          }
+        ]
+      }
+    ]
+  }
+  

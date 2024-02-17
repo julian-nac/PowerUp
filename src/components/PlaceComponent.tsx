@@ -27,20 +27,27 @@ const PlaceComponent: React.FC<PlaceComponentProps> = ({ handlePlaceSelection })
   
   
   const handleContinue = () => {
+   
+    if (selectedPlace === 'casa') {
+   
+      navigation.navigate('Casa');
+   
+    } else if (selectedPlace === 'gimnasio') { 
+   
+      navigation.navigate('Gym');
+   
+    } else if (selectedPlace === 'parque') {
+
+      navigation.navigate('Park')
+    }
   
     if (selectedPlace) {
-  
+   
       handlePlaceSelection(selectedPlace);
-
-      if (selectedPlace === 'casa') {
-        navigation.navigate('Casa')
-      }
+   
+    }
   
-      } else {
-  
-      }
-  
-    };
+  };
 
   return (
  

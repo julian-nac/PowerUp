@@ -1,0 +1,157 @@
+{
+  "rutinas": [
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos En Tijera",
+          "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
+          "duracion": "x20"
+        },
+        {
+          "nombre": "Burpees",
+          "descripcion": "Para realizar el ejercicio de burpees se parte de una posición inicial en cuclillas (o sentadillas), se colocan las manos en el suelo y se mantiene la cabeza erguida. Después se desplazan las piernas hacia atrás con los pies juntos y se hace una flexión de pecho (también conocida como flexión de codos).",
+          "duracion": "x24"
+        },
+        {
+          "nombre": "Plancha",
+          "descripcion": "Consiste en apoyar las rodillas en el suelo (preferiblemente sobre una alfombra), apoyar los antebrazos también sobre el suelo mientras mantienes la espalda totalmente recta e intentando mantener el core estable. Se recomienda mantener la posición entre 30 segundos y 1 minuto.",
+          "duracion": "30 seg"
+        },
+        {
+          "nombre": "Sentadillas",
+          "descripcion": "Ejercicio para piernas y glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        }
+      ]
+    },
+    {
+      "categoria": "Mancuernas",
+      "imagen": "https://i.pinimg.com/originals/f0/ee/cf/f0eecff8f557c63bca90b7b738c3df73.png",
+      "ejercicios": [
+        {
+          "nombre": "Abducciones de cadera",
+          "descripcion": "Ejercicio para glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        },
+        {
+          "nombre": "Curl de bíceps",
+          "descripcion": "Ejercicio para bíceps",
+          "duracion": "3 series de 12 repeticiones"
+        },
+        {
+          "nombre": "Press de hombros",
+          "descripcion": "Ejercicio para hombros",
+          "duracion": "3 series de 10 repeticiones"
+        }
+      ]
+    },
+    {
+      "categoria": "Con Banda Elástica",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
+      "ejercicios": [
+        {
+          "nombre": "Abducciones de cadera",
+          "descripcion": "Ejercicio para glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        },
+        {
+          "nombre": "Curl de bíceps",
+          "descripcion": "Ejercicio para bíceps",
+          "duracion": "3 series de 12 repeticiones"
+        },
+        {
+          "nombre": "Press de hombros",
+          "descripcion": "Ejercicio para hombros",
+          "duracion": "3 series de 10 repeticiones"
+        }
+      ]
+    },
+    {
+      "categoria": "Bosu",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
+      "ejercicios": [
+        {
+          "nombre": "Abducciones de cadera",
+          "descripcion": "Ejercicio para glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        },
+        {
+          "nombre": "Curl de bíceps",
+          "descripcion": "Ejercicio para bíceps",
+          "duracion": "3 series de 12 repeticiones"
+        },
+        {
+          "nombre": "Press de hombros",
+          "descripcion": "Ejercicio para hombros",
+          "duracion": "3 series de 10 repeticiones"
+        }
+      ]
+    },
+    {
+      "categoria": "Kettlebells",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Abducciones de cadera",
+          "descripcion": "Ejercicio para glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        },
+        {
+          "nombre": "Curl de bíceps",
+          "descripcion": "Ejercicio para bíceps",
+          "duracion": "3 series de 12 repeticiones"
+        },
+        {
+          "nombre": "Press de hombros",
+          "descripcion": "Ejercicio para hombros",
+          "duracion": "3 series de 10 repeticiones"
+        }
+      ]
+    },
+    {
+      "categoria": "Cuerda De Salto",
+      "imagen": "https://i.postimg.cc/rwrrYv4g/cuerda.png",
+      "ejercicios": [
+        {
+          "nombre": "Abducciones de cadera",
+          "descripcion": "Ejercicio para glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        },
+        {
+          "nombre": "Curl de bíceps",
+          "descripcion": "Ejercicio para bíceps",
+          "duracion": "3 series de 12 repeticiones"
+        },
+        {
+          "nombre": "Press de hombros",
+          "descripcion": "Ejercicio para hombros",
+          "duracion": "3 series de 10 repeticiones"
+        }
+      ]
+    },
+    {
+      "categoria": "Rodillo Abdominal",
+      "imagen": "https://petitfitbycris.com/wp-content/uploads/2022/02/Rueda-abdominal-MYP2.png",
+      "ejercicios": [
+        {
+          "nombre": "Abducciones de cadera",
+          "descripcion": "Ejercicio para glúteos",
+          "duracion": "3 series de 15 repeticiones"
+        },
+        {
+          "nombre": "Curl de bíceps",
+          "descripcion": "Ejercicio para bíceps",
+          "duracion": "3 series de 12 repeticiones"
+        },
+        {
+          "nombre": "Press de hombros",
+          "descripcion": "Ejercicio para hombros",
+          "duracion": "3 series de 10 repeticiones"
+        }
+      ]
+    }
+  ]
+}
