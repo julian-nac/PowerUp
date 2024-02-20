@@ -5,6 +5,8 @@ import { View, Text, TextInput, StyleSheet, ImageBackground, Image, KeyboardAvoi
 
 import { Button } from 'react-native-elements';
 
+import { getFirestore } from 'firebase/firestore';
+
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, UserCredential } from 'firebase/auth';
 
 import { initializeApp } from 'firebase/app';
@@ -13,7 +15,6 @@ import { firebaseConfig } from '../../firebase-config';
 
 import { useNavigation } from '@react-navigation/native';
 
-import SuccessMessage from './SuccessMessage';
 
 
 export default function LoginComponent() {
@@ -21,15 +22,13 @@ export default function LoginComponent() {
     const [email, setEmail] = useState('');
   
     const [password, setPassword] = useState('');
-
-    const [successMessage, setSuccessMessage] = useState('');
-
-    const [successType, setSuccessType] = useState('');
   
     const navigation = useNavigation()
   
     
     const app = initializeApp(firebaseConfig);
+
+    const db = getFirestore(app);
   
     const auth = getAuth(app);
   
@@ -47,16 +46,10 @@ export default function LoginComponent() {
       createUserWithEmailAndPassword(auth, email, password)
   
       .then((userCredential: UserCredential) => {
-  
-        console.log('Account created');
-  
+    
         const user = userCredential.user;
   
         console.log(user);
-
-        setSuccessMessage('Registro Completo! Bienvenido.');
-
-        setSuccessType('signup');
 
       })
   
@@ -95,8 +88,11 @@ export default function LoginComponent() {
         
           const user = userCredential.user;
                 
-          navigation.navigate('Home');
-        
+          if (user) {
+
+            navigation.navigate('Home')
+          }
+          
         })
         
         .catch((error) => {
@@ -162,9 +158,6 @@ export default function LoginComponent() {
           style={styles.container}
   
         >
-
-    {successMessage && successType === 'signup' && <SuccessMessage message={successMessage} />}
-
   
         <Image
             

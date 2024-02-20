@@ -1,19 +1,19 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity, ActivityIndicator} from 'react-native';
+import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity, ActivityIndicator } from 'react-native';
 
 import { Picker } from '@react-native-picker/picker';
 
-import { getFirestore, collection, addDoc } from 'firebase/firestore';
+import { firebaseConfig } from '../../firebase-config';
+
+import { getFirestore, collection, addDoc, getDoc, setDoc, doc } from 'firebase/firestore';
+
+import { getAuth } from 'firebase/auth';
 
 import { initializeApp } from 'firebase/app';
 
-import { firebaseConfig } from '../../firebase-config';
-
 import { useNavigation } from '@react-navigation/native';
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
 
 
 export default function HomeComponent() {
@@ -24,51 +24,110 @@ export default function HomeComponent() {
 
   const [goal, setGoal] = useState('');
 
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
 
   const navigation = useNavigation();
-
+  
   const app = initializeApp(firebaseConfig);
+  
+  const auth = getAuth(app);
   
   const db = getFirestore(app);
 
+
   useEffect(() => {
+  
     checkUserDetails();
-  }, []); 
+  
+  }, []);
 
+  
   const checkUserDetails = async () => {
+  
     try {
-      const storedWeight = await AsyncStorage.getItem('userWeight')
-      const storedHeight = await AsyncStorage.getItem('userHeight');
-
-      if (storedWeight && storedHeight) {
-
-        navigation.navigate('Place')
+  
+      const user = auth.currentUser;
+  
+      if (!user) {
+  
+        console.error('Usuario no autenticado.');
+  
+        setLoading(false);
+  
+        return;
+  
       }
+
+      const userDocRef = doc(collection(db, 'users'), user.uid);
+      
+      const userDoc = await getDoc(userDocRef);
+
+      if (userDoc.exists() && userDoc.data()?.dataEntered) {
+      
+        console.log('El usuario ya ha introducido datos anteriormente.');
+
+        navigation.navigate('Place');
+      
+      }
+
+      setLoading(false);
+
     } catch (error) {
-      console.error('Error al verificar detalles del usuario:', error);
+     
+      console.error('Error checking user details:', error);
+     
+      setLoading(false);
+    
     }
+  
   };
 
-  
   const handleSaveData = async () => {
-  
+ 
     try {
-
+ 
       if (!weight || !height || !goal) {
-
+ 
         console.error('Todos los campos deben completarse');
+ 
+        return;
+ 
+      }
+
+      setLoading(true);
+
+      const user = auth.currentUser;
+     
+      if (!user) {
+     
+        console.error('Usuario no autenticado.');
+     
+        setLoading(false); 
+     
+        return;
+     
+      }
+
+      const usersCollection = collection(db, 'users');
+      
+      const userDocRef = doc(usersCollection, user.uid);
+
+      const existingUserDoc = await getDoc(userDocRef);
+
+      if (existingUserDoc.exists() && existingUserDoc.data()?.dataEntered) {
+
+        console.log('El usuario ya ha introducido datos anteriormente.');
+
+        setLoading(false);
+
+        navigation.navigate('Place');
 
         return;
 
       }
 
-      setLoading(true)
-
-      const usersCollection = collection(db, 'users');
-
-      const docRef = await addDoc(usersCollection, {
+      await setDoc(userDocRef, {
 
         weight,
 
@@ -76,26 +135,39 @@ export default function HomeComponent() {
 
         goal,
 
+        dataEntered: true,
+
       });
 
-      await AsyncStorage.setItem('userWeight', weight);
-      await AsyncStorage.setItem('userHeight', height);
+      console.log('Datos del usuario guardados con éxito.');
 
-      console.log('Datos del usuario guardados con éxito. ID del documento:', docRef.id);
+      setLoading(false);
 
-      setLoading(false)
-
-      navigation.navigate('Place')
+      navigation.navigate('Place');
 
     } catch (error) {
 
       console.error('Error al guardar los datos del usuario:', error);
 
-      setLoading(false)
+      setLoading(false);
 
     }
 
   };
+
+  if (loading) {
+
+    return (
+
+      <View style={styles.loadingContainer}>
+
+        <ActivityIndicator size="large" color="#FFD700" />
+      
+      </View>
+    
+    );
+  
+  }
 
 
   return (
@@ -180,7 +252,7 @@ export default function HomeComponent() {
       
       size="large"
       
-      color="yellow" // Puedes cambiar el color según tus preferencias
+      color="yellow"
     
     />
       
@@ -201,6 +273,18 @@ const styles = StyleSheet.create({
 
     flex: 1,
 
+  },
+
+  loadingContainer: {
+   
+    flex: 1,
+   
+    justifyContent: 'center',
+   
+    alignItems: 'center',
+   
+    backgroundColor: 'black',
+  
   },
 
   backgroundImage: {
