@@ -16,6 +16,8 @@ import GymScreen from '../screens/GymScreen';
 
 import ParkScreen from '../screens/ParqueScreen';
 
+import RutinaScreen from '../screens/RutinaScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -38,6 +40,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Gym" component={GymScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Park" component={ParkScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="Rutina" component={RutinaScreen} options={{ headerShown: false }} />
 
       </Stack.Navigator>
 

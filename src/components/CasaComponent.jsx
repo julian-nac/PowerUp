@@ -1,22 +1,24 @@
 
 import React from 'react';
 
-import { View, Text, Image, ImageBackground, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, ImageBackground, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
+
+import { useNavigation } from '@react-navigation/native';
 
 import { rutinas } from '../data/ejerciciosCasa.json';
 
 
-const RutinaItem = ({ rutina }) => {
-
+const RutinaItem = ({ rutina, onPress }) => {
+  
   return (
-
-    <View style={styles.rutinaContainer}>
-
+  
+  <TouchableOpacity style={styles.rutinaContainer} onPress={onPress}>
+  
       <Text style={styles.rutinaText}>{`Ejercicios: ${rutina.ejercicios.length}`}</Text>
-    
+  
       {rutina.zona && <Text style={styles.rutinaText}>{` / Zona: ${rutina.zona}`}</Text>}
-    
-    </View>
+  
+    </TouchableOpacity>
   
   );
 
@@ -24,6 +26,9 @@ const RutinaItem = ({ rutina }) => {
 
 
 const CasaComponente = () => {
+
+  const navigation = useNavigation();
+
 
   const rutinasPorCategoria = rutinas.reduce((acc, rutina) => {
 
@@ -45,6 +50,13 @@ const CasaComponente = () => {
 
   }, {});
 
+
+  const handleRutinaPress = (rutina) => {
+
+    navigation.navigate('Rutina', { rutina });
+
+  };
+
   return (
 
     <View style={styles.container}>
@@ -52,7 +64,7 @@ const CasaComponente = () => {
       <ImageBackground
     
       source={require('../../assets/images/Fondo-pantalla-metal.jpg')}
-      
+    
       style={styles.backgroundImage}
       
       >
@@ -65,30 +77,26 @@ const CasaComponente = () => {
           
               <View style={styles.categoriaContainer}>
           
-                <Image
+                <Image source={{ uri: datosCategoria.imagen }} style={styles.categoriaImage} />
           
-                source={{ uri: datosCategoria.imagen }}
-                
-                style={styles.categoriaImage}
-                
-                />
-                
                 <Text style={styles.categoriaText}>{categoria}</Text>
-              
+          
               </View>
-              
+          
               {datosCategoria.ejercicios.map((rutina, rutinaIndex) => (
-              
-              <RutinaItem
-              
-              key={rutinaIndex}
-              
-              rutina={rutina}
-              
-              />
-              
-              ))}
-            
+          
+          <RutinaItem
+          
+          key={rutinaIndex}
+          
+          rutina={rutina}
+          
+          onPress={() => handleRutinaPress(rutina)}
+          
+          />
+          
+          ))}
+          
             </View>
           
           ))}
@@ -102,6 +110,7 @@ const CasaComponente = () => {
   );
 
 };
+
 
 
 const styles = StyleSheet.create({

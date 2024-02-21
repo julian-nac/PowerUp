@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 import { View, Text, TouchableOpacity, StyleSheet, ImageBackground, Image} from 'react-native';
 
-import { useNavigation } from '@react-navigation/native';
+import { useNavigation} from '@react-navigation/native';
 
 
 interface PlaceComponentProps {
@@ -17,7 +17,6 @@ const PlaceComponent: React.FC<PlaceComponentProps> = ({ handlePlaceSelection })
   const [selectedPlace, setSelectedPlace] = useState<string>('');
 
   const navigation = useNavigation()
-  
   
   const handleSelectPlace = (place: string) => {
   
@@ -48,6 +47,7 @@ const PlaceComponent: React.FC<PlaceComponentProps> = ({ handlePlaceSelection })
     }
   
   };
+
 
   return (
  
