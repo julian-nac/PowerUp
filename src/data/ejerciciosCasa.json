@@ -8,22 +8,26 @@
         {
           "nombre": "Saltos En Tijera",
           "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
-          "duracion": "x20"
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
           "nombre": "Burpees",
-          "descripcion": "Para realizar el ejercicio de burpees se parte de una posición inicial en cuclillas (o sentadillas), se colocan las manos en el suelo y se mantiene la cabeza erguida. Después se desplazan las piernas hacia atrás con los pies juntos y se hace una flexión de pecho (también conocida como flexión de codos).",
-          "duracion": "x24"
+          "descripcion": "Para realizar el ejercicio de burpees se parte de una posición inicial en cuclillas, se colocan las manos en el suelo y se mantiene la cabeza erguida. Después se desplazan las piernas hacia atrás con los pies juntos y se hace una flexión de pecho.",
+          "duracion": "x24",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
           "nombre": "Plancha",
           "descripcion": "Consiste en apoyar las rodillas en el suelo (preferiblemente sobre una alfombra), apoyar los antebrazos también sobre el suelo mientras mantienes la espalda totalmente recta e intentando mantener el core estable. Se recomienda mantener la posición entre 30 segundos y 1 minuto.",
-          "duracion": "30 seg"
+          "duracion": "30 seg",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
           "nombre": "Sentadillas",
           "descripcion": "Ejercicio para piernas y glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "duracion": "3 series de 15 repeticiones",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         }
       ]
     },
