@@ -1,7 +1,9 @@
 
-import React from 'react';
+import React, {useState} from 'react';
 
 import { View, Text, Image, ImageBackground, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+
+import { Picker } from '@react-native-picker/picker';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -26,6 +28,8 @@ const RutinaItem = ({ rutina, onPress }) => {
 
 
 const GymComponente = () => {
+
+  const [zonaSeleccionada, setZonaSeleccionada] = useState(null)
 
   const navigation = useNavigation();
 
@@ -70,6 +74,39 @@ const GymComponente = () => {
       >
       
         <ScrollView>
+
+        <View style={styles.filterContainer}>
+            
+            <Text style={styles.filterText}>Filtrar por Zona:</Text>
+            
+            <Picker
+            
+            selectedValue={zonaSeleccionada}
+            
+            onValueChange={(itemValue) => setZonaSeleccionada(itemValue)}
+            
+            style={styles.picker}
+            
+            >
+            
+              <Picker.Item label="Todas" value={null} />
+            
+              <Picker.Item label="Cuerpo Completo" value="Cuerpo Completo" />
+
+              <Picker.Item label="Brazos" value="Brazos" />
+
+              <Picker.Item label="Pecho" value="Pecho" />
+
+              <Picker.Item label="Espalda" value="Espalda" />
+
+              <Picker.Item label="Piernas" value="Piernas" />
+
+              <Picker.Item label="Abdomen" value="Abdomen" />
+
+            </Picker>
+          
+          </View>
+
       
           {Object.entries(rutinasPorCategoria).map(([categoria, datosCategoria], index) => (
       
@@ -83,7 +120,11 @@ const GymComponente = () => {
           
               </View>
           
-              {datosCategoria.ejercicios.map((rutina, rutinaIndex) => (
+              {datosCategoria.ejercicios
+            
+              .filter((rutina) => (zonaSeleccionada ? rutina.zona === zonaSeleccionada : true))
+            
+              .map((rutina, rutinaIndex) => (
           
           <RutinaItem
           
@@ -111,6 +152,8 @@ const GymComponente = () => {
 
 };
 
+
+
 const styles = StyleSheet.create({
 
   container: {
@@ -127,6 +170,45 @@ const styles = StyleSheet.create({
 
     justifyContent: 'center',
 
+  },
+
+  filterContainer: {
+  
+    flexDirection: 'row',
+  
+    alignItems: 'center',
+  
+    backgroundColor: 'black',
+  
+    marginVertical: 10,
+  
+    padding: 15,
+  
+  },
+  
+  filterText: {
+  
+    fontSize: 18,
+  
+    marginLeft: 10,
+  
+    fontWeight: 'bold',
+  
+    color: 'white',
+  
+    marginRight: 20,
+  
+  },
+  
+  picker: {
+  
+    flex: 1,
+  
+    height: 40,
+  
+    color: 'black',
+   
+    backgroundColor: 'yellow',
   },
 
   firstCategoriaContainer: {
@@ -181,13 +263,11 @@ const styles = StyleSheet.create({
 
     borderColor: 'black',
 
-    width: '90%',
+    width: '100%',
 
-    marginLeft: 20,
+    marginLeft: 0,
 
     borderWidth: 7,
-
-    borderRadius: 30,
 
     padding: 20,
 

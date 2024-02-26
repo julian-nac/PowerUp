@@ -76,16 +76,35 @@ const CasaComponente = () => {
         <ScrollView>
 
         <View style={styles.filterContainer}>
+            
             <Text style={styles.filterText}>Filtrar por Zona:</Text>
+            
             <Picker
-              selectedValue={zonaSeleccionada}
-              onValueChange={(itemValue) => setZonaSeleccionada(itemValue)}
-              style={styles.picker}
+            
+            selectedValue={zonaSeleccionada}
+            
+            onValueChange={(itemValue) => setZonaSeleccionada(itemValue)}
+            
+            style={styles.picker}
+            
             >
+            
               <Picker.Item label="Todas" value={null} />
+            
               <Picker.Item label="Cuerpo Completo" value="Cuerpo Completo" />
-              {/* Agrega más Picker.Item según las zonas que tengas */}
+
+              <Picker.Item label="Brazos" value="Brazos" />
+
+              <Picker.Item label="Pecho" value="Pecho" />
+
+              <Picker.Item label="Espalda" value="Espalda" />
+
+              <Picker.Item label="Piernas" value="Piernas" />
+
+              <Picker.Item label="Abdomen" value="Abdomen" />
+
             </Picker>
+          
           </View>
 
       
@@ -102,8 +121,10 @@ const CasaComponente = () => {
               </View>
           
               {datosCategoria.ejercicios
-                .filter((rutina) => (zonaSeleccionada ? rutina.zona === zonaSeleccionada : true))
-                .map((rutina, rutinaIndex) => (
+            
+              .filter((rutina) => (zonaSeleccionada ? rutina.zona === zonaSeleccionada : true))
+            
+              .map((rutina, rutinaIndex) => (
           
           <RutinaItem
           
@@ -152,22 +173,42 @@ const styles = StyleSheet.create({
   },
 
   filterContainer: {
+  
     flexDirection: 'row',
+  
     alignItems: 'center',
+  
     backgroundColor: 'black',
+  
     marginVertical: 10,
+  
+    padding: 15,
+  
   },
+  
   filterText: {
-    fontSize: 16,
+  
+    fontSize: 18,
+  
     marginLeft: 10,
+  
+    fontWeight: 'bold',
+  
     color: 'white',
+  
     marginRight: 20,
+  
   },
+  
   picker: {
+  
     flex: 1,
+  
     height: 40,
-    color: 'white',
-    backgroundColor: 'rgba(255, 255, 255, 0.8)',
+  
+    color: 'black',
+   
+    backgroundColor: 'yellow',
   },
 
   firstCategoriaContainer: {
@@ -222,13 +263,11 @@ const styles = StyleSheet.create({
 
     borderColor: 'black',
 
-    width: '90%',
+    width: '100%',
 
-    marginLeft: 20,
+    marginLeft: 0,
 
     borderWidth: 7,
-
-    borderRadius: 30,
 
     padding: 20,
 
