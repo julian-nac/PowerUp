@@ -8,89 +8,520 @@
         {
           "nombre": "Saltos En Tijera",
           "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
-          "duracion": "x20",
-          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
-        },
-        {
-          "nombre": "Burpees",
-          "descripcion": "Para realizar el ejercicio de burpees se parte de una posición inicial en cuclillas, se colocan las manos en el suelo y se mantiene la cabeza erguida. Después se desplazan las piernas hacia atrás con los pies juntos y se hace una flexión de pecho.",
-          "duracion": "x24",
-          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
-        },
-        {
-          "nombre": "Plancha",
-          "descripcion": "Consiste en apoyar las rodillas en el suelo (preferiblemente sobre una alfombra), apoyar los antebrazos también sobre el suelo mientras mantienes la espalda totalmente recta e intentando mantener el core estable. Se recomienda mantener la posición entre 30 segundos y 1 minuto.",
-          "duracion": "30 seg",
+          "duracion": "x10",
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
           "nombre": "Sentadillas",
-          "descripcion": "Ejercicio para piernas y glúteos",
-          "duracion": "3 series de 15 repeticiones",
+          "descripcion": "Junta tus manos o estira tus brazos en un ángulo de 90 grados. Cuando vayas a bajar, mantén los glúteos hacia atrás. Haz como si fueras a sentarte en una silla imaginaria. Es importante que las rodillas no sobrepasen la punta de tus pies, siempre deben quedar por detrás.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones De Rodillas",
+          "descripcion": "Túmbate de cara al suelo y coloca tus manos ligeramente más ancho que los hombros mientras aguantas tu torso con los brazos extendidos. Apoya tus rodillas al suelo y cruza los tobillos. Aguanta tu peso con las rodillas y las manos",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones",
+          "descripcion": "Mantén la cabeza mirando al suelo y baja el cuerpo hasta que tus codos se doblen en un ángulo exacto de 90 grados. A partir de ahí, puedes subir y estirar los brazos de nuevo.",
+          "duracion": "x5",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Zancadas Estáticas",
+          "descripcion": "Empieza de pie con los brazos relajados a los lados del cuerpo y las piernas separadas al ancho de las caderas. Da un paso adelante con la pierna derecha, pon las manos en la cintura y flexiona ambas piernas, haciendo que la rodilla izquierda toque el suelo.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Abdominales",
+          "descripcion": "Para realizar abdominales correctamente, acuéstate boca arriba, cruza las manos detrás de la cabeza, contrae los abdominales y levanta cabeza y hombros del suelo. Alcanza hacia las rodillas, desciende lentamente y repite.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Superman",
+          "descripcion": "Tensa tus músculos abdominales para mantener tu torso estable, luego levanta del suelo unas cuantas pulgadas los brazos, la parte superior del pecho y las piernas simultáneamente.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Brazos",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos En Tijera",
+          "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones De Rodillas",
+          "descripcion": "Túmbate de cara al suelo y coloca tus manos ligeramente más ancho que los hombros mientras aguantas tu torso con los brazos extendidos. Apoya tus rodillas al suelo y cruza los tobillos. Aguanta tu peso con las rodillas y las manos",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones",
+          "descripcion": "Mantén la cabeza mirando al suelo y baja el cuerpo hasta que tus codos se doblen en un ángulo exacto de 90 grados. A partir de ahí, puedes subir y estirar los brazos de nuevo.",
+          "duracion": "x8",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Tríceps En Silla",
+          "descripcion": "Siéntate en una silla con las manos sujetando el borde del asiento. Desplaza tus caderas frente a la silla y baja el cuerpo doblando los codos. Luego, vuelve a subir.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevaciones Laterales",
+          "descripcion": "Levanta los brazos lateralmente hasta la altura de los hombros. Imagina que estás sosteniendo pesas, y mantén la resistencia en los músculos del brazo.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Estiramientos De Brazos",
+          "descripcion": "Estira cada brazo cruzándolo sobre el pecho y aplicando una suave presión con la otra mano.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Pecho",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos En Tijera",
+          "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones De Rodillas",
+          "descripcion": "Túmbate de cara al suelo y coloca tus manos ligeramente más ancho que los hombros mientras aguantas tu torso con los brazos extendidos. Apoya tus rodillas al suelo y cruza los tobillos. Aguanta tu peso con las rodillas y las manos",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones",
+          "descripcion": "Mantén la cabeza mirando al suelo y baja el cuerpo hasta que tus codos se doblen en un ángulo exacto de 90 grados. A partir de ahí, puedes subir y estirar los brazos de nuevo.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevaciones Laterales",
+          "descripcion": "Levanta los brazos lateralmente hasta la altura de los hombros. Imagina que estás sosteniendo pesas, y mantén la resistencia en los músculos del brazo.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones Toque De Hombro",
+          "descripcion": "Realiza una flexión estándar y al subir, toca con una mano el hombro contrario. Alterna entre los lados en cada repetición.",
+          "duracion": "x6",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones De Rodillas",
+          "descripcion": "Túmbate de cara al suelo y coloca tus manos ligeramente más ancho que los hombros mientras aguantas tu torso con los brazos extendidos. Apoya tus rodillas al suelo y cruza los tobillos. Aguanta tu peso con las rodillas y las manos",
+          "duracion": "x14",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Estiramientos De Pecho",
+          "descripcion": "Coloca tus manos detrás de tu espalda y únelas. Estira los brazos y levanta suavemente, abriendo el pecho.",
+          "duracion": "seg-20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Estiramientos De Brazos",
+          "descripcion": "Estira cada brazo cruzándolo sobre el pecho y aplicando una suave presión con la otra mano.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Espalda",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos En Tijera",
+          "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Superman",
+          "descripcion": "Tensa tus músculos abdominales para mantener tu torso estable, luego levanta del suelo unas cuantas pulgadas los brazos, la parte superior del pecho y las piernas simultáneamente.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Puente De Glúteos",
+          "descripcion": "Acuéstate boca arriba, dobla las rodillas y levanta las caderas hacia el techo, apretando los glúteos y la espalda baja.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Hiperextensiones",
+          "descripcion": "Colócate boca abajo con las manos en la nuca, levanta el torso hacia arriba manteniendo la espalda recta.",
+          "duracion": "x18",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones De Espalda",
+          "descripcion": " Similar a una flexión, pero con el enfoque en la espalda. Coloca las manos cerca de los hombros y levanta el torso del suelo.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Piernas",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos En Tijera",
+          "descripcion": "Los saltos de tijera consisten en saltar con los pies separados a la altura de los hombros mientras llevas los brazos por encima de la cabeza, y luego volver a saltar con los pies juntos mientras bajas los brazos a los lados.",
+          "duracion": "x16",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Sentadillas",
+          "descripcion": "Junta tus manos o estira tus brazos en un ángulo de 90 grados. Cuando vayas a bajar, mantén los glúteos hacia atrás. Haz como si fueras a sentarte en una silla imaginaria. Es importante que las rodillas no sobrepasen la punta de tus pies, siempre deben quedar por detrás.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Zancadas Estáticas",
+          "descripcion": "Empieza de pie con los brazos relajados a los lados del cuerpo y las piernas separadas al ancho de las caderas. Da un paso adelante con la pierna derecha, pon las manos en la cintura y flexiona ambas piernas, haciendo que la rodilla izquierda toque el suelo.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevaciones De Talones",
+          "descripcion": "De pie, eleva los talones mientras mantienes el peso en la parte delantera de los pies. Luego baja los talones hacia abajo.",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Mountain Climbers",
+          "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho de forma alterna y a un ritmo rápido.",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Abdomen",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Abdominales",
+          "descripcion": "Acuéstate boca arriba, dobla las rodillas y coloca las manos detrás de la cabeza. Levanta los hombros hacia adelante y contrae los músculos abdominales. Baja lentamente y repite.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Levantamiento De Piernas",
+          "descripcion": "Acuéstate boca arriba y levanta las piernas hacia arriba manteniendo los pies juntos. Desciende las piernas lentamente sin tocar el suelo y luego vuelve a subir.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Bicicleta",
+          "descripcion": "Acostado boca arriba, lleva la rodilla derecha hacia el codo izquierdo mientras estiras la pierna izquierda. Alterna con la otra pierna en un movimiento similar al de andar en bicicleta.",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Escaladores",
+          "descripcion": "Desde una posición de plancha, lleva las rodillas hacia el pecho de forma alterna, manteniendo la espalda recta. Realiza el movimiento a un ritmo rápido.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Mountain Climbers",
+          "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho de forma alterna y a un ritmo rápido.",
+          "duracion": "x18",
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         }
       ]
     },
     {
       "categoria": "Mancuernas",
+      "zona": "Brazos",
       "imagen": "https://i.pinimg.com/originals/f0/ee/cf/f0eecff8f557c63bca90b7b738c3df73.png",
       "ejercicios": [
         {
-          "nombre": "Abducciones de cadera",
-          "descripcion": "Ejercicio para glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "nombre": "Curl De Bíceps",
+          "descripcion": "Levanta las mancuernas hacia los hombros, manteniendo los codos pegados al cuerpo.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
-          "nombre": "Curl de bíceps",
-          "descripcion": "Ejercicio para bíceps",
-          "duracion": "3 series de 12 repeticiones"
+          "nombre": "Press De Bíceps",
+          "descripcion": "Extiende las mancuernas hacia adelante desde una posición vertical.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
-          "nombre": "Press de hombros",
-          "descripcion": "Ejercicio para hombros",
-          "duracion": "3 series de 10 repeticiones"
+          "nombre": "Extensiones De Tríceps",
+          "descripcion": "Levanta una mancuerna sobre la cabeza y flexiona los codos para bajarla detrás de la cabeza.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevaciones Laterales",
+          "descripcion": "Levanta los brazos lateralmente hasta la altura de los hombros. Imagina que estás sosteniendo pesas, y mantén la resistencia en los músculos del brazo.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Mancuernas",
+      "zona": "Pecho",
+      "imagen": "https://i.pinimg.com/originals/f0/ee/cf/f0eecff8f557c63bca90b7b738c3df73.png",
+      "ejercicios": [
+        {
+          "nombre": "Press De Pecho",
+          "descripcion": "Acuéstate en un banco plano o algo similar y levanta las mancuernas desde los lados hasta que los brazos estén completamente extendidos.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Pull-Over Con Mancuerna",
+          "descripcion": "Acuéstate en un banco o algo similar con solo tu espalda y hombros apoyados. Sostén una mancuerna con ambos brazos extendidos sobre tu pecho y bájala hacia atrás sobre tu cabeza.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones Con Mancuernas",
+          "descripcion": "Colócate en posición de flexión con las manos sobre las mancuernas. Realiza flexiones manteniendo una línea recta desde la cabeza hasta los pies.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Aperturas Con Mancuernas",
+          "descripcion": "Acostado en un banco plano o algo similar, abre los brazos hacia los lados, manteniendo ligeramente flexionados los codos.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Mancuernas",
+      "zona": "Espalda",
+      "imagen": "https://i.pinimg.com/originals/f0/ee/cf/f0eecff8f557c63bca90b7b738c3df73.png",
+      "ejercicios": [
+        {
+          "nombre": "Remo Con Mancuernas",
+          "descripcion": "Con una mancuerna en cada mano, inclínate hacia adelante desde la cintura. Levanta las mancuernas hacia tus caderas manteniendo los codos cerca del cuerpo.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Peso Muerto Con Mancuerna",
+          "descripcion": "Sujeta una mancuerna en cada mano y baja hacia adelante desde las caderas mientras mantienes la espalda recta. Luego, vuelve a la posición inicial.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Pull-Over Con Mancuernas",
+          "descripcion": "Colócate en posición de flexión con las manos sobre las mancuernas. Realiza flexiones manteniendo una línea recta desde la cabeza hasta los pies.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Aperturas Con Mancuernas",
+          "descripcion": "Acuéstate en un banco o algo similar con solo tu espalda y hombros apoyados. Sostén una mancuerna con ambos brazos extendidos sobre tu pecho y bájala hacia atrás sobre tu cabeza.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Pulldown Con Mancuernas",
+          "descripcion": "Sujeta una mancuerna con ambas manos y estírala hacia abajo, manteniendo los brazos rectos. Lleva la mancuerna hacia arriba, contrayendo los músculos de la espalda.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Hiperextensiones",
+          "descripcion": "Acuéstate boca abajo en un banco inclinado, con una mancuerna en cada mano. Levanta los brazos hacia los lados mientras mantienes la parte superior del cuerpo en contacto con el banco.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         }
       ]
     },
     {
       "categoria": "Con Banda Elástica",
+      "zona": "Piernas",
       "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
       "ejercicios": [
         {
-          "nombre": "Abducciones de cadera",
-          "descripcion": "Ejercicio para glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "nombre": "Sentadillas Con Banda",
+          "descripcion": "Coloca la banda sobre tus muslos, a la altura de las rodillas. Realiza sentadillas manteniendo la tensión en la banda.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
-          "nombre": "Curl de bíceps",
-          "descripcion": "Ejercicio para bíceps",
-          "duracion": "3 series de 12 repeticiones"
+          "nombre": "Zancadas Laterales",
+          "descripcion": "Coloca la banda alrededor de tus tobillos. Da un paso lateral y regresa a la posición inicial.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
-          "nombre": "Press de hombros",
-          "descripcion": "Ejercicio para hombros",
-          "duracion": "3 series de 10 repeticiones"
+          "nombre": "Patadas De Glúteos",
+          "descripcion": "Asegura la banda en tus tobillos. Levanta una pierna hacia atrás, manteniendo la pierna extendida.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevaciones Piernas Laterales",
+          "descripcion": "Sujeta la banda con las manos y colócala alrededor de tus tobillos. Eleva lateralmente una pierna y baja controladamente.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Con Banda Elástica",
+      "zona": "Brazos",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
+      "ejercicios": [
+        {
+          "nombre": "Flexiones Bíceps Con Banda",
+          "descripcion": "Pisa la banda con ambos pies y realiza flexiones de bíceps.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Press Hombros Con Banda",
+          "descripcion": "Coloca la banda bajo tus pies y realiza press de hombros manteniendo la banda en tus manos.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Tríceps Con Banda",
+          "descripcion": "Sujeta la banda por encima de la cabeza y realiza extensiones de tríceps.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Abducción De Hombros",
+          "descripcion": "Párate sobre la banda y sujeta los extremos con las manos. Eleva lateralmente los brazos.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Con Banda Elástica",
+      "zona": "Espalda",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
+      "ejercicios": [
+        {
+          "nombre": "Remo Con Banda",
+          "descripcion": "Asegura la banda en un punto fijo y realiza un movimiento de remo.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Pull-Aparts",
+          "descripcion": "Sujeta la banda frente a ti con las manos separadas y realiza movimientos de pull-apart.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Lat Pulldown Con Banda",
+          "descripcion": "Fija la banda en un lugar elevado y realiza un movimiento similar a un lat pulldown.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         }
       ]
     },
     {
       "categoria": "Bosu",
+      "zona": "Cuerpo Completo",
       "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
       "ejercicios": [
         {
-          "nombre": "Abducciones de cadera",
-          "descripcion": "Ejercicio para glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "nombre": "Sentadillas En Bosu",
+          "descripcion": "Coloca el Bosu con la parte plana hacia arriba. Realiza sentadillas manteniendo el equilibrio sobre el Bosu.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
-          "nombre": "Curl de bíceps",
-          "descripcion": "Ejercicio para bíceps",
-          "duracion": "3 series de 12 repeticiones"
+          "nombre": "Flexiones En Bosu",
+          "descripcion": "Coloca las manos en el Bosu y realiza flexiones manteniendo la estabilidad.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         },
         {
-          "nombre": "Press de hombros",
-          "descripcion": "Ejercicio para hombros",
-          "duracion": "3 series de 10 repeticiones"
+          "nombre": "Mountain Climbers En Bosu",
+          "descripcion": "Coloca las manos sobre el Bosu y alterna entre llevar las rodillas hacia el pecho.",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevación Piernas En Bosu",
+          "descripcion": "Siéntate en el Bosu con las manos detrás de ti. Levanta las piernas hacia el frente.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones Laterales En Bosu",
+          "descripcion": "Sujeta el Bosu con una mano y realiza flexiones laterales para trabajar los oblicuos.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Bosu",
+      "zona": "Piernas",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas En Bosu",
+          "descripcion": "Coloca el Bosu con la parte plana hacia arriba. Realiza sentadillas manteniendo el equilibrio sobre el Bosu.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevación Talones En Bosu",
+          "descripcion": "Párate sobre el Bosu con los talones colgando y eleva los talones hacia arriba.",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Zancadas Laterales Bosu",
+          "descripcion": "Da un paso lateral sobre el Bosu, manteniendo la pierna opuesta recta. Alterna entre las piernas.",
+          "duracion": "x24",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevación Cadera En Bosu",
+          "descripcion": "Acuéstate boca arriba con los pies en el Bosu. Eleva las caderas hacia arriba.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Flexiones Pantorilla En Bosu",
+          "descripcion": "Coloca las puntas de los pies en el Bosu y realiza flexiones de pantorrilla",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         }
       ]
     },

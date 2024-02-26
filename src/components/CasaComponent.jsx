@@ -1,7 +1,9 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 
 import { View, Text, Image, ImageBackground, StyleSheet, ScrollView, TouchableOpacity} from 'react-native';
+
+import { Picker } from '@react-native-picker/picker';
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -26,6 +28,8 @@ const RutinaItem = ({ rutina, onPress }) => {
 
 
 const CasaComponente = () => {
+
+  const [zonaSeleccionada, setZonaSeleccionada] = useState(null)
 
   const navigation = useNavigation();
 
@@ -70,6 +74,20 @@ const CasaComponente = () => {
       >
       
         <ScrollView>
+
+        <View style={styles.filterContainer}>
+            <Text style={styles.filterText}>Filtrar por Zona:</Text>
+            <Picker
+              selectedValue={zonaSeleccionada}
+              onValueChange={(itemValue) => setZonaSeleccionada(itemValue)}
+              style={styles.picker}
+            >
+              <Picker.Item label="Todas" value={null} />
+              <Picker.Item label="Cuerpo Completo" value="Cuerpo Completo" />
+              {/* Agrega más Picker.Item según las zonas que tengas */}
+            </Picker>
+          </View>
+
       
           {Object.entries(rutinasPorCategoria).map(([categoria, datosCategoria], index) => (
       
@@ -83,7 +101,9 @@ const CasaComponente = () => {
           
               </View>
           
-              {datosCategoria.ejercicios.map((rutina, rutinaIndex) => (
+              {datosCategoria.ejercicios
+                .filter((rutina) => (zonaSeleccionada ? rutina.zona === zonaSeleccionada : true))
+                .map((rutina, rutinaIndex) => (
           
           <RutinaItem
           
@@ -129,6 +149,25 @@ const styles = StyleSheet.create({
 
     justifyContent: 'center',
 
+  },
+
+  filterContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: 'black',
+    marginVertical: 10,
+  },
+  filterText: {
+    fontSize: 16,
+    marginLeft: 10,
+    color: 'white',
+    marginRight: 20,
+  },
+  picker: {
+    flex: 1,
+    height: 40,
+    color: 'white',
+    backgroundColor: 'rgba(255, 255, 255, 0.8)',
   },
 
   firstCategoriaContainer: {

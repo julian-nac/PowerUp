@@ -33,59 +33,59 @@ const DetallesRutina = ({ route, navigation }) => {
 <View style={styles.container}>
 
     <ImageBackground
-        
+
         source={require('../../assets/images/Fondo-pantalla-metal.jpg')}
-  
+
         style={styles.backgroundImage}
 
     >
-     
+
       <View style={styles.header}>
-     
+
         <Text style={styles.zonaText}>{rutina.zona}</Text>
-     
+
       </View>
 
       <View style={styles.ejerciciosContainer}>
-     
+
         <View style={styles.ejercicioContainer}>
-     
+
           <Image
-     
+
           source={{ uri: rutina.ejercicios[indiceEjercicio].gif }}
-          
+
           style={styles.imagen}
-          
+
           />
-          
+
           <TouchableOpacity style={styles.circleButton} onPress={handleSiguienteEjercicio}>
-          
+
             <Text style={styles.buttonText}>✓</Text>
-          
+
           </TouchableOpacity>
-          
+
           <Text style={styles.nombreText}>{rutina.ejercicios[indiceEjercicio].nombre}{` : ${rutina.ejercicios[indiceEjercicio].duracion}`}</Text>
-          
+
           <Text style={styles.descripcionText}>{rutina.ejercicios[indiceEjercicio].descripcion}</Text>
-        
+
         </View>
-      
+
       </View>
 
       <View style={styles.progressBarContainer}>
-      
+
         <View style={styles.progressBar}>
-      
+
           <View style={{ width: `${progreso * 100}%`, height: '100%', backgroundColor: 'yellow' }} />
-      
+
         </View>
-      
+
       </View>
-     
+
      </ImageBackground>
-    
+
     </View>
-  
+
   );
 
 };
@@ -170,4 +170,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetallesRutina;
+export default DetallesRutina
