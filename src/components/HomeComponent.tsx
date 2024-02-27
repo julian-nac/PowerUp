@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 
-import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity, ActivityIndicator } from 'react-native';
+import { View, Text, TextInput, StyleSheet, ImageBackground, TouchableOpacity, ActivityIndicator, Alert } from 'react-native';
 
 import { Picker } from '@react-native-picker/picker';
 
@@ -21,6 +21,10 @@ export default function HomeComponent() {
   const [weight, setWeight] = useState('');
 
   const [height, setHeight] = useState('');
+
+  const [yearsold, setYearsold] = useState('');
+
+  const [expectweight, setExpectweight] = useState('');
 
   const [goal, setGoal] = useState('');
 
@@ -67,7 +71,7 @@ export default function HomeComponent() {
       
         console.log('El usuario ya ha introducido datos anteriormente.');
 
-        navigation.navigate('Place');
+        navigation.navigate('Inicio');
       
       }
 
@@ -87,7 +91,7 @@ export default function HomeComponent() {
  
     try {
  
-      if (!weight || !height || !goal) {
+      if (!weight || !height || !goal || !yearsold || !expectweight) {
  
         console.error('Todos los campos deben completarse');
  
@@ -121,7 +125,7 @@ export default function HomeComponent() {
 
         setLoading(false);
 
-        navigation.navigate('Place');
+        navigation.navigate('Inicio');
 
         return;
 
@@ -135,6 +139,10 @@ export default function HomeComponent() {
 
         goal,
 
+        yearsold,
+
+        expectweight,
+
         dataEntered: true,
 
       });
@@ -143,7 +151,7 @@ export default function HomeComponent() {
 
       setLoading(false);
 
-      navigation.navigate('Place');
+      navigation.navigate('Inicio');
 
     } catch (error) {
 
@@ -169,6 +177,42 @@ export default function HomeComponent() {
   
   }
 
+  const handleSkip = () => {
+    
+    Alert.alert(
+    
+      'Omitir Datos',
+    
+      '¿Estás seguro de que quieres omitir la introducción de datos? Una experiencia personalizada requiere información adicional.',
+    
+      [
+    
+        {
+    
+          text: 'Volver',
+    
+          style: 'cancel',
+    
+        },
+    
+        {
+    
+          text: 'Omitir',
+    
+          onPress: () => {
+
+            navigation.navigate('Inicio')
+    
+          },
+    
+        },
+    
+      ],
+    
+      );
+  
+    };
+
 
   return (
 
@@ -181,6 +225,13 @@ export default function HomeComponent() {
         style={styles.backgroundImage}
 
       >
+
+      <TouchableOpacity style={styles.skipButton} onPress={handleSkip}>
+
+        <Text style={styles.skipButtonText}>Omitir</Text>
+
+      </TouchableOpacity>
+
 
       <Text style={styles.subtitle}>Para una mejor experiencia con la rutina, necesitamos tus siguientes datos:</Text>
 
@@ -237,10 +288,38 @@ export default function HomeComponent() {
       
       </View>
 
+      <TextInput
+      
+      style={styles.inputSecond}
+      
+      placeholder="Edad"
+      
+      keyboardType="numeric"
+      
+      value={yearsold}
+      
+      onChangeText={(text) => setYearsold(text)}
+      
+      />
+
+      <TextInput
+      
+      style={styles.input}
+      
+      placeholder="Peso Ideal (kg)"
+      
+      keyboardType="numeric"
+      
+      value={expectweight}
+      
+      onChangeText={(text) => setExpectweight(text)}
+      
+      />
+
 
       <TouchableOpacity style={styles.buttonContainer} onPress={handleSaveData}>
       
-        <Text style={styles.buttonText}>Guardar Datos</Text>
+      <Text style={styles.buttonText}>Guardar Datos</Text>
       
       </TouchableOpacity>
 
@@ -345,6 +424,58 @@ const styles = StyleSheet.create({
   
     fontSize: 15,
   
+  },
+
+  inputSecond: {
+  
+    height: 50,
+  
+    width: '90%',
+  
+    fontWeight: 'bold',
+  
+    borderRadius: 20,
+
+    borderColor: 'gray',
+  
+    borderWidth: 3,
+
+    marginTop: 20,
+  
+    marginBottom: 20,
+  
+    marginLeft: 20,
+  
+    paddingLeft: 10,
+  
+    fontSize: 15,
+  
+  },
+
+  skipButton: {
+   
+    backgroundColor: 'transparent',
+   
+    padding: 10,
+   
+    width: '20%',
+   
+    position: 'absolute',
+   
+    top: 10,
+   
+    right: 10,
+   
+    alignItems: 'center',
+ 
+  },
+ 
+  skipButtonText: {
+ 
+    color: 'white',
+ 
+    fontWeight: 'bold'
+ 
   },
 
   picker: {

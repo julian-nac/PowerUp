@@ -18,6 +18,8 @@ import ParkScreen from '../screens/ParqueScreen';
 
 import RutinaScreen from '../screens/RutinaScreen';
 
+import InicioScreen from '../screens/InicioScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -32,6 +34,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="Inicio" component={InicioScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Place" component={PlaceScreen} options={{ headerShown: false }} />
 
