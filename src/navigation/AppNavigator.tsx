@@ -20,6 +20,8 @@ import RutinaScreen from '../screens/RutinaScreen';
 
 import InicioScreen from '../screens/InicioScreen';
 
+import EditarDatosScreen from '../screens/EditarDatosScreen';
+
 
 const Stack = createNativeStackNavigator();
 
@@ -36,6 +38,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Inicio" component={InicioScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="EditarDatos" component={EditarDatosScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Place" component={PlaceScreen} options={{ headerShown: false }} />
 
