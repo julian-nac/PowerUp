@@ -91,83 +91,161 @@ const DetallesRutina = ({ route, navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  
   container: {
+  
     flex: 1,
+  
   },
+  
   backgroundImage: {
+  
     flex: 1,
+  
     resizeMode: 'cover',
+  
     justifyContent: 'center',
+  
   },
+  
   header: {
+  
     alignItems: 'center',
+  
     marginTop: 0,
+  
     marginLeft: -10,
+  
     marginRight: -10,
+  
     backgroundColor: 'yellow',
+  
     borderColor: 'black',
+  
     borderWidth: 5,
+  
     padding: 20,
+  
   },
+  
   zonaText: {
+  
     fontSize: 22,
+  
     color: 'black',
+  
     fontWeight: 'bold'
+  
   },
+  
   imagen: {
+  
     width: 300,
+  
     height: 250,
+  
     marginBottom: 10,
+  
     alignSelf: 'center',
+  
   },
+  
   ejerciciosContainer: {
+  
     padding: 20,
+  
   },
+  
   ejercicioContainer: {
+  
     marginBottom: 20,
+  
     height: 550, 
+  
   },
+  
   nombreText: {
+  
     fontSize: 20,
+  
     fontWeight: 'bold',
+  
     color: 'white',
+  
     marginTop: '5%',
+  
     textAlign: 'center'
+  
   },
+  
   descripcionText: {
+  
     fontSize: 15,
+  
     color: 'white',
+  
     marginTop: '5%',
+  
     textAlign: 'center'
+  
   },
+  
   circleButton: {
+  
     width: 80,
+  
     height: 80,
+  
     borderRadius: 125,
+  
     backgroundColor: 'yellow',
+  
     alignSelf: 'center',
+  
     justifyContent: 'center',
+  
     borderColor: 'black',
+  
     borderWidth: 5,
+  
     alignItems: 'center',
+  
     marginTop: 50,
+  
   },
+  
   buttonText: {
+  
     color: 'black',
+  
     fontSize: 30,
+  
     fontWeight: 'bold',
+  
   },
+  
   progressBarContainer: {
+  
     position: 'absolute',
+  
     top: 10,
+  
     bottom: 0,
+  
     left: 0,
+  
     right: 0,
+  
     height: 30,
+  
   },
+  
   progressBar: {
+  
     height: '100%',
+  
   },
+
 });
 
 export default DetallesRutina

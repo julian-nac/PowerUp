@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Modal } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Modal, Image, ScrollView } from 'react-native';
 import { doc, getDoc } from 'firebase/firestore';
 import { useNavigation } from '@react-navigation/native';
 
@@ -40,10 +40,11 @@ const fetchUserData = async () => {
 
   return (
     <View style={styles.navbar}>
+
       <TouchableOpacity onPress={toggleMenu}>
         <Text style={styles.menuIcon}>☰</Text>
       </TouchableOpacity>
-
+      <ScrollView>
       <Modal
         transparent
         visible={menuVisible}
@@ -55,32 +56,65 @@ const fetchUserData = async () => {
             <Text style={styles.closeButtonText}>✕</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity onPress={() => onSectionPress('perfil')}>
+          <View style={styles.logoContainer}>
+          <Image source={require('../../assets/images/user.png')} style={styles.logo} />
             <Text style={styles.menuItem}>Perfil</Text>
-          </TouchableOpacity>
+            <View style={styles.line} />
+          </View>
+
           <View style={styles.userDataContainer}>
             <TouchableOpacity onPress={handleEditUserData}>
               <Text style={styles.editUserDataText}>Editar Datos</Text>
             </TouchableOpacity>
           </View>
 
-          <TouchableOpacity onPress={() => onSectionPress('avances')}>
+          <View style={styles.logoContainer}>
+          <Image source={require('../../assets/images/stats.png')} style={styles.logo} />
             <Text style={styles.menuItem}>Avances</Text>
-          </TouchableOpacity>
+            <View style={styles.line} />
+          </View>
 
-          <TouchableOpacity onPress={() => onSectionPress('tienda')}>
+          <View style={styles.userDataContainer}>
+            <TouchableOpacity>
+              <Text style={styles.editUserDataText}>Informe</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={styles.editUserDataText}>Objetivo</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.logoContainer}>
+          <Image source={require('../../assets/images/shop.png')} style={styles.logo} />
             <Text style={styles.menuItem}>Tienda</Text>
-          </TouchableOpacity>
+            <View style={styles.line} />
+          </View>
 
-          <TouchableOpacity onPress={() => onSectionPress('configuracion')}>
+          <View style={styles.userDataContainer}>
+            <TouchableOpacity>
+              <Text style={styles.editUserDataText}>Comprar</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.logoContainer}>
+          <Image source={require('../../assets/images/config.png')} style={styles.logo} />
             <Text style={styles.menuItem}>Configuración</Text>
-          </TouchableOpacity>
+            <View style={styles.line} />
+          </View>
 
-          <TouchableOpacity onPress={() => onSectionPress('apoyarnos')}>
-            <Text style={styles.menuItem}>Apoyarnos</Text>
-          </TouchableOpacity>
+          <View style={styles.userDataContainer}>
+            <TouchableOpacity>
+              <Text style={styles.editUserDataText}>Alarmas</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={styles.editUserDataText}>Sonido</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Text style={styles.editUserDataText}>Ajustes De Entrenamientos</Text>
+            </TouchableOpacity>
+          </View>
         </View>
-      </Modal>
+        </Modal>
+      </ScrollView>
     </View>
   );
 };
@@ -88,16 +122,34 @@ const fetchUserData = async () => {
 const styles = StyleSheet.create({
   navbar: {
     position: 'absolute',
-    borderColor: 'white',
-    borderWidth: 2,
-    width: '100%',
-    top: 2,
+    borderColor: 'yellow',
+    borderBottomWidth: 2,  // Agregamos solo el borde inferior
+    width: '100%',  // Cambié '102%' a '100%' para asegurarme de que ocupe el ancho completo
+    top: 0,
     backgroundColor: 'black',
     padding: 18,
   },
   menuIcon: {
-    color: 'white',
+    color: 'yellow',
+    textAlign: 'right',
     fontSize: 24,
+  },
+  editUserDataText: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginLeft: 5,
+    marginBottom: 10,
+    marginTop: 5,
+  },
+  logoContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginVertical: 20,
+  },
+  logo: {
+    width: 32, // Ajusta el ancho según tus necesidades
+    height: 32, // Ajusta la altura según tus necesidades
+    marginRight: 10,
   },
   menuContainer: {
     flex: 1,
@@ -108,13 +160,22 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
   },
   closeButtonText: {
-    color: 'white',
+    color: 'yellow',
     fontSize: 24,
   },
   menuItem: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 20,
     marginVertical: 10,
+    fontWeight: 'bold'
+  },
+  line: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    width: '100%', // O el ancho que desees
+    height: 2,
+    backgroundColor: 'yellow',
   },
   navbarItem: {
     paddingVertical: 5,
