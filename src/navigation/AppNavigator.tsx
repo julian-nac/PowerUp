@@ -22,6 +22,7 @@ import InicioScreen from '../screens/InicioScreen';
 
 import EditarDatosScreen from '../screens/EditarDatosScreen';
 
+import { ProgressProvider } from '../components/ProgressContext';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +31,8 @@ const AppNavigator = () => {
   return (
 
 <NavigationContainer>
+
+  <ProgressProvider>
 
       <Stack.Navigator initialRouteName="Login">
 
@@ -52,6 +55,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Rutina" component={RutinaScreen} options={{ headerShown: false }} />
 
       </Stack.Navigator>
+
+  </ProgressProvider>
 
 </NavigationContainer>
 

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, TextInput, Button, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, ActivityIndicator, StyleSheet } from 'react-native';
 import { getFirestore, collection, getDocs, updateDoc, doc } from 'firebase/firestore';
+import { useNavigation } from '@react-navigation/native';
+import { Image } from 'react-native-elements';
 
 const EditarDatos = () => {
+  const navigation = useNavigation()
   const [userData, setUserData] = useState({});
   const [loading, setLoading] = useState(true);
+  const [saving, setSaving] = useState(false)
 
   const [isEditing, setIsEditing] = useState(false);
   const [newWeight, setNewWeight] = useState('');
@@ -34,6 +38,7 @@ const EditarDatos = () => {
 
   const handleSaveChanges = async () => {
     try {
+      setSaving(true)
       const db = getFirestore();
       const userDocRef = doc(collection(db, 'users'), userData.id);
 
@@ -58,13 +63,14 @@ const EditarDatos = () => {
       setNewExpectweight('');
 
       setIsEditing(false);
-      console.log('Datos actualizados con éxito');
     } catch (error) {
       console.error('Error al actualizar datos en Firestore:', error);
+    } finally {
+      setSaving(false)
     }
   };
 
-  if (loading) {
+  if (loading || saving) {
     return (
       <View style={styles.loadingContainer}>
         <ActivityIndicator size="large" color="yellow" />
@@ -74,8 +80,12 @@ const EditarDatos = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tus Datos:</Text>
 
+      <TouchableOpacity style={styles.goBack} onPress={() => navigation.goBack()}>
+      <Image source={require('../../assets/images/back.png')} style={styles.logo} />
+      </TouchableOpacity>
+      <Text style={styles.title}>Tus Datos:</Text>
+  
       <View style={styles.fieldContainer}>
         <Text style={styles.label}>Peso:</Text>
         {isEditing ? (
@@ -84,12 +94,13 @@ const EditarDatos = () => {
             keyboardType="numeric"
             value={newWeight}
             onChangeText={(text) => setNewWeight(text)}
+            placeholder="Nuevo peso"
           />
         ) : (
           <Text style={styles.value}>{userData.weight}</Text>
         )}
       </View>
-
+  
       <View style={styles.fieldContainer}>
         <Text style={styles.label}>Altura:</Text>
         {isEditing ? (
@@ -98,12 +109,13 @@ const EditarDatos = () => {
             keyboardType="numeric"
             value={newHeight}
             onChangeText={(text) => setNewHeight(text)}
+            placeholder="Nueva altura"
           />
         ) : (
           <Text style={styles.value}>{userData.height}</Text>
         )}
       </View>
-
+  
       <View style={styles.fieldContainer}>
         <Text style={styles.label}>Edad:</Text>
         {isEditing ? (
@@ -112,12 +124,13 @@ const EditarDatos = () => {
             keyboardType="numeric"
             value={newYearsold}
             onChangeText={(text) => setNewYearsold(text)}
+            placeholder="Nueva edad"
           />
         ) : (
           <Text style={styles.value}>{userData.yearsold}</Text>
         )}
       </View>
-
+  
       <View style={styles.fieldContainer}>
         <Text style={styles.label}>Peso Ideal:</Text>
         {isEditing ? (
@@ -126,20 +139,26 @@ const EditarDatos = () => {
             keyboardType="numeric"
             value={newExpectweight}
             onChangeText={(text) => setNewExpectweight(text)}
+            placeholder="Nuevo peso ideal"
           />
         ) : (
           <Text style={styles.value}>{userData.expectweight}</Text>
         )}
       </View>
-
-
-      {isEditing && (
-        <Button title="Guardar Cambios" onPress={handleSaveChanges} />
-      )}
-
-      {!isEditing && (
-        <Button title="Editar Datos" onPress={() => setIsEditing(true)} />
-      )}
+  
+      <View style={styles.buttonContainer}>
+        {isEditing && (
+          <TouchableOpacity style={styles.saveButton} onPress={handleSaveChanges}>
+            <Text style={styles.buttonTextConfirm}>Guardar Cambios</Text>
+          </TouchableOpacity>
+        )}
+  
+        {!isEditing && (
+          <TouchableOpacity style={styles.editButton} onPress={() => setIsEditing(true)}>
+            <Text style={styles.buttonText}>Editar Datos</Text>
+          </TouchableOpacity>
+        )}
+      </View>
     </View>
   );
 };
@@ -150,9 +169,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: 'black',
   },
+  goBack: {
+
+    position: 'absolute',
+    top: 20,
+    right: 1,
+  },
   loadingContainer: {
     
-      position: 'absolute',
+      position: 'absolute', 
       
       top: 0,
       
@@ -174,6 +199,11 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
     color: 'white',
+  },
+  logo: {
+    width: 32, // Ajusta el ancho según tus necesidades
+    height: 32, // Ajusta la altura según tus necesidades
+    marginRight: 10,
   },
   fieldContainer: {
     flexDirection: 'row',
@@ -207,6 +237,35 @@ const styles = StyleSheet.create({
   editIcon: {
     fontSize: 20,
     color: 'white',
+  },
+  buttonContainer: {
+    marginTop: 20,
+  },
+  editButton: {
+    backgroundColor: 'black',
+    borderColor: 'yellow',
+    borderWidth: 2,
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  saveButton: {
+    backgroundColor: 'yellow',
+    borderColor: 'black',
+    borderWidth: 2,
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 15,
+    fontWeight: 'bold'
+  },
+  buttonTextConfirm: {
+    color: 'black',
+    fontSize: 15,
+    fontWeight: 'bold'
   },
 });
 

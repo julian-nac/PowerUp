@@ -3,12 +3,16 @@ import React, { useState } from 'react';
 
 import { View, Text, Button, TouchableOpacity, Image, StyleSheet, ScrollView, ImageBackground } from 'react-native';
 
+import { useProgress } from './ProgressContext';
+
 
 const DetallesRutina = ({ route, navigation }) => {
 
   const { rutina } = route.params;
 
   const [indiceEjercicio, setIndiceEjercicio] = useState(0);
+
+  const { progreso, actualizarProgreso } = useProgress()
 
 
   const handleSiguienteEjercicio = () => {
@@ -19,13 +23,15 @@ const DetallesRutina = ({ route, navigation }) => {
 
     } else {
 
-      navigation.navigate('Place');
+      navigation.navigate('Inicio');
+      
+      actualizarProgreso(progreso + 10)
 
     }
 
   };
 
-  const progreso = (indiceEjercicio + 1) / rutina.ejercicios.length;
+  const avances = (indiceEjercicio + 1) / rutina.ejercicios.length;
 
 
   return (
@@ -76,7 +82,7 @@ const DetallesRutina = ({ route, navigation }) => {
 
         <View style={styles.progressBar}>
 
-          <View style={{ width: `${progreso * 100}%`, height: '100%', backgroundColor: 'yellow' }} />
+          <View style={{ width: `${avances * 100}%`, height: '100%', backgroundColor: 'yellow' }} />
 
         </View>
 
