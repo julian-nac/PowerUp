@@ -1,13 +1,45 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, ImageBackground, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import NavbarComponent from './NavbarComponent';
 import { useNavigation } from '@react-navigation/native';
 import { useProgress } from './ProgressContext';
 
 const InicioComponente = () => {
-  const { progreso } = useProgress()
+
+  const { progreso,
+          categoriaActual, 
+          setProgresoBrazos, 
+          progresoBrazos, 
+          setProgresoPierna,
+          progresoPierna,
+          actualizarProgreso 
+        } = useProgress();
   const navigate = useNavigation();
+
   const [activeSection, setActiveSection] = useState('perfil');
+
+  useEffect(() => {
+
+    if (categoriaActual === 'Brazos') {
+
+      setProgresoBrazos(progresoBrazos + 10);
+    }
+  }, [categoriaActual, progresoBrazos]);
+
+  useEffect(() => {
+
+    if (categoriaActual === 'Piernas') {
+
+      setProgresoPierna(progresoPierna + 10)
+    }
+  }, [categoriaActual, progresoPierna])
+
+  useEffect(() => {
+    if (categoriaActual) {
+
+      actualizarProgreso(progreso + 10, null);
+    }
+  }, [categoriaActual, progreso]);
 
   const handleSectionPress = (section) => {
     setActiveSection(section);
@@ -25,7 +57,11 @@ const InicioComponente = () => {
       >
         <NavbarComponent activeSection={activeSection} handleSectionPress={handleSectionPress} />
 
-        <Text style={styles.estadisticaTexto}>Progreso: {progreso}%</Text>
+        <Text style={styles.estadisticaTexto}>Progreso General: {progreso}%</Text>
+
+        <Text style={styles.estadisticaTexto}>Progreso de Brazos: {progresoBrazos}%</Text>
+
+        <Text style={styles.estadisticaTexto}>Progreso de Pierna: {progresoPierna}%</Text>
 
         <TouchableOpacity onPress={escogerLugar}>
           <Text>Empezar Rutina</Text>

@@ -12,23 +12,25 @@ const DetallesRutina = ({ route, navigation }) => {
 
   const [indiceEjercicio, setIndiceEjercicio] = useState(0);
 
-  const { progreso, actualizarProgreso } = useProgress()
+  const { progreso, categoriaActual, actualizarProgreso } = useProgress()
 
 
   const handleSiguienteEjercicio = () => {
-
     if (indiceEjercicio < rutina.ejercicios.length - 1) {
-
       setIndiceEjercicio(indiceEjercicio + 1);
-
     } else {
+      const categoriaDeRutina = rutina.zona;
+
+      if (categoriaDeRutina === 'Brazos') {
+        actualizarProgreso(progreso + 10, categoriaDeRutina);
+      } else if (categoriaDeRutina === 'Piernas') {
+        actualizarProgreso(progreso + 10, categoriaDeRutina);
+      } else {
+        actualizarProgreso(progreso + 10, null);
+      }
 
       navigation.navigate('Inicio');
-      
-      actualizarProgreso(progreso + 10)
-
     }
-
   };
 
   const avances = (indiceEjercicio + 1) / rutina.ejercicios.length;
