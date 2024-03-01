@@ -12,21 +12,47 @@ const DetallesRutina = ({ route, navigation }) => {
 
   const [indiceEjercicio, setIndiceEjercicio] = useState(0);
 
-  const { progreso, categoriaActual, actualizarProgreso } = useProgress()
+  const { progreso, actualizarProgreso } = useProgress()
 
 
   const handleSiguienteEjercicio = () => {
+  
     if (indiceEjercicio < rutina.ejercicios.length - 1) {
+  
       setIndiceEjercicio(indiceEjercicio + 1);
+  
     } else {
+  
       const categoriaDeRutina = rutina.zona;
 
       if (categoriaDeRutina === 'Brazos') {
-        actualizarProgreso(progreso + 10, categoriaDeRutina);
+        
+        actualizarProgreso(progreso + 1, categoriaDeRutina);
+
       } else if (categoriaDeRutina === 'Piernas') {
-        actualizarProgreso(progreso + 10, categoriaDeRutina);
+        
+        actualizarProgreso(progreso + 1, categoriaDeRutina);
+
+      } else if (categoriaDeRutina === 'Cuerpo Completo') {
+
+        actualizarProgreso(progreso + 1, categoriaDeRutina)
+
+      } else if (categoriaDeRutina === 'Pecho') {
+
+        actualizarProgreso(progreso + 1, categoriaDeRutina)
+
+      } else if (categoriaDeRutina === 'Espalda'){
+
+        actualizarProgreso(progreso + 1, categoriaDeRutina)
+
+     } else if (categoriaDeRutina === 'Abdomen'){
+
+        actualizarProgreso(progreso + 1, categoriaDeRutina)
+
       } else {
-        actualizarProgreso(progreso + 10, null);
+      
+        actualizarProgreso(progreso + 1, null);
+      
       }
 
       navigation.navigate('Inicio');
