@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 
 import { View, Text, Button, TouchableOpacity, Image, StyleSheet, ScrollView, ImageBackground } from 'react-native';
 
+import moment from 'moment'; // Importa la librería moment
+
+import 'moment/locale/es'; // Importa la localización en español
+
 import { useProgress } from './ProgressContext';
 
 
@@ -12,7 +16,9 @@ const DetallesRutina = ({ route, navigation }) => {
 
   const [indiceEjercicio, setIndiceEjercicio] = useState(0);
 
-  const { progreso, actualizarProgreso } = useProgress()
+  const { progreso, actualizarProgreso, marcarRutinaCompletadaDiaria} = useProgress()
+
+  moment.locale('es'); // Establece la localización en español
 
 
   const handleSiguienteEjercicio = () => {
@@ -52,8 +58,12 @@ const DetallesRutina = ({ route, navigation }) => {
       } else {
       
         actualizarProgreso(progreso + 1, null);
-      
+        
       }
+
+      const diaActual = moment().format('dddd');
+      
+      marcarRutinaCompletadaDiaria(diaActual); // Marcar el lunes como completado
 
       navigation.navigate('Inicio');
     }

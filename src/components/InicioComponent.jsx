@@ -9,6 +9,10 @@ import { useNavigation } from '@react-navigation/native';
 
 import { useProgress } from './ProgressContext';
 
+import { Image } from 'react-native-elements';
+
+import Calendario from './Calendario';
+
 
 const InicioComponente = () => {
 
@@ -123,20 +127,77 @@ const InicioComponente = () => {
       >
         <NavbarComponent activeSection={activeSection} handleSectionPress={handleSectionPress} />
         
+        <View style={styles.banner}>
+  
+        <View style={styles.encabezado}>
+  
+        <Text style={styles.encabezadoTexto}>Progreso General: {progreso}%</Text>
+    
+        </View>
 
-        <Text style={styles.estadisticaTexto}>Progreso General: {progreso}%</Text>
+        <View style={styles.listaProgresos}>
         
-        <Text style={styles.estadisticaTexto}>Progreso de Cuerpo Completo: {progresoCuerpo}%</Text>
+        <View style={styles.columnaProgresos}>
 
-        <Text style={styles.estadisticaTexto}>Progreso de Brazos: {progresoBrazos}%</Text>
+        <View style={styles.itemProgreso}>
+        
+          <Image source={require('../../assets/images/CuerpoCompleto.png')} style={styles.imagenIcono} />
+        
+          <Text style={styles.estadisticaTexto}>{progresoCuerpo}%</Text>
+        
+        </View>
 
-        <Text style={styles.estadisticaTexto}>Progreso de Pierna: {progresoPierna}%</Text>
+        <View style={styles.itemProgreso}>
+        
+          <Image source={require('../../assets/images/Brazo.png')} style={styles.imagenIcono} />
+        
+          <Text style={styles.estadisticaTexto}>{progresoBrazos}%</Text>
+        
+        </View>
+        
+        <View style={styles.itemProgreso}>
+        
+          <Image source={require('../../assets/images/Pierna.png')} style={styles.imagenIcono} />
+        
+          <Text style={styles.estadisticaTexto}>{progresoPierna}%</Text>
+        
+        </View>
+        
+        </View>
 
-        <Text style={styles.estadisticaTexto}>Progreso de Pecho: {progresoPecho}%</Text>
+        <View style={styles.columnaProgresos}>
+        
+        <View style={styles.itemProgreso}>
+        
+          <Image source={require('../../assets/images/Pecho.png')} style={styles.imagenIcono} />
+        
+          <Text style={styles.estadisticaTexto}>{progresoPecho}%</Text>
+        
+        </View>
+        
+        <View style={styles.itemProgreso}>
+        
+          <Image source={require('../../assets/images/Espalda.png')} style={styles.imagenIcono} />
+        
+          <Text style={styles.estadisticaTexto}>{progresoEspalda}%</Text>
+        
+        </View>
+        
+        <View style={styles.itemProgreso}>
+        
+          <Image source={require('../../assets/images/Abdomen.png')} style={styles.imagenIcono} />
+        
+          <Text style={styles.estadisticaTexto}>{progresoAbdomen}%</Text>
+        
+        </View>
+        
+        </View>
+      
+      </View>
+    
+    </View>
 
-        <Text style={styles.estadisticaTexto}>Progreso de Espalda: {progresoEspalda}%</Text>
-
-        <Text style={styles.estadisticaTexto}>Progreso de Abdomen: {progresoAbdomen}%</Text>
+    <Calendario/>
 
       
         <TouchableOpacity onPress={escogerLugar}>
@@ -154,33 +215,107 @@ const InicioComponente = () => {
 };
 
 const styles = StyleSheet.create({
+
   container: {
+  
     flex: 1,
+  
   },
+  
   backgroundImage: {
+  
     flex: 1,
+  
     resizeMode: 'cover',
+  
     justifyContent: 'center',
+  
   },
+  
   banner: {
-    backgroundColor: 'lightgray',
+  
+    backgroundColor: 'white',
+  
+    position: 'relative',
+  
+    bottom: 180,
+  
     padding: 10,
-    marginTop: 10,
+  
+    borderRadius: 8,
+  
+    margin: 10,
+  
   },
-  bannerText: {
-    fontSize: 16,
+  
+  encabezado: {
+  
+    marginBottom: 10,
+  
+  },
+  
+  encabezadoTexto: {
+  
+    color: 'yellow',
+  
+    borderRadius: 10,
+  
+    fontSize: 18,
+  
     fontWeight: 'bold',
+  
+    backgroundColor: 'black',
+  
+    padding: 15,
+  
   },
-  bodyPartsContainer: {
-    flexDirection: 'column',
-    marginTop: 5,
+  
+  listaProgresos: {
+  
+    flexDirection: 'row',
+  
+    backgroundColor: 'white'
+  
   },
-  bodyPartItem: {
+  
+  columnaProgresos: {
+  
+    flex: 1, 
+  
+  },
+  
+  estadisticaTexto: {
+  
+    color: 'black',
+  
+    fontSize: 16,
+  
+    marginLeft: 10,
+  
     marginBottom: 5,
+  
   },
-  bodyPartText: {
-    fontSize: 14,
+
+  itemProgreso: {
+  
+    flexDirection: 'row',
+  
+    alignItems: 'center',
+  
+    marginBottom: 10,
+  
   },
+  
+  imagenIcono: {
+  
+    width: 30,
+  
+    height: 30,
+  
+    marginRight: 0,
+  
+  },
+
 });
 
 export default InicioComponente;

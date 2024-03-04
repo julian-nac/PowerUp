@@ -1,12 +1,24 @@
 
 import React, { createContext, useContext, useState } from 'react';
 
+import moment from 'moment'
+
 const ProgressContext = createContext();
 
 
 export const ProgressProvider = ({ children }) => {
 
   const [progreso, setProgreso] = useState(0);
+
+  const [rutinaCompletadaDiaria, setRutinaCompletadaDiaria] = useState({
+    Lunes: false,
+    Martes: false,
+    Miércoles: false,
+    Jueves: false,
+    Viernes: false,
+    Sábado: false,
+    Domingo: false,
+  });
 
   const [categoriaActual, setCategoriaActual] = useState(null)
 
@@ -22,6 +34,10 @@ export const ProgressProvider = ({ children }) => {
 
   const [progresoAbdomen, setProgresoAbdomen] = useState(0);
 
+
+  const marcarRutinaCompletadaDiaria = (dia) => {
+    setRutinaCompletadaDiaria((prev) => ({ ...prev, [dia]: true }));
+  };
 
   const actualizarProgreso = (nuevoProgreso, nuevaCategoria) => {
   
@@ -79,6 +95,8 @@ export const ProgressProvider = ({ children }) => {
 
       progresoAbdomen,
 
+      rutinaCompletadaDiaria,
+
       setProgresoAbdomen,
 
       setProgresoEspalda,
@@ -92,6 +110,8 @@ export const ProgressProvider = ({ children }) => {
       setProgresoBrazos,
   
       actualizarProgreso,
+
+      marcarRutinaCompletadaDiaria,
   
     }}
   
