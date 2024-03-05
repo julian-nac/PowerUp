@@ -51,6 +51,8 @@ export default function LoginComponent() {
   
         console.log(user);
 
+        navigation.navigate('Home')
+
       })
   
       .catch((error) => {
