@@ -13,6 +13,8 @@ import { Image } from 'react-native-elements';
 
 import Calendario from './Calendario';
 
+import BannerCarousel from './BannerCarousel';
+
 
 const InicioComponente = () => {
 
@@ -125,8 +127,9 @@ const InicioComponente = () => {
       style={styles.backgroundImage}
       
       >
+
         <NavbarComponent activeSection={activeSection} handleSectionPress={handleSectionPress} />
-        
+                    <BannerCarousel/>
         <View style={styles.banner}>
   
         <View style={styles.encabezado}>
@@ -199,6 +202,8 @@ const InicioComponente = () => {
 
     <Calendario/>
 
+
+
       
         <TouchableOpacity onPress={escogerLugar}>
       
@@ -238,7 +243,7 @@ const styles = StyleSheet.create({
   
     position: 'relative',
   
-    bottom: 200,
+    top: -20,
   
     padding: 10,
   

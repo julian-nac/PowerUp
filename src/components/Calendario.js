@@ -33,7 +33,8 @@ const Calendario = () => {
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
-    marginTop: -180,
+    marginTop: -20,
+    marginBottom: 130,
   },
   titulo: {
     fontSize: 20,
