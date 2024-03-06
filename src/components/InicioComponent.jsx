@@ -238,7 +238,7 @@ const styles = StyleSheet.create({
   
     position: 'relative',
   
-    bottom: 180,
+    bottom: 200,
   
     padding: 10,
   
