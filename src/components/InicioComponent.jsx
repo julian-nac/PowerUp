@@ -205,9 +205,9 @@ const InicioComponente = () => {
 
 
       
-        <TouchableOpacity onPress={escogerLugar}>
+        <TouchableOpacity style={styles.buttonContainer} onPress={escogerLugar}>
       
-          <Text>Empezar Rutina</Text>
+          <Text  style={styles.buttonText}>Empezar Rutina</Text>
       
         </TouchableOpacity>
       
@@ -286,6 +286,40 @@ const styles = StyleSheet.create({
   columnaProgresos: {
   
     flex: 1, 
+  
+  },
+
+  buttonContainer: {
+    
+    marginTop: -100,
+
+    marginBottom: 60,
+    
+    marginLeft: 20,
+    
+    backgroundColor: 'yellow',
+    
+    padding: 10,
+    
+    borderRadius: 20,
+
+    borderColor: 'black',
+
+    borderWidth: 5,
+    
+    width: '90%',
+  
+  },
+
+  buttonText: {
+  
+    textAlign: 'center',
+  
+    fontSize: 18,
+  
+    color: 'black',
+  
+    fontWeight: 'bold',
   
   },
   

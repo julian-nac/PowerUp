@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Image, StyleSheet, Dimensions } from 'react-native';
 import Carousel from 'react-native-banner-carousel';
+import { LogBox } from 'react-native';
 
 const BannerCarousel = () => {
   const BannerWidth = Dimensions.get('window').width;
@@ -12,6 +13,11 @@ const BannerCarousel = () => {
     require('../../assets/images/Banner-2.webp'),
     require('../../assets/images/Banner-3.webp'),
   ];
+
+  useEffect(() => {
+    // Oculta la advertencia específica sobre `useNativeDriver`
+    LogBox.ignoreLogs(['Animated: `useNativeDriver` was not specified.']);
+  }, []);
 
   return (
     <View style={styles.container}>
