@@ -1,11 +1,13 @@
 
 import React, { useState } from 'react';
 
-import { View, Text, Button, TouchableOpacity, Image, StyleSheet, ScrollView, ImageBackground } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet, ImageBackground, Modal, TouchableHighlight } from 'react-native';
 
-import moment from 'moment';  
+import moment from 'moment'; 
 
-import 'moment/locale/es'; // Importa la localización en español
+import Sound from 'react-native-sound'
+
+import 'moment/locale/es';
 
 import { useProgress } from './ProgressContext';
 
@@ -16,16 +18,40 @@ const DetallesRutina = ({ route, navigation }) => {
 
   const [indiceEjercicio, setIndiceEjercicio] = useState(0);
 
+  const [showCongratsModal, setShowCongratsModal] = useState(false)
+
   const { progreso, actualizarProgreso, marcarRutinaCompletadaDiaria} = useProgress()
 
-  moment.locale('es'); // Establece la localización en español
+  moment.locale('es'); 
 
+  const soundFile = require('../../assets/sound/complete-notification.mp3')
+  
+  const sound = new Sound(soundFile, Sound.MAIN_BUNDLE, (error) => {
+   
+    if(error) {
+   
+      console.error
+   
+    }
+  
+  })
+
+  const handleEjercicioSiguiente = () => {
+    
+    if (indiceEjercicio < rutina.ejercicios.length - 1){
+
+      setIndiceEjercicio(indiceEjercicio + 1)
+    }
+  
+  }
 
   const handleSiguienteEjercicio = () => {
   
     if (indiceEjercicio < rutina.ejercicios.length - 1) {
   
       setIndiceEjercicio(indiceEjercicio + 1);
+
+      sound.play()
   
     } else {
   
@@ -63,11 +89,28 @@ const DetallesRutina = ({ route, navigation }) => {
 
       const diaActual = moment().format('dddd');
       
-      marcarRutinaCompletadaDiaria(diaActual); // Marcar el lunes como completado
+      marcarRutinaCompletadaDiaria(diaActual);
 
-      navigation.navigate('Inicio');
+      setShowCongratsModal(true)
+
     }
   };
+
+  const handleCloseModal = () => {
+    setShowCongratsModal(false);
+    navigation.navigate('Inicio');
+  };
+
+
+  const handleEjercicioAnterior = () => {
+  
+    if (indiceEjercicio > 0) {
+  
+      setIndiceEjercicio(indiceEjercicio - 1)
+  
+    }
+  
+  }
 
   const avances = (indiceEjercicio + 1) / rutina.ejercicios.length;
 
@@ -83,6 +126,33 @@ const DetallesRutina = ({ route, navigation }) => {
         style={styles.backgroundImage}
 
     >
+
+    <Modal
+        animationType="slide"
+        transparent={true}
+        visible={showCongratsModal}
+        onRequestClose={() => {
+          setShowCongratsModal(!showCongratsModal);
+        }}
+      >
+        <View style={styles.modalBackground}>
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Image
+              source={require('../../assets/images/trophy.png')}
+              style={styles.trofeoLogo}
+            />
+            <Text style={styles.congratsText}>¡Felicitaciones! Progreso guardado</Text>
+            <TouchableHighlight
+              style={styles.volverButton}
+              onPress={handleCloseModal}
+            >
+              <Text style={styles.volverButtonText}>Volver a Inicio</Text>
+            </TouchableHighlight>
+          </View>
+        </View>
+        </View>
+      </Modal>
 
       <View style={styles.header}>
 
@@ -102,9 +172,21 @@ const DetallesRutina = ({ route, navigation }) => {
 
           />
 
+          <TouchableOpacity style={styles.arrowButtonLeft} onPress={handleEjercicioAnterior}>
+        
+          <Text style={styles.arrowText}>◁</Text>
+
+          </TouchableOpacity>
+
           <TouchableOpacity style={styles.circleButton} onPress={handleSiguienteEjercicio}>
 
             <Text style={styles.buttonText}>✓</Text>
+
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.arrowButtonRigth} onPress={handleEjercicioSiguiente}>
+        
+          <Text style={styles.arrowText}>▷</Text>
 
           </TouchableOpacity>
 
@@ -181,7 +263,82 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   
   },
+
+  arrowButtonLeft: {
   
+    position: 'absolute',
+  
+    top: '56%',
+  
+    left: 70,
+  
+    paddingHorizontal: 16,
+  
+  },
+  
+  arrowButtonRigth: {
+  
+    position: 'absolute',
+  
+    top: '56%',
+  
+    left: 194,
+  
+    paddingHorizontal: 16,
+  
+  },
+  
+  arrowText: {
+  
+    fontSize: 54,
+  
+    color: 'yellow',
+  
+    fontWeight: 'bold'
+  
+  },
+  
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalBackground: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Ajusta el último valor para cambiar la opacidad
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalContent: {
+    backgroundColor: 'black',
+    borderColor: 'white',
+    borderWidth: 5,
+    borderRadius: 10,
+    padding: 110,
+    alignItems: 'center',
+    elevation: 5,
+  },
+  trofeoLogo: {
+    width: 150,
+    height: 150,
+    marginBottom: 20,
+  },
+  congratsText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    marginBottom: 20,
+  },
+  volverButton: {
+    backgroundColor: '#3498db',
+    padding: 10,
+    borderRadius: 5,
+  },
+  volverButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
   imagen: {
   
     width: 300,
