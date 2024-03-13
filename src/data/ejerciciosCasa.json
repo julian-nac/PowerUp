@@ -52,6 +52,104 @@
     },
     {
       "categoria": "Sin Elementos",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Burpees",
+          "descripcion": "Comienza de pie, realiza una flexión, salta con los pies hacia adelante, y luego realiza un salto explosivo. Repite el movimiento de forma fluida.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Rr7b2lzpCOk6M/giphy.gif"
+        },
+        {
+          "nombre": "Sentadillas con Salto",
+          "descripcion": "Realiza una sentadilla y al subir, realiza un salto explosivo. Aterriza suavemente y vuelve a la posición de sentadilla.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/10WsdAJaSnjLUs/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Explosivas",
+          "descripcion": "Realiza flexiones con suficiente fuerza para que tus manos abandonen el suelo en la fase ascendente del movimiento. Aterriza suavemente y repite.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/Ph0WjRlE8qoKI/giphy.gif"
+        },
+        {
+          "nombre": "Plancha con Elevación de Pierna",
+          "descripcion": "En posición de plancha, levanta una pierna hacia arriba manteniendo el cuerpo recto. Alterna las piernas en cada repetición.",
+          "duracion": "x15 por pierna",
+          "gif": "https://media.giphy.com/media/THwsVQ16QKdPe/giphy.gif"
+        },
+        {
+          "nombre": "Zancadas con Salto",
+          "descripcion": "Realiza una zancada hacia adelante, al bajar realiza un salto explosivo y alterna entre las piernas.",
+          "duracion": "x16 por pierna",
+          "gif": "https://media.giphy.com/media/jp9QZzRfb7e0Q/giphy.gif"
+        },
+        {
+          "nombre": "Mountain Climbers",
+          "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho alternativamente a un ritmo rápido.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/26BRuo6KoR4iZI8x6/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones de Tríceps",
+          "descripcion": "Realiza flexiones con las manos colocadas más cerca una de la otra, enfocándote en trabajar los tríceps.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/XDSq8pkZuwJJI/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas con Salto y Giro",
+          "descripcion": "Realiza una sentadilla con salto, y al subir, realiza un giro lateral. Aterriza suavemente y repite el movimiento.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/l2Je6d3t3Z29GZMfC/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones de Mano a Mano",
+          "descripcion": "Realiza flexiones y al subir, lleva una mano al centro y alterna con la otra mano en cada repetición.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/3o7TKAN9CEKxTNZafy/giphy.gif"
+        },
+        {
+          "nombre": "Burpees con Rodilla al Pecho",
+          "descripcion": "Realiza un burpee y al subir, lleva una rodilla al pecho. Alterna las piernas en cada repetición.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/3o7TKVsWCOzVeJWGkg/giphy.gif"
+        },
+        {
+          "nombre": "Mountain Climbers Rápidos",
+          "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho a un ritmo rápido, manteniendo la velocidad durante toda la serie.",
+          "duracion": "x40",
+          "gif": "https://media.giphy.com/media/XGxgiUJODkq8M/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Explosivas con Palmada",
+          "descripcion": "Realiza flexiones explosivas y al subir, da una palmada en el pecho antes de aterrizar.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/Y4z9olnoVl5QI/giphy.gif"
+        },
+        {
+          "nombre": "Jumping Lunges",
+          "descripcion": "Realiza zancadas con salto, alternando las piernas en cada repetición. Mantén un ritmo constante.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/3oz8xRT5j07LRgRiUk/giphy.gif"
+        },
+        {
+          "nombre": "Plancha con Rotación y Elevación",
+          "descripcion": "En posición de plancha, rota el cuerpo hacia un lado y levanta el brazo correspondiente al techo. Alterna los lados en cada repetición.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/W7wCnVP6LNkms/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
       "zona": "Brazos",
       "banner": "https://i.postimg.cc/CMQshr1h/template-3.webp",
       "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
@@ -94,7 +192,104 @@
         }
       ]
     },
-
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Brazos",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Burpees con Flexión",
+          "descripcion": "Combina burpees con flexiones. Realiza un burpee completo y al regresar a la posición inicial, agrega una flexión antes de realizar el siguiente burpee.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/11wqEu2k7AwLKM/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Explosivas",
+          "descripcion": "Realiza flexiones con suficiente fuerza para que tus manos abandonen el suelo en la fase ascendente del movimiento. Aterriza suavemente y repite.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Ph0WjRlE8qoKI/giphy.gif"
+        },
+        {
+          "nombre": "Dominadas de Pierna",
+          "descripcion": "Busca una barra elevada y realiza dominadas mientras elevas las piernas en cada repetición para trabajar los músculos del core y los brazos.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/AkN2HHjA3xXEk/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas",
+          "descripcion": "Coloca los pies en una elevación y realiza flexiones declinadas para enfocar el esfuerzo en la parte superior de los brazos y los hombros.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/eM6rbO1kWY5XEABmMW/giphy.gif"
+        },
+        {
+          "nombre": "Circuito de Brazos",
+          "descripcion": "Realiza un circuito rápido con flexiones, elevaciones laterales y fondos de tríceps. Realiza cada ejercicio sin descanso entre ellos antes de tomar un breve descanso al final del circuito.",
+          "duracion": "x12 de cada ejercicio",
+          "gif": "https://media.giphy.com/media/KZN9jHiZlKse/giphy.gif"
+        },
+        {
+          "nombre": "Plancha con Apoyo",
+          "descripcion": "En posición de plancha, apoya un brazo en el suelo y levanta la otra mano hacia arriba. Alterna entre los brazos.",
+          "duracion": "x15 por lado",
+          "gif": "https://media.giphy.com/media/vr6JQjeRC1Xfq/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones de Tríceps",
+          "descripcion": "Realiza flexiones con las manos colocadas más cerca una de la otra, enfocándote en trabajar los tríceps.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/XDSq8pkZuwJJI/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Brazos",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Flexiones en Explosión",
+          "descripcion": "Realiza flexiones explosivas con suficiente fuerza para levantar las manos del suelo. Aterriza suavemente y repite el movimiento de forma fluida.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Mq76IgPKUGGOk/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas con Salto",
+          "descripcion": "Coloca los pies en una elevación y realiza flexiones declinadas. Después de cada flexión, realiza un salto explosivo.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/8T0wq9MjVbq6M/giphy.gif"
+        },
+        {
+          "nombre": "Dominadas con Piernas Elevadas",
+          "descripcion": "Realiza dominadas mientras elevas las piernas en cada repetición. Este ejercicio intensifica el trabajo de los músculos del core y los brazos.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/AkN2HHjA3xXEk/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Diamante",
+          "descripcion": "Coloca las manos en forma de diamante al realizar flexiones. Este ejercicio focaliza el esfuerzo en los tríceps y el centro del pecho.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/5fVU3Wey1wWuA/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones con Mano Cambiada",
+          "descripcion": "Realiza flexiones cambiando la posición de una mano a la vez. Mantén el ritmo constante y concéntrate en la estabilidad.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/Y4HkV5k8nuR1M/giphy.gif"
+        },
+        {
+          "nombre": "Elevaciones Laterales con Impulso",
+          "descripcion": "Realiza elevaciones laterales con un impulso adicional en cada repetición. Controla el movimiento para maximizar el trabajo en los deltoides.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/fdzu3xDSDen5q/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones con Salto y Giro",
+          "descripcion": "Combina flexiones con un salto explosivo y un giro en el aire. Aterriza suavemente y repite el siguiente movimiento.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/5c5Fz7zggC95shJAS0/giphy.gif"
+        }
+      ]
+    },
     {
       "categoria": "Sin Elementos",
       "zona": "Pecho",
@@ -150,6 +345,116 @@
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
         }
       ]
+    },    
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Pecho",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Burpees con Flexión",
+          "descripcion": "Combina burpees con flexiones. Realiza un burpee completo y al regresar a la posición inicial, agrega una flexión antes de realizar el siguiente burpee.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/Rr7b2lzpCOk6M/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Explosivas",
+          "descripcion": "Realiza flexiones con suficiente fuerza para que tus manos abandonen el suelo en la fase ascendente del movimiento. Aterriza suavemente y repite.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Ph0WjRlE8qoKI/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas",
+          "descripcion": "Coloca los pies en una elevación y realiza flexiones declinadas. Concentra el esfuerzo en la parte superior del pecho y los tríceps.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/eM6rbO1kWY5XEABmMW/giphy.gif"
+        },
+        {
+          "nombre": "Fondos de Pecho",
+          "descripcion": "Busca un borde elevado y realiza fondos de pecho. Mantén el cuerpo recto y desciende lo más que puedas en cada repetición.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/2j2sBm8okvKg/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Toque de Hombro",
+          "descripcion": "Realiza una flexión estándar y al subir, toca con una mano el hombro contrario. Alterna entre los lados en cada repetición.",
+          "duracion": "x10 por lado",
+          "gif": "https://media.giphy.com/media/V9V0ErHA2FO8k/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Anchas",
+          "descripcion": "Amplía la posición de las manos al realizar flexiones, enfocándote en trabajar los músculos pectorales.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/4PFb6G8Th4XR2/giphy.gif"
+        },
+        {
+          "nombre": "Estiramientos de Pecho",
+          "descripcion": "Coloca tus manos detrás de tu espalda y únelas. Estira los brazos y levanta suavemente, abriendo el pecho.",
+          "duracion": "x15 segundos",
+          "gif": "https://media.giphy.com/media/l2YWGKGJ4mgfLzYcM/giphy.gif"
+        },
+        {
+          "nombre": "Estiramientos de Brazos",
+          "descripcion": "Estira cada brazo cruzándolo sobre el pecho y aplicando una suave presión con la otra mano.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/3oriO6Rl5NPt9Zv9Kk/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Pecho",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Flexiones en Explosión",
+          "descripcion": "Realiza flexiones explosivas con suficiente fuerza para levantar las manos del suelo. Aterriza suavemente y repite el movimiento de forma fluida.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/Mq76IgPKUGGOk/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas con Salto",
+          "descripcion": "Coloca los pies en una elevación y realiza flexiones declinadas. Después de cada flexión, realiza un salto explosivo.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/8T0wq9MjVbq6M/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Diamante",
+          "descripcion": "Coloca las manos en forma de diamante al realizar flexiones. Este ejercicio focaliza el esfuerzo en los tríceps y el centro del pecho.",
+          "duracion": "x18",
+          "gif": "https://media.giphy.com/media/5fVU3Wey1wWuA/giphy.gif"
+        },
+        {
+          "nombre": "Fondos de Pecho Explosivos",
+          "descripcion": "Realiza fondos de pecho con un impulso explosivo en la fase ascendente. Aterriza suavemente y repite.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/3o7TKMt1VVNsisTj4o/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Toque de Hombro",
+          "descripcion": "Realiza una flexión estándar y al subir, toca con una mano el hombro contrario. Alterna entre los lados en cada repetición.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/V9V0ErHA2FO8k/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones en Plancha",
+          "descripcion": "En posición de plancha, realiza flexiones manteniendo el cuerpo recto. Trabaja en la estabilidad y control del movimiento.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/XDxx72r9JgUSY/giphy.gif"
+        },
+        {
+          "nombre": "Estiramientos de Pecho",
+          "descripcion": "Coloca tus manos detrás de tu espalda y únelas. Estira los brazos y levanta suavemente, abriendo el pecho.",
+          "duracion": "x20 segundos",
+          "gif": "https://media.giphy.com/media/l2YWGKGJ4mgfLzYcM/giphy.gif"
+        },
+        {
+          "nombre": "Estiramientos de Brazos",
+          "descripcion": "Estira cada brazo cruzándolo sobre el pecho y aplicando una suave presión con la otra mano.",
+          "duracion": "x15 por lado",
+          "gif": "https://media.giphy.com/media/3oriO6Rl5NPt9Zv9Kk/giphy.gif"
+        }
+      ]
     },
     {
       "categoria": "Sin Elementos",
@@ -186,6 +491,86 @@
           "descripcion": " Similar a una flexión, pero con el enfoque en la espalda. Coloca las manos cerca de los hombros y levanta el torso del suelo.",
           "duracion": "x10",
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Espalda",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Pull-ups",
+          "descripcion": "Busca una barra horizontal firme y realiza pull-ups. Levanta el cuerpo hasta que tu barbilla esté por encima de la barra y baja lentamente.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/RkA83u49Ju5Tq/giphy.gif"
+        },
+        {
+          "nombre": "Superman",
+          "descripcion": "Acuéstate boca abajo y levanta simultáneamente los brazos, las piernas y el torso. Mantén la posición durante un segundo y baja.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
+        },
+        {
+          "nombre": "Puente de Glúteos con Pierna Elevada",
+          "descripcion": "Realiza el puente de glúteos y eleva una pierna hacia arriba. Alterna las piernas en cada repetición.",
+          "duracion": "x12 por pierna",
+          "gif": "https://media.giphy.com/media/Y0J9XsYAjWGcM/giphy.gif"
+        },
+        {
+          "nombre": "Hiperextensiones",
+          "descripcion": "Colócate boca abajo con las manos en la nuca, levanta el torso hacia arriba manteniendo la espalda recta. Añade resistencia si es posible.",
+          "duracion": "x18",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
+        },
+        {
+          "nombre": "Remo Invertido",
+          "descripcion": "Busca una barra baja resistente y agarra con las manos. Levanta el cuerpo hacia la barra manteniendo los codos cerca del cuerpo.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Espalda",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Pull-ups con Pierna Elevada",
+          "descripcion": "Realiza pull-ups elevando una pierna en cada repetición. Asegúrate de mantener el cuerpo recto durante el ejercicio.",
+          "duracion": "x12 por pierna",
+          "gif": "https://media.giphy.com/media/RkA83u49Ju5Tq/giphy.gif"
+        },
+        {
+          "nombre": "Superman con Contracción",
+          "descripcion": "Realiza el movimiento clásico de Superman, pero agrega una contracción adicional en la parte superior del movimiento antes de bajar.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
+        },
+        {
+          "nombre": "Puente de Glúteos con Pierna Elevada y Contracción",
+          "descripcion": "Eleva una pierna durante el puente de glúteos y realiza una contracción adicional en la parte superior del movimiento.",
+          "duracion": "x10 por pierna",
+          "gif": "https://media.giphy.com/media/Y0J9XsYAjWGcM/giphy.gif"
+        },
+        {
+          "nombre": "Hiperextensiones con Rotación",
+          "descripcion": "Realiza hiperextensiones y agrega una rotación del torso al llegar a la parte superior del movimiento.",
+          "duracion": "x16",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
+        },
+        {
+          "nombre": "Remo Invertido con Piernas Elevadas",
+          "descripcion": "Eleva las piernas mientras realizas el remo invertido. Concentra el esfuerzo en la espalda y el core.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
+        },
+        {
+          "nombre": "Rotación de Espalda",
+          "descripcion": "Acuéstate de lado y realiza rotaciones de la parte superior del cuerpo. Asegúrate de trabajar ambos lados.",
+          "duracion": "x15 por lado",
+          "gif": "https://media.giphy.com/media/3o6fJ7J09xg7bNlFQc/giphy.gif"
         }
       ]
     },
@@ -229,6 +614,80 @@
     },
     {
       "categoria": "Sin Elementos",
+      "zona": "Piernas",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos En Tijera Explosivos",
+          "descripcion": "Realiza saltos de tijera con un impulso explosivo. Alterna rápidamente entre las posiciones de salto.",
+          "duracion": "x16",
+          "gif": "https://media.giphy.com/media/l4FGsS7YmG8p2IffC/giphy.gif"
+        },
+        {
+          "nombre": "Sentadillas con Pulso",
+          "descripcion": "Realiza una sentadilla y, en la posición más baja, realiza pulsos pequeños hacia arriba antes de subir.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/GH6f5r2JMe4i2p9nsW/giphy.gif"
+        },
+        {
+          "nombre": "Zancadas Dinámicas",
+          "descripcion": "Da zancadas largas hacia adelante, alternando entre las piernas. Añade dinamismo al movimiento.",
+          "duracion": "x12 por pierna",
+          "gif": "https://media.giphy.com/media/Sv2FOFwqUcYyxZ5uq3/giphy.gif"
+        },
+        {
+          "nombre": "Elevaciones De Talones en Explosión",
+          "descripcion": "Realiza elevaciones de talones con un impulso explosivo en la fase ascendente. Baja lentamente.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/hTB8QSTVh8Uzu/giphy.gif"
+        },
+        {
+          "nombre": "Mountain Climbers Rápidos",
+          "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho a un ritmo rápido. Mantén el abdomen contraído.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/Yk7J0QlmDm3lHja3GM/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Piernas",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Jump Squats",
+          "descripcion": "Realiza sentadillas explosivas con un salto en la fase ascendente. Aterriza suavemente para proteger las articulaciones.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/xT0BKqYhR2ysXCfiXY/giphy.gif"
+        },
+        {
+          "nombre": "Lunges con Salto",
+          "descripcion": "Da una zancada larga hacia adelante y realiza un salto en la posición baja de la zancada. Alterna entre las piernas.",
+          "duracion": "x16",
+          "gif": "https://media.giphy.com/media/8xYs3kxE5A1wIu4Jsj/giphy.gif"
+        },
+        {
+          "nombre": "Sentadillas Isométricas",
+          "descripcion": "Baja a la posición de sentadilla y mantén la posición más baja durante 30 segundos. Mantén la espalda recta.",
+          "duracion": "x2 (30 segundos cada una)",
+          "gif": "https://media.giphy.com/media/10S5QLzHq9yQKw/giphy.gif"
+        },
+        {
+          "nombre": "Elevaciones De Talones con Salto",
+          "descripcion": "Realiza elevaciones de talones y agrega un salto en la fase ascendente. Controla el aterrizaje.",
+          "duracion": "x18",
+          "gif": "https://media.giphy.com/media/3o6gDZgm2cQLDO0JXi/giphy.gif"
+        },
+        {
+          "nombre": "Mountain Climbers Explosivos",
+          "descripcion": "En posición de plancha, alterna rápidamente las rodillas hacia el pecho con un impulso explosivo.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/GgV5xJVoLSpDaVxyQ8/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
       "zona": "Abdomen",
       "banner": "https://i.postimg.cc/Y9V2brTZ/template-8.webp",
       "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
@@ -262,6 +721,80 @@
           "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho de forma alterna y a un ritmo rápido.",
           "duracion": "x18",
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Abdomen",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Abdominales Explosivos",
+          "descripcion": "Acuéstate boca arriba, realiza abdominales tradicionales y al subir, realiza un impulso explosivo levantando el torso más alto. Baja lentamente y repite.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/lnvDODKbQWxQg/giphy.gif"
+        },
+        {
+          "nombre": "Levantamiento De Piernas en V",
+          "descripcion": "Acuéstate boca arriba y levanta las piernas hacia arriba formando una 'V'. Baja las piernas lentamente sin tocar el suelo y luego vuelve a subir.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/Y3ehKUQ5Vx9PW/giphy.gif"
+        },
+        {
+          "nombre": "Bicicleta a Alta Velocidad",
+          "descripcion": "Acostado boca arriba, realiza el movimiento de bicicleta pero a un ritmo muy rápido, llevando la rodilla hacia el codo opuesto.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/11cVdDpCUeqzLi/giphy.gif"
+        },
+        {
+          "nombre": "Escaladores Explosivos",
+          "descripcion": "Desde una posición de plancha, realiza escaladores llevando las rodillas hacia el pecho de forma explosiva. Mantén la espalda recta.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/YRJ6Pd0JzvRPy/giphy.gif"
+        },
+        {
+          "nombre": "Mountain Climbers Rápidos",
+          "descripcion": "En posición de plancha, lleva las rodillas hacia el pecho a un ritmo rápido. Mantén el abdomen contraído.",
+          "duracion": "x25",
+          "gif": "https://media.giphy.com/media/Yk7J0QlmDm3lHja3GM/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Sin Elementos",
+      "zona": "Abdomen",
+      "imagen": "https://creazilla-store.fra1.digitaloceanspaces.com/emojis/51765/flexed-biceps-emoji-clipart-xl.png",
+      "ejercicios": [
+        {
+          "nombre": "Plancha con Rotación",
+          "descripcion": "Desde la posición de plancha, gira el cuerpo hacia un lado extendiendo el brazo hacia arriba. Alterna entre los lados.",
+          "duracion": "x15 cada lado",
+          "gif": "https://media.giphy.com/media/11EKSz0nuwkHTy/giphy.gif"
+        },
+        {
+          "nombre": "Abdominales en Tijera",
+          "descripcion": "Acuéstate boca arriba y eleva las piernas del suelo. Realiza movimientos de tijera con las piernas mientras mantienes el abdomen contraído.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/l41YwZWhLCjt7tHVy/giphy.gif"
+        },
+        {
+          "nombre": "Plancha con Elevación de Pierna",
+          "descripcion": "Desde la posición de plancha, levanta una pierna hacia arriba manteniendo el cuerpo en línea recta. Alterna entre las piernas.",
+          "duracion": "x12 cada pierna",
+          "gif": "https://media.giphy.com/media/xTiTnLxymbo9NkIfok/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones con Toque de Rodilla al Codo",
+          "descripcion": "Realiza una flexión y al subir, lleva la rodilla hacia el codo del mismo lado. Alterna entre los lados.",
+          "duracion": "x10 cada lado",
+          "gif": "https://media.giphy.com/media/MuIvPux6He76I/giphy.gif"
+        },
+        {
+          "nombre": "V-Ups",
+          "descripcion": "Acuéstate boca arriba, eleva las piernas y el torso al mismo tiempo formando una 'V'. Baja lentamente y repite.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/26wkz2YHX7sJ9hMuc/giphy.gif"
         }
       ]
     },
@@ -329,6 +862,37 @@
     },
     {
       "categoria": "Mancuernas",
+      "zona": "Pecho",
+      "imagen": "https://i.pinimg.com/originals/f0/ee/cf/f0eecff8f557c63bca90b7b738c3df73.png",
+      "ejercicios": [
+        {
+          "nombre": "Press De Pecho Alternado",
+          "descripcion": "Acuéstate en un banco plano o algo similar con una mancuerna en cada mano. Realiza press de pecho, alternando los brazos de manera controlada.",
+          "duracion": "x14 (7 por cada brazo)",
+          "gif": "https://media.giphy.com/media/h6qS9Z7uxc8Hk/giphy.gif"
+        },
+        {
+          "nombre": "Pull-Over con Mancuerna y Piernas Elevadas",
+          "descripcion": "Acuéstate en un banco con solo tu espalda y hombros apoyados. Sostén una mancuerna con ambos brazos extendidos sobre tu pecho y eleva las piernas. Realiza pull-over bajando la mancuerna hacia atrás sobre tu cabeza.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/FpDwlMqNVvVXa/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones con Mancuernas en Plancha",
+          "descripcion": "Colócate en posición de flexión con las manos sobre las mancuernas. Realiza flexiones manteniendo una línea recta desde la cabeza hasta los pies.",
+          "duracion": "x18",
+          "gif": "https://media.giphy.com/media/5b5PfVsrlmr8uK7tHv/giphy.gif"
+        },
+        {
+          "nombre": "Aperturas con Mancuernas y Contracciones",
+          "descripcion": "Acostado en un banco plano con mancuernas en cada mano, realiza aperturas y contrae fuertemente el pecho en la posición extendida.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/L1qWzEbyQhMsU/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Mancuernas",
       "zona": "Espalda",
       "imagen": "https://i.pinimg.com/originals/f0/ee/cf/f0eecff8f557c63bca90b7b738c3df73.png",
       "ejercicios": [
@@ -371,6 +935,37 @@
       ]
     },
     {
+      "categoria": "Mancuernas",
+      "zona": "Espalda",
+      "imagen": "https://i.pinimg.com/originals/66/3b/80/663b80e1ea8b8f1a30cf8653f5eaa4bb.png",
+      "ejercicios": [
+        {
+          "nombre": "Remo con Mancuerna",
+          "descripcion": "Colócate en un banco inclinado con una mancuerna en cada mano. Extiende los brazos hacia abajo y realiza un movimiento de remo llevando las mancuernas hacia tu cintura. Mantén la espalda recta durante todo el movimiento.",
+          "duracion": "x12 por brazo",
+          "gif": "https://media.giphy.com/media/11lxB8by2B1ZL2/giphy.gif"
+        },
+        {
+          "nombre": "Peso Muerto con Mancuernas",
+          "descripcion": "De pie con una mancuerna en cada mano, baja el cuerpo hacia adelante manteniendo las piernas ligeramente flexionadas. Lleva las mancuernas hacia abajo manteniendo la espalda recta y luego vuelve a la posición inicial.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/YDAUCXCkMfN1W/giphy.gif"
+        },
+        {
+          "nombre": "Pull-Over Inclinado con Mancuerna",
+          "descripcion": "Acuéstate en un banco inclinado con solo tu espalda y hombros apoyados. Sostén una mancuerna con ambos brazos extendidos sobre tu pecho y baja la mancuerna hacia atrás sobre tu cabeza hasta que sientas un estiramiento en la parte superior de la espalda.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/lnqDiSgAGKo4o/giphy.gif"
+        },
+        {
+          "nombre": "Encogimientos de Hombros con Mancuernas",
+          "descripcion": "De pie con una mancuerna en cada mano a los lados, eleva los hombros hacia arriba y luego baja los hombros. Mantén los brazos rectos durante el movimiento.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/11RVRVlJNviLJK/giphy.gif"
+        }
+      ]
+    },    
+    {
       "categoria": "Con Banda Elástica",
       "zona": "Piernas",
       "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
@@ -398,6 +993,37 @@
           "descripcion": "Sujeta la banda con las manos y colócala alrededor de tus tobillos. Eleva lateralmente una pierna y baja controladamente.",
           "duracion": "x12",
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Con Banda Elástica",
+      "zona": "Piernas",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas con Banda (Prensa Banda)",
+          "descripcion": "Coloca la banda sobre tus muslos, justo por encima de las rodillas. Realiza sentadillas manteniendo la tensión en la banda para un mayor trabajo en los músculos de las piernas.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/rlI2kzI2M4Enu/giphy.gif"
+        },
+        {
+          "nombre": "Zancadas Laterales con Banda",
+          "descripcion": "Coloca la banda alrededor de tus tobillos. Da un paso lateral y regresa a la posición inicial, manteniendo la resistencia de la banda en todo momento.",
+          "duracion": "x12 por pierna",
+          "gif": "https://media.giphy.com/media/11EF2QJpwzB7Vm/giphy.gif"
+        },
+        {
+          "nombre": "Patadas de Glúteos con Banda",
+          "descripcion": "Asegura la banda en tus tobillos. Levanta una pierna hacia atrás, manteniendo la pierna extendida y la banda tensa.",
+          "duracion": "x15 por pierna",
+          "gif": "https://media.giphy.com/media/5pMlchPm3R1tm/giphy.gif"
+        },
+        {
+          "nombre": "Elevaciones Piernas Laterales con Banda",
+          "descripcion": "Sujeta la banda con las manos y colócala alrededor de tus tobillos. Eleva lateralmente una pierna y baja controladamente, manteniendo la resistencia de la banda.",
+          "duracion": "x12 por pierna",
+          "gif": "https://media.giphy.com/media/gx5weQ1FxjqME/giphy.gif"
         }
       ]
     },
@@ -434,6 +1060,37 @@
     },
     {
       "categoria": "Con Banda Elástica",
+      "zona": "Brazos",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
+      "ejercicios": [
+        {
+          "nombre": "Curl de Bíceps con Banda",
+          "descripcion": "Párate sobre la banda con los pies a la altura de los hombros. Sujeta los extremos de la banda con las manos y realiza curls de bíceps, manteniendo los codos pegados al cuerpo.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/7YoFyTSdN67rO0N5Os/giphy.gif"
+        },
+        {
+          "nombre": "Press de Hombros con Banda",
+          "descripcion": "Coloca la banda debajo de tus pies y sujeta los extremos con las manos. Eleva los brazos hacia los lados hasta que estén paralelos al suelo, luego lleva los brazos hacia arriba sobre la cabeza.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/13nvFqavbASdQk/giphy.gif"
+        },
+        {
+          "nombre": "Tríceps con Banda",
+          "descripcion": "Sujeta la banda con ambas manos por encima de tu cabeza. Baja las manos detrás de la cabeza, flexionando los codos, y luego estira los brazos hacia arriba.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/MNFaJNP6C2QSY/giphy.gif"
+        },
+        {
+          "nombre": "Pull Apart",
+          "descripcion": "Sujeta la banda frente a ti con las manos separadas. Estira la banda hacia los lados, manteniendo los brazos rectos. Lleva la banda de nuevo al centro.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/13eXTI84BGpT6k/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Con Banda Elástica",
       "zona": "Espalda",
       "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
       "ejercicios": [
@@ -454,6 +1111,37 @@
           "descripcion": "Fija la banda en un lugar elevado y realiza un movimiento similar a un lat pulldown.",
           "duracion": "x12",
           "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },
+    {
+      "categoria": "Con Banda Elástica",
+      "zona": "Espalda",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/4069/4069408.png",
+      "ejercicios": [
+        {
+          "nombre": "Remo Horizontal con Banda",
+          "descripcion": "Asegura la banda en un punto fijo a la altura de los hombros. Adopta una posición inclinada y realiza un movimiento de remo horizontal, manteniendo la espalda recta.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/vwAnW8kUe6yPu/giphy.gif"
+        },
+        {
+          "nombre": "Pull-Aparts Amplios",
+          "descripcion": "Sujeta la banda frente a ti con las manos separadas más ampliamente. Realiza movimientos amplios de pull-apart para activar los músculos de la espalda.",
+          "duracion": "x18",
+          "gif": "https://media.giphy.com/media/ZVXZY7Yfw5tzi/giphy.gif"
+        },
+        {
+          "nombre": "Lat Pulldown Amplio con Banda",
+          "descripcion": "Fija la banda en un lugar elevado y realiza un lat pulldown más amplio, llevando las manos hacia los lados para trabajar diferentes áreas de la espalda.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/8YDaGy0l4lTgM/giphy.gif"
+        },
+        {
+          "nombre": "Hiperextensiones con Banda",
+          "descripcion": "Asegura la banda alrededor de tus hombros y realiza hiperextensiones hacia atrás para fortalecer la parte baja de la espalda.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/F0G8ZiY8F7GeE/giphy.gif"
         }
       ]
     },
@@ -496,6 +1184,80 @@
     },
     {
       "categoria": "Bosu",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas Explosivas en Bosu",
+          "descripcion": "Coloca el Bosu con la parte plana hacia arriba. Realiza sentadillas explosivas, saltando con fuerza y manteniendo el equilibrio sobre el Bosu.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/ZFt3hTl4Cw9oE/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas en Bosu",
+          "descripcion": "Coloca los pies en el Bosu y las manos en el suelo, realiza flexiones manteniendo la estabilidad y elevando los pies.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/aKn1kmFoiLEje/giphy.gif"
+        },
+        {
+          "nombre": "Mountain Climbers con Giro en Bosu",
+          "descripcion": "Coloca las manos sobre el Bosu y alterna entre llevar las rodillas hacia el pecho y girar el torso para trabajar los músculos oblicuos.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/TB5SXj18pH8Fi/giphy.gif"
+        },
+        {
+          "nombre": "Elevación de Piernas y Tronco en Bosu",
+          "descripcion": "Siéntate en el Bosu con las manos detrás de ti. Levanta las piernas y el tronco hacia el frente, manteniendo la posición para un mayor desafío.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/SeZJ9eU2OhuWk/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Laterales con Bosu y Peso",
+          "descripcion": "Sujeta el Bosu con una mano y sostén una pesa en la mano opuesta. Realiza flexiones laterales para trabajar intensamente los oblicuos.",
+          "duracion": "x12 (cada lado)",
+          "gif": "https://media.giphy.com/media/NsiRn11BwMbRe/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Bosu",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas en Bosu con Salto y Giro",
+          "descripcion": "Coloca el Bosu con la parte plana hacia arriba. Realiza sentadillas con salto y gira 180 grados en el aire antes de aterrizar, manteniendo el equilibrio sobre el Bosu.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/5UyzEgF8oposU/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones de Mano Única en Bosu",
+          "descripcion": "Coloca una mano en el Bosu y la otra en el suelo. Realiza flexiones manteniendo la estabilidad y alternando la mano de apoyo en cada repetición.",
+          "duracion": "x12 (cada lado)",
+          "gif": "https://media.giphy.com/media/XEjWvobOeaF8I/giphy.gif"
+        },
+        {
+          "nombre": "Burpees con Bosu y Salto",
+          "descripcion": "Realiza un burpee con el pecho tocando el Bosu, luego salta con fuerza sobre el Bosu. Repite el movimiento de forma fluida y explosiva.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/rlTbZ3mWA7hfi/giphy.gif"
+        },
+        {
+          "nombre": "Crunches Laterales con Bosu",
+          "descripcion": "Siéntate en el Bosu y realiza crunches laterales, llevando el codo hacia la rodilla opuesta. Aumenta la intensidad manteniendo los pies elevados.",
+          "duracion": "x20 (cada lado)",
+          "gif": "https://media.giphy.com/media/pw8FGnBtS6F1K/giphy.gif"
+        },
+        {
+          "nombre": "Plancha con Bosu y Levantamiento de Pierna",
+          "descripcion": "Adopta la posición de plancha con los pies sobre el Bosu. Alterna elevando cada pierna hacia arriba, manteniendo la posición de plancha.",
+          "duracion": "x15 (cada pierna)",
+          "gif": "https://media.giphy.com/media/5YWgEMeSOT1Zi/giphy.gif"
+        }
+      ]
+    },    
+    {
+      "categoria": "Bosu",
       "zona": "Piernas",
       "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
       "ejercicios": [
@@ -532,67 +1294,675 @@
       ]
     },
     {
+      "categoria": "Bosu",
+      "zona": "Piernas",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas Explosivas en Bosu",
+          "descripcion": "Realiza sentadillas en Bosu con un salto explosivo al subir. Mantén el equilibrio durante el movimiento.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevación de Rodillas en Bosu",
+          "descripcion": "Alterna entre elevar las rodillas hacia el pecho mientras estás en posición de plancha sobre el Bosu.",
+          "duracion": "x20",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Salto Lateral sobre Bosu",
+          "descripcion": "Realiza saltos laterales sobre el Bosu, aterrizando suavemente en cada salto. Mantén la estabilidad.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Pistol Squats en Bosu",
+          "descripcion": "Realiza pistol squats manteniendo un pie elevado sobre el Bosu. Trabaja la fuerza y el equilibrio.",
+          "duracion": "x10 (cada pierna)",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Burpees con Salto sobre Bosu",
+          "descripcion": "Incorpora un salto sobre el Bosu al realizar burpees. Añade intensidad a tu rutina.",
+          "duracion": "x10",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    },   
+    {
+      "categoria": "Bosu",
+      "zona": "Piernas",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/639/639301.png",
+      "ejercicios": [
+        {
+          "nombre": "Sentadillas Explosivas en Bosu",
+          "descripcion": "Realiza sentadillas en Bosu con un salto explosivo al subir. Mantén el equilibrio durante el movimiento.",
+          "duracion": "x15",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Elevación de Rodillas en Bosu",
+          "descripcion": "Alterna entre elevar las rodillas hacia el pecho mientras estás en posición de plancha sobre el Bosu.",
+          "duracion": "x25",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Salto Lateral sobre Bosu",
+          "descripcion": "Realiza saltos laterales sobre el Bosu, aterrizando suavemente en cada salto. Mantén la estabilidad.",
+          "duracion": "x18",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Pistol Squats en Bosu",
+          "descripcion": "Realiza pistol squats manteniendo un pie elevado sobre el Bosu. Trabaja la fuerza y el equilibrio.",
+          "duracion": "x12 (cada pierna)",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        },
+        {
+          "nombre": "Burpees con Salto sobre Bosu",
+          "descripcion": "Incorpora un salto sobre el Bosu al realizar burpees. Añade intensidad a tu rutina.",
+          "duracion": "x12",
+          "gif": "https://images.pngnice.com/download/2100/Gym-Silhoutte-PNG-Photo.png"
+        }
+      ]
+    }, 
+    {
       "categoria": "Kettlebells",
+      "zona": "Cuerpo Completo",
       "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
       "ejercicios": [
         {
-          "nombre": "Abducciones de cadera",
-          "descripcion": "Ejercicio para glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "nombre": "Swings con Kettlebell",
+          "descripcion": "Agarra la kettlebell con ambas manos, mantén los brazos extendidos y realiza un movimiento de balanceo controlado desde la cadera hasta la altura del hombro.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/14oBDYjZigG4E0/giphy.gif"
         },
         {
-          "nombre": "Curl de bíceps",
-          "descripcion": "Ejercicio para bíceps",
-          "duracion": "3 series de 12 repeticiones"
+          "nombre": "Sentadillas Goblet",
+          "descripcion": "Sostén la kettlebell frente al pecho con ambas manos y realiza una sentadilla manteniendo la espalda recta y el peso en los talones.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/Y1c4hLkbRdF32/giphy.gif"
         },
         {
-          "nombre": "Press de hombros",
-          "descripcion": "Ejercicio para hombros",
-          "duracion": "3 series de 10 repeticiones"
+          "nombre": "Prensa Militar con Kettlebell",
+          "descripcion": "Levanta la kettlebell desde los hombros hasta la posición extendida sobre la cabeza. Controla el descenso de la kettlebell hacia los hombros.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/3o84sEIDzTo0v0aCbu/giphy.gif"
+        },
+        {
+          "nombre": "Filas con Kettlebell",
+          "descripcion": "Colócate en posición de sumo, sostén la kettlebell con una mano y realiza filas, manteniendo la espalda recta y el codo cerca del cuerpo.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/7oKdKXBtQF1ji/giphy.gif"
+        },
+        {
+          "nombre": "Peso Muerto con Kettlebell",
+          "descripcion": "Sostén la kettlebell frente a ti con ambas manos y realiza un movimiento de flexión de cadera mientras mantienes la espalda recta.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/3oKIP9uN0lXpDVs2GY/giphy.gif"
+        },
+        {
+          "nombre": "Clean & Press",
+          "descripcion": "Realiza un movimiento de limpieza desde el suelo hasta los hombros, seguido de una prensa sobre la cabeza. Controla el descenso.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/5B1xJSOKa6uI1FpN4u/giphy.gif"
+        },
+        {
+          "nombre": "Turkish Get-Up",
+          "descripcion": "Acuéstate en el suelo con la kettlebell en una mano. Realiza una serie de movimientos coordinados para ponerte de pie y luego regresa al suelo.",
+          "duracion": "x2-3 por lado",
+          "gif": "https://media.giphy.com/media/l1J9OaGGeFofK/giphy.gif"
         }
       ]
     },
     {
-      "categoria": "Cuerda De Salto",
+      "categoria": "Kettlebells",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Kettlebell Thrusters",
+          "descripcion": "Sostén una kettlebell en cada mano a la altura de los hombros. Realiza una sentadilla profunda y, al levantarte, impulsa las kettlebells hacia arriba en un movimiento fluido.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/xTiTnsYFY7N5bcTqyk/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Snatch",
+          "descripcion": "Con una kettlebell en una mano, realiza un movimiento explosivo para llevarla desde el suelo hasta sobre la cabeza en un solo movimiento.",
+          "duracion": "x10 por lado",
+          "gif": "https://media.giphy.com/media/3o6Zt3Py8x5UMpNHsI/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Renegade Rows",
+          "descripcion": "En posición de plancha con una kettlebell en cada mano, alterna filas levantando una kettlebell mientras mantienes el cuerpo estable.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/2FZh7QKl6qqki1cymA/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Lunges con Rotación",
+          "descripcion": "Realiza lunges sosteniendo una kettlebell frente al pecho. Gira el torso hacia el lado de la pierna adelantada.",
+          "duracion": "x15 por pierna",
+          "gif": "https://media.giphy.com/media/l4FGmR0heJJJKmFIY/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Russian Twists",
+          "descripcion": "Siéntate en el suelo, inclina ligeramente el torso hacia atrás y gira de un lado a otro sosteniendo una kettlebell.",
+          "duracion": "x20 (cada lado)",
+          "gif": "https://media.giphy.com/media/1zKehHAf5zJzhtvN8V/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Burpee",
+          "descripcion": "Incorpora una kettlebell al realizar burpees. Al bajar, sujeta la kettlebell y al subir, levántala por encima de la cabeza.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/26gZ1u8p6SDhqkC2A/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Turkish Get-Up",
+          "descripcion": "Realiza el movimiento Turkish Get-Up con una kettlebell, manteniendo una carga constante durante todo el ejercicio.",
+          "duracion": "x2-3 por lado",
+          "gif": "https://media.giphy.com/media/l1J9OaGGeFofK/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Kettlebells",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Kettlebell Clean & Jerk",
+          "descripcion": "Realiza un movimiento de limpieza desde el suelo hasta los hombros, seguido de una flexión de rodillas y empuje sobre la cabeza.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/iGq9M8a6EyTh3dgdEE/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Figure 8",
+          "descripcion": "Párate con las piernas separadas y realiza un movimiento de pasar la kettlebell en forma de 8 entre las piernas.",
+          "duracion": "x20 (cada dirección)",
+          "gif": "https://media.giphy.com/media/7bY3gJofEqFbGWcMTn/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Side Swing",
+          "descripcion": "Realiza swings laterales con la kettlebell, manteniendo un control en el movimiento y trabajando los músculos laterales.",
+          "duracion": "x15 (cada lado)",
+          "gif": "https://media.giphy.com/media/2tQR6ljzeo0sRuX2qX/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Deadlift con Salto",
+          "descripcion": "Realiza un deadlift con kettlebell y al levantarte, añade un salto para aumentar la intensidad.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/9JgZ8Hy8cKNTFCdDtl/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Around the World",
+          "descripcion": "Sostén la kettlebell con ambas manos y realiza movimientos circulares alrededor del cuerpo, alternando direcciones.",
+          "duracion": "x12 (cada dirección)",
+          "gif": "https://media.giphy.com/media/eN1iLVR3MAc4MWgXWT/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Push Press",
+          "descripcion": "Realiza una flexión de rodillas seguida de un empuje con la kettlebell desde los hombros hacia arriba.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/8F8t3LCKdBB4c3Ff2V/giphy.gif"
+        },
+        {
+          "nombre": "Kettlebell Plank Pull-Through",
+          "descripcion": "En posición de plancha, alterna entre levantar la kettlebell de un lado a otro, manteniendo el cuerpo estable.",
+          "duracion": "x15 (cada lado)",
+          "gif": "https://media.giphy.com/media/3oEjI72HNl2zdn8C8I/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Kettlebells",
+      "zona": "Brazos",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Curl con Kettlebell",
+          "descripcion": "Sujeta una kettlebell en cada mano, mantén los codos pegados al cuerpo y realiza curls, llevando las kettlebells hacia los hombros.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/xTiTnIusLBcb1dPqQU/giphy.gif"
+        },
+        {
+          "nombre": "Press de Tríceps con Kettlebell",
+          "descripcion": "Sujeta una kettlebell con ambas manos por la parte superior, levántala sobre la cabeza y flexiona los codos para bajar la kettlebell detrás de la cabeza.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/KDtcdu2pHbNE0/giphy.gif"
+        },
+        {
+          "nombre": "Martillo con Kettlebell",
+          "descripcion": "Sujeta una kettlebell en cada mano, con las palmas enfrentadas. Realiza movimientos tipo martillo, llevando las kettlebells hacia los hombros.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/3o7aTJ7z8iNHr17QoY/giphy.gif"
+        },
+        {
+          "nombre": "Extensiones de Muñeca con Kettlebell",
+          "descripcion": "Sujeta una kettlebell con una mano y extiende la muñeca hacia abajo y luego hacia arriba, trabajando el antebrazo.",
+          "duracion": "x15 por lado",
+          "gif": "https://media.giphy.com/media/l2Je6FQWh3Fhj4u1i/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones con Kettlebell",
+          "descripcion": "Coloca las manos sobre dos kettlebells y realiza flexiones, manteniendo el cuerpo recto y controlando el descenso.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/l0MYzF1yRofLy0uY0/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Kettlebells",
+      "zona": "Brazos",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Kettlebell Snatch",
+          "descripcion": "Realiza un snatch explosivo con la kettlebell en una mano, llevándola desde el suelo hasta sobre la cabeza en un solo movimiento.",
+          "duracion": "x10 por lado",
+          "gif": "https://media.giphy.com/media/3o6Zt3Py8x5UMpNHsI/giphy.gif"
+        },
+        {
+          "nombre": "Clean & Press Alternado",
+          "descripcion": "Alterna entre realizar un clean y press con kettlebell en cada mano, manteniendo el movimiento fluido y controlado.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/3ohzdI9XVsazek1vS8/giphy.gif"
+        },
+        {
+          "nombre": "Curl Martillo con Kettlebell",
+          "descripcion": "Sujeta una kettlebell en cada mano con las palmas enfrentadas. Realiza curls tipo martillo, llevando las kettlebells hacia los hombros.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/l0MYzF1yRofLy0uY0/giphy.gif"
+        },
+        {
+          "nombre": "Press de Tríceps en Plancha",
+          "descripcion": "Colócate en posición de plancha con las manos sobre las kettlebells. Flexiona los codos para bajar el cuerpo hacia el suelo y luego estira los brazos.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/26BRQpjuQMr2B9jdG/giphy.gif"
+        },
+        {
+          "nombre": "Filas con Kettlebell Alternadas",
+          "descripcion": "En posición de split stance, alterna filas con kettlebell en cada mano. Mantén la espalda recta y el núcleo comprometido.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/5OEMaWL14X4Efojfu2/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones de Brazos con Kettlebell",
+          "descripcion": "Coloca una mano sobre una kettlebell y realiza flexiones, alternando entre las manos. Mantén el cuerpo en línea recta.",
+          "duracion": "x10 por lado",
+          "gif": "https://media.giphy.com/media/1zkiGGxxHe1huNR8Lw/giphy.gif"
+        }
+      ]
+    },    
+    {
+      "categoria": "Kettlebells",
+      "zona": "Espalda",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Remo con Kettlebell",
+          "descripcion": "Colócate en posición de sumo, sujeta la kettlebell con una mano y realiza un movimiento de remo llevando el codo hacia arriba y hacia atrás.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/QxJzV2JnbXgk/giphy.gif"
+        },
+        {
+          "nombre": "Press Arnold con Kettlebell",
+          "descripcion": "Sujeta una kettlebell en cada mano, realiza un press sobre la cabeza y rota los brazos durante el movimiento para trabajar los hombros desde diferentes ángulos.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/l1h8eCTp9CdFrRlfa/giphy.gif"
+        },
+        {
+          "nombre": "Face Pull con Kettlebell",
+          "descripcion": "Sujeta una kettlebell con ambas manos y realiza un movimiento de tracción hacia la cara, trabajando los músculos de la parte alta de la espalda y los hombros.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Tj2xRt5I8Y1Da/giphy.gif"
+        },
+        {
+          "nombre": "Pájaros con Kettlebell",
+          "descripcion": "Inclínate hacia adelante, sujeta una kettlebell en cada mano y levanta los brazos hacia los lados, trabajando los músculos de la espalda alta y los deltoides.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/1BXV8vUj8YNjxe1qF3/giphy.gif"
+        },
+        {
+          "nombre": "Encogimientos con Kettlebell",
+          "descripcion": "Sujeta una kettlebell en cada mano y realiza encogimientos de hombros, elevando los hombros hacia las orejas y luego relajándolos.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/2U6YZYINkvnAs/giphy.gif"
+        }
+      ]
+    },    
+    {
+      "categoria": "Kettlebells",
+      "zona": "Espalda",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/670/670132.png",
+      "ejercicios": [
+        {
+          "nombre": "Remo Unilateral con Kettlebell",
+          "descripcion": "Colócate en posición de sumo, sujeta la kettlebell con una mano y realiza un remo unilateral, llevando el codo hacia arriba y hacia atrás. Mantén la espalda recta.",
+          "duracion": "x12 por lado",
+          "gif": "https://media.giphy.com/media/QxJzV2JnbXgk/giphy.gif"
+        },
+        {
+          "nombre": "Press Arnold con Rotación de Tronco",
+          "descripcion": "Sujeta una kettlebell en cada mano, realiza un press sobre la cabeza y añade una rotación del tronco al subir, trabajando la musculatura de la espalda y los oblicuos.",
+          "duracion": "x10 por lado",
+          "gif": "https://media.giphy.com/media/l1h8eCTp9CdFrRlfa/giphy.gif"
+        },
+        {
+          "nombre": "Face Pull con Kettlebell",
+          "descripcion": "Sujeta una kettlebell con ambas manos y realiza un face pull, llevando la kettlebell hacia la cara. Trabaja los músculos de la parte alta de la espalda y los hombros.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Tj2xRt5I8Y1Da/giphy.gif"
+        },
+        {
+          "nombre": "Pull-Overs con Kettlebell",
+          "descripcion": "Acuéstate sobre una superficie estable, sujeta la kettlebell con ambas manos y realiza pull-overs, trabajando los músculos de la espalda y el pecho.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/1BXV8vUj8YNjxe1qF3/giphy.gif"
+        },
+        {
+          "nombre": "Encogimientos con Kettlebell y Elevación de Piernas",
+          "descripcion": "Sujeta una kettlebell en cada mano, realiza encogimientos de hombros y, simultáneamente, eleva las piernas hacia arriba. Integra abdominales en el movimiento.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/2U6YZYINkvnAs/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Cuerda de Salto",
+      "zona": "Cuerpo Completo",
       "imagen": "https://i.postimg.cc/rwrrYv4g/cuerda.png",
       "ejercicios": [
         {
-          "nombre": "Abducciones de cadera",
-          "descripcion": "Ejercicio para glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "nombre": "Saltos Simples",
+          "descripcion": "Realiza saltos simples continuos con la cuerda, manteniendo un ritmo constante y aterrizando suavemente en la punta de los pies.",
+          "duracion": "x50",
+          "gif": "https://media.giphy.com/media/Xm1fXOLtZhZfG/giphy.gif"
         },
         {
-          "nombre": "Curl de bíceps",
-          "descripcion": "Ejercicio para bíceps",
-          "duracion": "3 series de 12 repeticiones"
+          "nombre": "Doble Salto",
+          "descripcion": "Salta dos veces en el mismo giro de cuerda. Aumenta la velocidad para realizar el doble salto con éxito.",
+          "duracion": "x40",
+          "gif": "https://media.giphy.com/media/3oEduF3Vfcb8Nxu0aU/giphy.gif"
         },
         {
-          "nombre": "Press de hombros",
-          "descripcion": "Ejercicio para hombros",
-          "duracion": "3 series de 10 repeticiones"
+          "nombre": "Saltos con Rodillas Arriba",
+          "descripcion": "Intercala saltos simples con levantamiento de rodillas hacia el pecho en cada salto.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/3oKIPqO6ovHJp1p2cY/giphy.gif"
+        },
+        {
+          "nombre": "Saltos Laterales",
+          "descripcion": "Salta lateralmente de izquierda a derecha, manteniendo un ritmo constante y aterrizando suavemente.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/l4FGvPccZUJwrLzCo/giphy.gif"
+        },
+        {
+          "nombre": "Saltos con Cruce de Brazos",
+          "descripcion": "Realiza saltos simples mientras cruzas los brazos frente al cuerpo en cada giro de cuerda.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/26BRErB92aWRJ2cZa/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Cuerda de Salto",
+      "zona": "Cuerpo Completo",
+      "imagen": "https://i.postimg.cc/rwrrYv4g/cuerda.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos Dobles con Giro",
+          "descripcion": "Realiza saltos dobles con un giro de cuerda en cada salto. Aumenta la velocidad para mayor intensidad.",
+          "duracion": "x50",
+          "gif": "https://media.giphy.com/media/Xm1fXOLtZhZfG/giphy.gif"
+        },
+        {
+          "nombre": "Salto de Alta Intensidad",
+          "descripcion": "Salta lo más alto posible en cada giro de cuerda, maximizando la elevación de las piernas.",
+          "duracion": "x40",
+          "gif": "https://media.giphy.com/media/3oEduF3Vfcb8Nxu0aU/giphy.gif"
+        },
+        {
+          "nombre": "Burpees con Cuerda",
+          "descripcion": "Combina saltos de cuerda con burpees. Realiza un burpee completo después de cada 10 saltos.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/3oKIPqO6ovHJp1p2cY/giphy.gif"
+        },
+        {
+          "nombre": "Saltos Laterales Rápidos",
+          "descripcion": "Realiza saltos laterales a máxima velocidad, manteniendo un ritmo constante y aterrizando suavemente.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/l4FGvPccZUJwrLzCo/giphy.gif"
+        },
+        {
+          "nombre": "Saltos con Cruce de Piernas",
+          "descripcion": "Realiza saltos simples mientras cruzas las piernas en cada giro de cuerda. Aumenta la velocidad para mayor intensidad.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/26BRErB92aWRJ2cZa/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Cuerda de Salto",
+      "zona": "Piernas",
+      "imagen": "https://i.postimg.cc/rwrrYv4g/cuerda.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos Simples",
+          "descripcion": "Realiza saltos simples continuos con la cuerda, manteniendo una buena postura y aterrizando suavemente en la punta de los pies.",
+          "duracion": "x50",
+          "gif": "https://media.giphy.com/media/4HkMlEZZE9a64/giphy.gif"
+        },
+        {
+          "nombre": "Saltos con Rodillas Altas",
+          "descripcion": "Alterna entre saltos simples y eleva las rodillas lo más alto posible en cada salto, activando los músculos de las piernas y el core.",
+          "duracion": "x40",
+          "gif": "https://media.giphy.com/media/2v2FHQZ2c9chFlpUZb/giphy.gif"
+        },
+        {
+          "nombre": "Saltos Laterales",
+          "descripcion": "Salta lateralmente de un lado a otro, manteniendo la cuerda baja. Este ejercicio trabaja los músculos internos y externos de las piernas.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/d6vHnJx02uD5M/giphy.gif"
+        },
+        {
+          "nombre": "Sentadillas con Salto",
+          "descripcion": "Realiza una sentadilla profunda y al subir, realiza un salto. Aterriza suavemente y repite el proceso.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/l0IynXU5Byb8wFFMs/giphy.gif"
+        },
+        {
+          "nombre": "Zancadas con Saltos",
+          "descripcion": "Da una zancada hacia adelante, al bajar realiza un salto y alterna entre las piernas. Este ejercicio trabaja glúteos y cuádriceps.",
+          "duracion": "x16",
+          "gif": "https://media.giphy.com/media/qlZLZyQlxg2dC/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Cuerda de Salto",
+      "zona": "Piernas",
+      "imagen": "https://i.postimg.cc/rwrrYv4g/cuerda.png",
+      "ejercicios": [
+        {
+          "nombre": "Saltos Dobles con Giro",
+          "descripcion": "Realiza saltos dobles con un giro de cuerda en cada salto. Aumenta la velocidad para mayor intensidad.",
+          "duracion": "x50",
+          "gif": "https://media.giphy.com/media/4HkMlEZZE9a64/giphy.gif"
+        },
+        {
+          "nombre": "Salto de Alta Intensidad",
+          "descripcion": "Salta lo más alto posible en cada giro de cuerda, maximizando la elevación de las piernas.",
+          "duracion": "x40",
+          "gif": "https://media.giphy.com/media/2v2FHQZ2c9chFlpUZb/giphy.gif"
+        },
+        {
+          "nombre": "Burpees con Cuerda",
+          "descripcion": "Combina saltos de cuerda con burpees. Realiza un burpee completo después de cada 10 saltos.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/d6vHnJx02uD5M/giphy.gif"
+        },
+        {
+          "nombre": "Saltos Laterales Rápidos",
+          "descripcion": "Realiza saltos laterales a máxima velocidad, manteniendo un ritmo constante y aterrizando suavemente.",
+          "duracion": "x20",
+          "gif": "https://media.giphy.com/media/l0IynXU5Byb8wFFMs/giphy.gif"
+        },
+        {
+          "nombre": "Saltos con Cruce de Piernas",
+          "descripcion": "Realiza saltos simples mientras cruzas las piernas en cada giro de cuerda. Aumenta la velocidad para mayor intensidad.",
+          "duracion": "x30",
+          "gif": "https://media.giphy.com/media/qlZLZyQlxg2dC/giphy.gif"
+        }
+      ]
+    },    
+    {
+      "categoria": "Rodillo Abdominal",
+      "zona": "Abdomen",
+      "imagen": "https://petitfitbycris.com/wp-content/uploads/2022/02/Rueda-abdominal-MYP2.png",
+      "ejercicios": [
+        {
+          "nombre": "Rodillo Abdominal hacia Adelante",
+          "descripcion": "Arrodíllate con el rodillo abdominal frente a ti. Desliza el rodillo hacia adelante, manteniendo el abdomen contraído. Luego, regresa a la posición inicial.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/QA3RMLGZysZxNqoRz2/giphy.gif"
+        },
+        {
+          "nombre": "Plancha con Rodillo",
+          "descripcion": "Colócate en posición de plancha con el rodillo abdominal debajo de los pies. Desliza el rodillo hacia adelante y luego vuelve a la posición inicial.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/8FvVvGmTpjpujUU9Lj/giphy.gif"
+        },
+        {
+          "nombre": "Rodillo Abdominal hacia los Lados",
+          "descripcion": "Arrodíllate y desliza el rodillo hacia un lado, manteniendo el torso recto. Luego, regresa al centro y repite hacia el otro lado.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/2fHEBYrKrweoYsVuF2/giphy.gif"
+        },
+        {
+          "nombre": "Rodillo Abdominal con Giro",
+          "descripcion": "Desliza el rodillo hacia adelante y realiza un giro del torso hacia un lado. Alterna los giros con cada repetición.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/0IvA7o1V0Fn3e5AZ7w/giphy.gif"
+        },
+        {
+          "nombre": "Rodillo Abdominal con Piernas Elevadas",
+          "descripcion": "Acuéstate boca arriba con el rodillo entre las manos. Eleva las piernas mientras deslizas el rodillo hacia adelante, luego regresa.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/2soGzpgYe0E6okISLV/giphy.gif"
         }
       ]
     },
     {
       "categoria": "Rodillo Abdominal",
+      "zona": "Abdomen",
       "imagen": "https://petitfitbycris.com/wp-content/uploads/2022/02/Rueda-abdominal-MYP2.png",
       "ejercicios": [
         {
-          "nombre": "Abducciones de cadera",
-          "descripcion": "Ejercicio para glúteos",
-          "duracion": "3 series de 15 repeticiones"
+          "nombre": "Rodillo Abdominal hacia Adelante con Salto",
+          "descripcion": "Arrodíllate con el rodillo abdominal frente a ti. Desliza el rodillo hacia adelante y realiza un salto al regresar a la posición inicial. Mantén el abdomen contraído.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/QA3RMLGZysZxNqoRz2/giphy.gif"
         },
         {
-          "nombre": "Curl de bíceps",
-          "descripcion": "Ejercicio para bíceps",
-          "duracion": "3 series de 12 repeticiones"
+          "nombre": "Plancha con Rodillo y Elevación de Piernas",
+          "descripcion": "Colócate en posición de plancha con el rodillo abdominal debajo de los pies. Desliza el rodillo hacia adelante y eleva una pierna, luego alterna con la otra. Regresa a la posición inicial.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/8FvVvGmTpjpujUU9Lj/giphy.gif"
         },
         {
-          "nombre": "Press de hombros",
-          "descripcion": "Ejercicio para hombros",
-          "duracion": "3 series de 10 repeticiones"
+          "nombre": "Rodillo Abdominal hacia los Lados con Salto",
+          "descripcion": "Arrodíllate y desliza el rodillo hacia un lado, manteniendo el torso recto. Realiza un salto al regresar al centro y repite hacia el otro lado.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/2fHEBYrKrweoYsVuF2/giphy.gif"
+        },
+        {
+          "nombre": "Rodillo Abdominal con Giro y Flexión",
+          "descripcion": "Desliza el rodillo hacia adelante y realiza un giro del torso hacia un lado. Al regresar, realiza una flexión de tronco hacia atrás. Alterna los giros y las flexiones.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/0IvA7o1V0Fn3e5AZ7w/giphy.gif"
+        },
+        {
+          "nombre": "Rodillo Abdominal con Piernas Elevadas y Toque de Pies",
+          "descripcion": "Acuéstate boca arriba con el rodillo entre las manos. Eleva las piernas mientras deslizas el rodillo hacia adelante y toca los pies. Luego, regresa a la posición inicial.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/2soGzpgYe0E6okISLV/giphy.gif"
         }
       ]
-    }
+    },    
+    {
+      "categoria": "Rodillo Abdominal",
+      "zona": "Pecho",
+      "imagen": "https://petitfitbycris.com/wp-content/uploads/2022/02/Rueda-abdominal-MYP2.png",
+      "ejercicios": [
+        {
+          "nombre": "Flexiones con Rodillo",
+          "descripcion": "Colócate en posición de flexión con las manos en el rodillo abdominal. Realiza flexiones, manteniendo el abdomen contraído y controlando el movimiento.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/Wpbb9CTjTCM8r56Zrm/giphy.gif"
+        },
+        {
+          "nombre": "Prensa de Rodillo en el Suelo",
+          "descripcion": "Acuéstate boca arriba con el rodillo en las manos sobre el pecho. Extiende los brazos hacia arriba, manteniendo los codos ligeramente flexionados.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/7W3xHfgNo8VCxQaVAz/giphy.gif"
+        },
+        {
+          "nombre": "Aperturas con Rodillo",
+          "descripcion": "Tumbado en el suelo, sostén el rodillo con ambas manos y realiza aperturas, abriendo los brazos hacia los lados y luego cerrándolos.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/2YtV4Y1rdMnOAn6A67/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas con Rodillo",
+          "descripcion": "Coloca los pies en un banco o elevación, con las manos en el rodillo. Realiza flexiones declinadas para enfocar el esfuerzo en la parte superior del pecho.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/eM6rbO1kWY5XEABmMW/giphy.gif"
+        },
+        {
+          "nombre": "Pullover con Rodillo",
+          "descripcion": "Recuéstate en un banco con el rodillo sobre el pecho. Sujeta el rodillo con ambas manos y realiza un movimiento de pullover, llevando el rodillo hacia atrás.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/4QnFqhrKu8Pvup9Een/giphy.gif"
+        }
+      ]
+    },
+    {
+      "categoria": "Rodillo Abdominal",
+      "zona": "Pecho",
+      "imagen": "https://petitfitbycris.com/wp-content/uploads/2022/02/Rueda-abdominal-MYP2.png",
+      "ejercicios": [
+        {
+          "nombre": "Flexiones Explosivas con Rodillo",
+          "descripcion": "Colócate en posición de flexión con las manos en el rodillo abdominal. Realiza flexiones explosivas, impulsándote para despegar las manos del suelo.",
+          "duracion": "x12",
+          "gif": "https://media.giphy.com/media/3EdbJLdH8R1mkFmb4T/giphy.gif"
+        },
+        {
+          "nombre": "Prensa de Rodillo en el Suelo con Pausa",
+          "descripcion": "Acuéstate boca arriba con el rodillo en las manos sobre el pecho. Extiende los brazos hacia arriba, haciendo una pausa en la posición extendida.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/2z7J2jioAqAe4/giphy.gif"
+        },
+        {
+          "nombre": "Aperturas con Rodillo y Peso Adicional",
+          "descripcion": "Tumbado en el suelo, sostén el rodillo con ambas manos y realiza aperturas con un peso adicional, aumentando la resistencia.",
+          "duracion": "x15",
+          "gif": "https://media.giphy.com/media/4Z11THZbYlfXThCJ21/giphy.gif"
+        },
+        {
+          "nombre": "Flexiones Declinadas con Rodillo y Peso Adicional",
+          "descripcion": "Coloca los pies en un banco o elevación, con las manos en el rodillo. Realiza flexiones declinadas con un peso adicional para mayor intensidad.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/4MKvGphlmTpdqOPdKr/giphy.gif"
+        },
+        {
+          "nombre": "Pullover con Rodillo y Peso Adicional",
+          "descripcion": "Recuéstate en un banco con el rodillo sobre el pecho. Sujeta el rodillo con ambas manos y realiza un movimiento de pullover con un peso adicional.",
+          "duracion": "x10",
+          "gif": "https://media.giphy.com/media/l0Iy2xVKQhcZKl9fa/giphy.gif"
+        }
+      ]
+    }    
   ]
 }

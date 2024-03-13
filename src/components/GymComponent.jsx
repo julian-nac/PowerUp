@@ -1,146 +1,115 @@
 
-import React, {useState} from 'react';
+import React, { useState, useRef } from 'react';
 
 import { View, Text, Image, ImageBackground, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
-
-import { Picker } from '@react-native-picker/picker';
 
 import { useNavigation } from '@react-navigation/native';
 
 import { rutinas } from '../data/ejerciciosGym.json';
 
 
-const RutinaItem = ({ rutina, onPress }) => {
-  
-  return (
-  
-  <TouchableOpacity style={styles.rutinaContainer} onPress={onPress}>
-  
-      <Text style={styles.rutinaText}>{`Ejercicios: ${rutina.ejercicios.length}`}</Text>
-  
-      {rutina.zona && <Text style={styles.rutinaText}>{` / Zona: ${rutina.zona}`}</Text>}
-  
-    </TouchableOpacity>
-  
-  );
-
-};
-
-
 const GymComponente = () => {
 
-  const [zonaSeleccionada, setZonaSeleccionada] = useState(null)
+  const [zonaSeleccionada, setZonaSeleccionada] = useState(null);
+
+  const scrollViewRef = useRef(null);
 
   const navigation = useNavigation();
 
+  const zonasUnicas = [...new Set(rutinas.map((rutina) => rutina.zona))].filter(Boolean);
 
-  const rutinasPorCategoria = rutinas.reduce((acc, rutina) => {
-
-    if (!acc[rutina.categoria]) {
-
-      acc[rutina.categoria] = {
-
-        ejercicios: [],
-
-        imagen: rutina.imagen,
-
-      };
-
-    }
-
-    acc[rutina.categoria].ejercicios.push(rutina);
-
-    return acc;
-
-  }, {});
-
+  const handleZonaPress = (zona) => {
+   
+    setZonaSeleccionada(zona);
+   
+    scrollViewRef.current?.scrollTo({ y: 1000, animated: true });
+  
+  };
 
   const handleRutinaPress = (rutina) => {
-
+  
     navigation.navigate('Rutina', { rutina });
-
+  
   };
 
   return (
-
-    <View style={styles.container}>
-
+  
+  <View style={styles.container}>
+  
       <ImageBackground
-    
+  
       source={require('../../assets/images/Fondo-pantalla-metal.jpg')}
-    
+      
       style={styles.backgroundImage}
       
       >
       
-        <ScrollView>
+        <ScrollView ref={scrollViewRef}>
+      
+          <View style={styles.filterContainer}>
+      
+            <Text style={styles.filterText}>Seleccionar Zona:</Text>
+      
+          </View>
 
-        <View style={styles.filterContainer}>
-            
-            <Text style={styles.filterText}>Filtrar por Zona:</Text>
-            
-            <Picker
-            
-            selectedValue={zonaSeleccionada}
-            
-            onValueChange={(itemValue) => setZonaSeleccionada(itemValue)}
-            
-            style={styles.picker}
-            
-            >
-            
-              <Picker.Item label="Todas" value={null} />
-            
-              <Picker.Item label="Cuerpo Completo" value="Cuerpo Completo" />
 
-              <Picker.Item label="Brazos" value="Brazos" />
+          <View style={styles.zonasContainer}>
 
-              <Picker.Item label="Pecho" value="Pecho" />
+            {zonasUnicas.map((zona, index) => (
 
-              <Picker.Item label="Espalda" value="Espalda" />
+          <TouchableOpacity
+          
+          key={index}
+          
+          style={styles.zonaContainer}
+          
+          onPress={() => handleZonaPress(zona)}
+          
+          >
+          
+          <Image source={{ uri: rutinas.find((rutina) => rutina.zona === zona)?.banner }} style={styles.zonaImage} />
+    
+          </TouchableOpacity>
 
-              <Picker.Item label="Piernas" value="Piernas" />
-
-              <Picker.Item label="Abdomen" value="Abdomen" />
-
-            </Picker>
+          ))}
           
           </View>
 
-      
-          {Object.entries(rutinasPorCategoria).map(([categoria, datosCategoria], index) => (
-      
-          <View key={index} style={index === 0 ? styles.firstCategoriaContainer : null}>
+          {zonaSeleccionada && (
           
-              <View style={styles.categoriaContainer}>
+          <View style={styles.rutinasContainer}>
           
-                <Image source={{ uri: datosCategoria.imagen }} style={styles.categoriaImage} />
+              <Text style={styles.rutinasText}>{`Rutinas para ${zonaSeleccionada}:`}</Text>
           
-                <Text style={styles.categoriaText}>{categoria}</Text>
+              {rutinas
           
-              </View>
+          .filter((rutina) => rutina.zona === zonaSeleccionada)
           
-              {datosCategoria.ejercicios
-            
-              .filter((rutina) => (zonaSeleccionada ? rutina.zona === zonaSeleccionada : true))
-            
-              .map((rutina, rutinaIndex) => (
+          .map((rutina, index) => (
           
-          <RutinaItem
+            <TouchableOpacity
           
-          key={rutinaIndex}
+            key={index}
           
-          rutina={rutina}
+            style={styles.rutinaContainer}
           
-          onPress={() => handleRutinaPress(rutina)}
+            onPress={() => handleRutinaPress(rutina)}
           
-          />
+          >
           
+          <Image source={{ uri: rutina.imagen }} style={styles.rutinaImage} />
+          
+          <Text style={styles.rutinaText}>{`Ejercicios: ${rutina.ejercicios.length}`}</Text>
+          
+          <Text style={styles.rutinaText}>{`Categoría: ${rutina.categoria}`}</Text>
+          
+         </TouchableOpacity>
+  
           ))}
           
             </View>
           
-          ))}
+          )}
         
         </ScrollView>
       
@@ -153,138 +122,75 @@ const GymComponente = () => {
 };
 
 
-
 const styles = StyleSheet.create({
-
   container: {
-
     flex: 1,
-
   },
-
   backgroundImage: {
-
     flex: 1,
-
     resizeMode: 'cover',
-
-    justifyContent: 'center',
-
   },
-
   filterContainer: {
-  
-    flexDirection: 'row',
-  
-    alignItems: 'center',
-  
+    padding: 16,
     backgroundColor: 'black',
-  
-    marginVertical: 10,
-  
-    padding: 15,
-  
+    borderBottomColor: 'yellow',
+    borderWidth: 2,
   },
-  
   filterText: {
-  
-    fontSize: 18,
-  
-    marginLeft: 10,
-  
+    fontSize: 20,
     fontWeight: 'bold',
-  
-    color: 'white',
-  
-    marginRight: 20,
-  
+    color: 'white'
   },
-  
-  picker: {
-  
-    flex: 1,
-  
-    height: 40,
-  
-    color: 'black',
-   
-    backgroundColor: 'yellow',
-  },
-
-  firstCategoriaContainer: {
-
-    marginTop: 20, 
-
-  },
-
-  categoriaContainer: {
-
-    backgroundColor: 'black',
-
+  zonasContainer: {
     flexDirection: 'row',
-
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    marginVertical: 16,
+  },
+  zonaContainer: {
     alignItems: 'center',
-
-    padding: 20,
-
-    marginBottom: 10,
-
-    borderColor: 'yellow',
-
-    borderWidth: 3,
-
+    margin: 2,
+    backgroundColor: 'rgba(0, 0, 0, 0.93)',
+    borderRadius: 8,
   },
-
-  categoriaImage: {
-
-    width: 50,
-
-    height: 50,
-
-    marginRight: 20,
-
+  zonaImage: {
+    width: 180,
+    height: 230,
   },
-
-  categoriaText: {
-
-    color: 'white',
-
-    fontSize: 18,
-
-    fontWeight: 'bold',
-
-  },
-
-  rutinaContainer: {
-
-    backgroundColor: 'yellow',
-
-    flexDirection: 'row',
-
-    borderColor: 'black',
-
-    width: '100%',
-
-    marginLeft: 0,
-
-    borderWidth: 7,
-
-    padding: 20,
-
-    marginBottom: 10,
-
-  },
-
-  rutinaText: {
-
-    color: 'black',
-
+  zonaText: {
     fontSize: 16,
-
-    fontWeight: 'bold',
-
   },
-
+  rutinasContainer: {
+    marginTop: 16,
+    padding: 16,
+  },
+  rutinasText: {
+    fontSize: 20,
+    padding: 20,
+    fontWeight: 'bold',
+    backgroundColor: 'black',
+    color: 'white',
+    borderBottomColor: 'yellow',
+    borderWidth: 2,
+    marginBottom: 8,
+  },
+  rutinaContainer: {
+    alignItems: 'center',
+    marginVertical: 8,
+    padding: 16,
+    backgroundColor: 'rgba(0, 0, 0, 0.41)',
+    borderRadius: 8,
+  },
+  rutinaImage: {
+    width: 90, // Ajusta el ancho según tus necesidades
+    height: 90, // Ajusta la altura según tus necesidades
+    marginBottom: 8,
+  },
+  rutinaText: {
+    fontSize: 18,
+    color: 'white',
+    fontWeight: 'bold'
+  },
 });
 
 export default GymComponente;

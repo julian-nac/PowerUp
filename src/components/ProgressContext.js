@@ -43,6 +43,34 @@ export const ProgressProvider = ({ children }) => {
   const [progresoAbdomen, setProgresoAbdomen] = useState(0);
 
 
+  const AsyncStorageKeys = {
+    Progreso: 'progreso',
+    ProgresoBrazos: 'progresoBrazos',
+    ProgresoPierna: 'progresoPierna',
+    ProgresoCuerpo: 'progresoCuerpo',
+    ProgresoPecho: 'progresoPecho',
+    ProgresoEspalda: 'progresoEspalda',
+    ProgresoAbdomen: 'progresoAbdomen',
+  };
+
+  const cargarProgreso = async (key, setProgreso) => {
+    try {
+      const progresoGuardado = await AsyncStorage.getItem(key);
+      if (progresoGuardado) {
+        setProgreso(parseInt(progresoGuardado, 10));
+      }
+    } catch (error) {
+      console.error(`Error al cargar ${key} desde AsyncStorage:`, error);
+    }
+  };
+
+  const guardarProgreso = async (key, nuevoProgreso) => {
+    try {
+      await AsyncStorage.setItem(key, nuevoProgreso.toString());
+    } catch (error) {
+      console.error(`Error al guardar ${key} en AsyncStorage:`, error);
+    }
+  };
   
   const marcarRutinaCompletadaDiaria = async (dia) => {
   
@@ -133,6 +161,27 @@ export const ProgressProvider = ({ children }) => {
     setCategoriaActual(nuevaCategoria);
 
   };
+
+  useEffect(() => {
+    cargarProgreso(AsyncStorageKeys.Progreso, setProgreso);
+    cargarProgreso(AsyncStorageKeys.ProgresoBrazos, setProgresoBrazos);
+    cargarProgreso(AsyncStorageKeys.ProgresoPierna, setProgresoPierna);
+    cargarProgreso(AsyncStorageKeys.ProgresoCuerpo, setProgresoCuerpo);
+    cargarProgreso(AsyncStorageKeys.ProgresoPecho, setProgresoPecho);
+    cargarProgreso(AsyncStorageKeys.ProgresoEspalda, setProgresoEspalda);
+    cargarProgreso(AsyncStorageKeys.ProgresoAbdomen, setProgresoAbdomen);
+  }, []);
+
+  useEffect(() => {
+    guardarProgreso(AsyncStorageKeys.Progreso, progreso)
+    guardarProgreso(AsyncStorageKeys.ProgresoBrazos, progresoBrazos);
+    guardarProgreso(AsyncStorageKeys.ProgresoPierna, progresoPierna);
+    guardarProgreso(AsyncStorageKeys.ProgresoCuerpo, progresoCuerpo);
+    guardarProgreso(AsyncStorageKeys.ProgresoPecho, progresoPecho);
+    guardarProgreso(AsyncStorageKeys.ProgresoEspalda, progresoEspalda);
+    guardarProgreso(AsyncStorageKeys.ProgresoAbdomen, progresoAbdomen);
+  }, [progreso, progresoBrazos, progresoPierna, progresoCuerpo, progresoPecho, progresoEspalda, progresoAbdomen]);
+
 
   return (
 

@@ -22,7 +22,7 @@ const CasaComponente = () => {
    
     setZonaSeleccionada(zona);
    
-    scrollViewRef.current?.scrollTo({ y: 1000, animated: true });
+    scrollViewRef.current?.scrollTo({ y: 800, animated: true });
   
   };
 
@@ -33,92 +33,57 @@ const CasaComponente = () => {
   };
 
   return (
-  
-  <View style={styles.container}>
-  
+    <View style={styles.container}>
       <ImageBackground
-  
-      source={require('../../assets/images/Fondo-pantalla-metal.jpg')}
-      
-      style={styles.backgroundImage}
-      
+        source={require('../../assets/images/Fondo-pantalla-metal.jpg')}
+        style={styles.backgroundImage}
       >
-      
         <ScrollView ref={scrollViewRef}>
-      
           <View style={styles.filterContainer}>
-      
             <Text style={styles.filterText}>Seleccionar Zona:</Text>
-      
           </View>
 
-
           <View style={styles.zonasContainer}>
-
             {zonasUnicas.map((zona, index) => (
-
-          <TouchableOpacity
-          
-          key={index}
-          
-          style={styles.zonaContainer}
-          
-          onPress={() => handleZonaPress(zona)}
-          
-          >
-          
-          <Image source={{ uri: rutinas.find((rutina) => rutina.zona === zona)?.banner }} style={styles.zonaImage} />
-    
-          </TouchableOpacity>
-
-          ))}
-          
+              <TouchableOpacity
+                key={index}
+                style={styles.zonaContainer}
+                onPress={() => handleZonaPress(zona)}
+              >
+                <Image source={{ uri: rutinas.find((rutina) => rutina.zona === zona)?.banner }} style={styles.zonaImage} />
+              </TouchableOpacity>
+            ))}
           </View>
 
           {zonaSeleccionada && (
-          
-          <View style={styles.rutinasContainer}>
-          
+            <View style={styles.rutinasContainer}>
               <Text style={styles.rutinasText}>{`Rutinas para ${zonaSeleccionada}:`}</Text>
-          
-              {rutinas
-          
-          .filter((rutina) => rutina.zona === zonaSeleccionada)
-          
-          .map((rutina, index) => (
-          
-            <TouchableOpacity
-          
-            key={index}
-          
-            style={styles.rutinaContainer}
-          
-            onPress={() => handleRutinaPress(rutina)}
-          
-          >
-          
-          <Image source={{ uri: rutina.imagen }} style={styles.rutinaImage} />
-          
-          <Text style={styles.rutinaText}>{`Ejercicios: ${rutina.ejercicios.length}`}</Text>
-          
-          <Text style={styles.rutinaText}>{`Categoría: ${rutina.categoria}`}</Text>
-          
-         </TouchableOpacity>
-  
-          ))}
-          
-            </View>
-          
-          )}
-        
-        </ScrollView>
-      
-      </ImageBackground>
-    
-    </View>
-  
-  );
 
+              {rutinas
+                .filter((rutina) => rutina.zona === zonaSeleccionada)
+                .map((rutina, index) => (
+                  <TouchableOpacity
+                    key={index}
+                    style={styles.rutinaContainer}
+                    onPress={() => handleRutinaPress(rutina)}
+                  >
+                    <Image source={{ uri: rutina.imagen }} style={styles.rutinaImage} />
+                    <Text style={styles.rutinaText}>{`Ejercicios: ${rutina.ejercicios.length}`}</Text>
+                    <Text style={styles.rutinaText}>{`Categoría: ${rutina.categoria}`}</Text>
+                  </TouchableOpacity>
+                ))}
+              
+              {rutinas
+                .filter((rutina) => rutina.zona === zonaSeleccionada)
+                .length === 0 && (
+                  <Text style={styles.rutinaText}>No hay rutinas disponibles para esta zona.</Text>
+                )}
+            </View>
+          )}
+        </ScrollView>
+      </ImageBackground>
+    </View>
+  );
 };
 
 
@@ -160,9 +125,14 @@ const styles = StyleSheet.create({
   zonaText: {
     fontSize: 16,
   },
-  rutinasContainer: {
-    marginTop: 16,
+  rutinaContainer: {
+    alignItems: 'center',
+    marginVertical: 8,
     padding: 16,
+    backgroundColor: 'rgba(0, 0, 0, 0.41)',
+    borderRadius: 8,
+    marginRight: 10,
+    width: 120, // Ancho ajustado
   },
   rutinasText: {
     fontSize: 20,
