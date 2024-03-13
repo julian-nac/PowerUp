@@ -7,6 +7,8 @@ import moment from 'moment';
 
 import Sound from 'react-native-sound'
 
+import Gif from 'react-native-gif'
+
 import 'moment/locale/es';
 
 import { useProgress } from './ProgressContext';
@@ -138,10 +140,10 @@ const DetallesRutina = ({ route, navigation }) => {
         <View style={styles.modalBackground}>
         <View style={styles.modalContainer}>
           <View style={styles.modalContent}>
-            <Image
-              source={require('../../assets/images/trophy.png')}
-              style={styles.trofeoLogo}
-            />
+          <Gif
+        source={require('../../assets/images/trophy.gif')}
+        style={{ width: 200, height: 200 }}
+      />
             <Text style={styles.congratsText}>¡Felicitaciones! Progreso guardado</Text>
             <TouchableHighlight
               style={styles.volverButton}
@@ -310,16 +312,16 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContent: {
-    backgroundColor: 'black',
+    backgroundColor: '#1d1e21',
     borderColor: 'white',
     borderWidth: 5,
     borderRadius: 10,
-    padding: 110,
+    padding: 10,
     alignItems: 'center',
     elevation: 5,
   },
   trofeoLogo: {
-    width: 150,
+    width: 350,
     height: 150,
     marginBottom: 20,
   },

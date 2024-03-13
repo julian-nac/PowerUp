@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { View, Image, StyleSheet, Dimensions } from 'react-native';
-import Carousel from 'react-native-banner-carousel';
-import { LogBox } from 'react-native';
+import Swiper from 'react-native-swiper';
 
 const BannerCarousel = () => {
   const BannerWidth = Dimensions.get('window').width;
@@ -14,30 +13,37 @@ const BannerCarousel = () => {
     require('../../assets/images/Banner-3.webp'),
   ];
 
+  const swiperRef = useRef(null);
+
   useEffect(() => {
-    // Oculta la advertencia específica sobre `useNativeDriver`
-    LogBox.ignoreLogs(['Animated: `useNativeDriver` was not specified.']);
+    const autoplayTimer = setInterval(() => {
+      // Cambia a la siguiente imagen cada 5 segundos
+      if (swiperRef.current) {
+        swiperRef.current.scrollBy(1);
+      }
+    }, 5000);
+
+    return () => {
+      clearInterval(autoplayTimer);
+    };
   }, []);
 
   return (
     <View style={styles.container}>
-      <Carousel
+      <Swiper
+        ref={swiperRef}
         autoplay
         autoplayTimeout={5000}
         loop
         index={0}
-        pageSize={BannerWidth}
-        pageIndicatorContainerStyle={{ display: 'none' }}  // Intenta ocultar los puntos indicadores
+        paginationStyle={{ display: 'none' }}
       >
         {images.map((image, index) => (
           <View key={index}>
-            <Image
-              style={{ width: BannerWidth, height: BannerHeight }}
-              source={image}
-            />
+            <Image style={{ width: BannerWidth, height: BannerHeight }} source={image} />
           </View>
         ))}
-      </Carousel>
+      </Swiper>
     </View>
   );
 };

@@ -295,7 +295,7 @@ const styles = StyleSheet.create({
 
     marginBottom: 60,
     
-    marginLeft: 20,
+    marginLeft: 10,
     
     backgroundColor: 'yellow',
     
@@ -307,7 +307,7 @@ const styles = StyleSheet.create({
 
     borderWidth: 5,
     
-    width: '90%',
+    width: '95%',
   
   },
 
