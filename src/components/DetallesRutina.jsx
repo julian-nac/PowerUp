@@ -30,7 +30,9 @@ const DetallesRutina = ({ route, navigation }) => {
   
   const sound = new Sound(soundFile, Sound.MAIN_BUNDLE, (error) => {
    
-    if(error) {
+    if
+    
+    (error) {
    
       console.error
    
@@ -99,8 +101,19 @@ const DetallesRutina = ({ route, navigation }) => {
   };
 
   const handleCloseModal = () => {
+ 
     setShowCongratsModal(false);
+ 
     navigation.navigate('Inicio');
+ 
+  };
+
+  const handleCloseModalRut = () => {
+ 
+    setShowCongratsModal(false);
+ 
+    navigation.navigate('Place');
+ 
   };
 
 
@@ -130,30 +143,74 @@ const DetallesRutina = ({ route, navigation }) => {
     >
 
     <Modal
-        animationType="slide"
-        transparent={true}
-        visible={showCongratsModal}
-        onRequestClose={() => {
-          setShowCongratsModal(!showCongratsModal);
-        }}
-      >
+ 
+    animationType="slide"
+ 
+    transparent={true}
+    
+    visible={showCongratsModal}
+    
+    onRequestClose={() => {
+    
+      setShowCongratsModal(!showCongratsModal);
+    
+    }}
+    
+    >
+    
         <View style={styles.modalBackground}>
+    
         <View style={styles.modalContainer}>
+    
           <View style={styles.modalContent}>
+    
           <Gif
-        source={require('../../assets/images/trophy.gif')}
-        style={{ width: 200, height: 200 }}
-      />
-            <Text style={styles.congratsText}>¡Felicitaciones! Progreso guardado</Text>
+    
+          source={require('../../assets/images/trophy.gif')}
+        
+          style={{ width: 300, height: 250}}
+      
+          />
+          
+            <Text style={styles.congratsText}>¡Rutina Completada!</Text>
+          
+            <Text style={styles.congratsText}>% Progreso Guardado %</Text>
+
+              
+          <View style={styles.buttonContainer}>
+          
             <TouchableHighlight
-              style={styles.volverButton}
-              onPress={handleCloseModal}
+          
+            style={styles.volverButton}
+          
+            onPress={handleCloseModal}
+          
             >
-              <Text style={styles.volverButtonText}>Volver a Inicio</Text>
+            
+            <Text style={styles.volverButtonText}>Volver a Inicio</Text>
+
             </TouchableHighlight>
+          
+            <TouchableHighlight
+          
+            style={styles.volverButton}
+            
+            onPress={handleCloseModalRut}
+            
+            >
+            
+            <Text style={styles.volverButtonText}>Volver a Rutina</Text>
+
+            </TouchableHighlight>
+      
+            </View>
+             
           </View>
+        
         </View>
+        
         </View>
+      
       </Modal>
 
       <View style={styles.header}>
@@ -299,48 +356,103 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   
   },
+
+  buttonContainer: {
+ 
+    flexDirection: 'row',
+ 
+  },
   
   modalContainer: {
+ 
     flex: 1,
+ 
     justifyContent: 'center',
+ 
     alignItems: 'center',
+ 
   },
+ 
   modalBackground: {
+ 
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.8)', // Ajusta el último valor para cambiar la opacidad
+ 
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+ 
     justifyContent: 'center',
+ 
     alignItems: 'center',
+ 
   },
+ 
   modalContent: {
+ 
     backgroundColor: '#1d1e21',
+ 
     borderColor: 'white',
+ 
     borderWidth: 5,
+ 
     borderRadius: 10,
+
     padding: 10,
+
     alignItems: 'center',
+
     elevation: 5,
+
   },
+
   trofeoLogo: {
+
     width: 350,
+
     height: 150,
+
     marginBottom: 20,
+
   },
+
   congratsText: {
+
     fontSize: 20,
+
     fontWeight: 'bold',
+
     textAlign: 'center',
-    marginBottom: 20,
+
+    marginBottom: 10,
+
   },
+
   volverButton: {
-    backgroundColor: '#3498db',
-    padding: 10,
+
+    backgroundColor: 'yellow',
+
+    paddingVertical: 10,
+
+    paddingHorizontal: 20,
+
     borderRadius: 5,
+
+    marginRight: 10,
+
+    marginLeft: 10,
+
+    marginTop: 20,
+
   },
+
   volverButtonText: {
-    color: 'white',
+
+    color: 'black',
+
     fontWeight: 'bold',
+
     textAlign: 'center',
+
   },
+  
   imagen: {
   
     width: 300,
