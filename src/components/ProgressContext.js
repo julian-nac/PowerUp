@@ -128,10 +128,37 @@ export const ProgressProvider = ({ children }) => {
       if (datosGuardados) {
   
         const parsedData = JSON.parse(datosGuardados);
-  
+
+        const ahora = new Date();
+
+        const diaSemana = ahora.getDay();
+
+        if (diaSemana === 1) {
+          
+          setRutinaCompletadaDiaria({
+          
+            Lunes: false,
+          
+            Martes: false,
+          
+            Miércoles: false,
+          
+            Jueves: false,
+          
+            Viernes: false,
+          
+            Sábado: false,
+          
+            Domingo: false,
+         
+          });
+        } else {
+            
         console.log('Datos cargados desde AsyncStorage:', parsedData);
   
         setRutinaCompletadaDiaria(parsedData);
+        
+      }
   
       }
   

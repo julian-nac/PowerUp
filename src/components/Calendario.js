@@ -10,6 +10,25 @@ const Calendario = () => {
     setEstadoRutina(rutinaCompletadaDiaria);
   }, [rutinaCompletadaDiaria]);
 
+  useEffect(() => {
+    const reiniciarRutina = () => {
+      const ahora = new Date();
+      const diaSemana = ahora.getDay();
+      if (diaSemana === 1) {
+        setEstadoRutina({
+          lunes: false,
+          martes: false,
+          miércoles: false,
+          jueves: false,
+          viernes: false,
+          sábado: false,
+          domingo: false,
+        })
+      }
+    }
+    reiniciarRutina()
+  }, [])
+
   console.log('Estado actual de rutinaCompletadaDiaria:', estadoRutina);
 
   const díasSemana = ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'];
