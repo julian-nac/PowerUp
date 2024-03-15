@@ -1,13 +1,16 @@
 
 import React, { useState, useEffect } from 'react';
 
-import { View, Text, TextInput, TouchableOpacity, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, ActivityIndicator, StyleSheet, LogBox } from 'react-native';
 
 import { getFirestore, collection, getDocs, updateDoc, doc } from 'firebase/firestore';
 
 import { useNavigation } from '@react-navigation/native';
 
 import { Image } from 'react-native-elements';
+
+LogBox.ignoreLogs(['Non-serializable values were found in the navigation state']);
+
 
 
 const EditarDatos = () => {
@@ -429,9 +432,9 @@ const styles = StyleSheet.create({
   
     editButton: {
   
-      backgroundColor: 'black',
+      backgroundColor: 'yellow',
   
-      borderColor: 'yellow',
+      borderColor: 'black',
   
       borderWidth: 2,
   
@@ -461,7 +464,7 @@ const styles = StyleSheet.create({
   
     buttonText: {
   
-      color: 'white',
+      color: 'black',
   
       fontSize: 15,
   

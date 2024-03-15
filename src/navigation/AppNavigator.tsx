@@ -22,6 +22,8 @@ import InicioScreen from '../screens/InicioScreen';
 
 import EditarDatosScreen from '../screens/EditarDatosScreen';
 
+import InformeScreen from '../screens/InformeScreen';
+
 import { ProgressProvider } from '../components/ProgressContext';
 
 const Stack = createNativeStackNavigator();
@@ -53,6 +55,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Park" component={ParkScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Rutina" component={RutinaScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="Informe" component={InformeScreen} options={{ headerShown: false }} />
 
       </Stack.Navigator>
 

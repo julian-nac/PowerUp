@@ -40,69 +40,44 @@ const InicioComponente = () => {
   const [activeSection, setActiveSection] = useState('perfil');
 
   useEffect(() => {
-
+   
     if (categoriaActual === 'Brazos') {
-
-      setProgresoBrazos(progresoBrazos + 1);
-  
-    }
-  
-  }, [categoriaActual, progresoBrazos]);
-
-  useEffect(() => {
-
-    if (categoriaActual === 'Piernas') {
-
-      setProgresoPierna(progresoPierna + 1)
-  
-    }
-  
-  }, [categoriaActual, progresoPierna])
-
-  useEffect(() => {
-
-    if (categoriaActual === 'Cuerpo Completo') {
-
-      setProgresoCuerpo(progresoCuerpo + 1)
-    }
-  
-  }, [categoriaActual, progresoCuerpo])
-
-  useEffect(() => {
-
-    if (categoriaActual === 'Pecho') {
-
-      setProgresoPecho(progresoPecho + 1)
-    }
-  
-  }, [categoriaActual, progresoPecho])
-
-  useEffect(() => {
-
-    if (categoriaActual === 'Espalda') {
-
-      setProgresoEspalda(progresoEspalda + 1)
-    }
-  
-  }, [categoriaActual, progresoEspalda])
-
-  useEffect(() => {
-
-    if (categoriaActual === 'Abdomen') {
-
-      setProgresoAbdomen(progresoAbdomen + 1)
-    }
-  }, [categoriaActual, progresoAbdomen])
-
-  useEffect(() => {
    
+      setProgresoBrazos((prevProgress) => prevProgress + 1);
+   
+    } else if (categoriaActual === 'Piernas') {
+   
+      setProgresoPierna((prevProgress) => prevProgress + 1);
+   
+    } else if (categoriaActual === 'Cuerpo Completo') {
+   
+      setProgresoCuerpo((prevProgress) => prevProgress + 1);
+   
+    } else if (categoriaActual === 'Pecho') {
+   
+      setProgresoPecho((prevProgress) => prevProgress + 1);
+   
+    } else if (categoriaActual === 'Espalda') {
+   
+      setProgresoEspalda((prevProgress) => prevProgress + 1);
+   
+    } else if (categoriaActual === 'Abdomen') {
+   
+      setProgresoAbdomen((prevProgress) => prevProgress + 1);
+   
+    }
+  
+  }, [categoriaActual, setProgresoBrazos, setProgresoPierna, setProgresoCuerpo, setProgresoPecho, setProgresoEspalda, setProgresoAbdomen]);
+
+  useEffect(() => {
+  
     if (categoriaActual) {
-
-      actualizarProgreso(progreso + 1, null);
-   
+  
+      actualizarProgreso((prevProgress) => prevProgress + 1, null);
+  
     }
   
-  }, [categoriaActual, progreso]);
+  }, [categoriaActual, actualizarProgreso]);
 
   const handleSectionPress = (section) => {
   
