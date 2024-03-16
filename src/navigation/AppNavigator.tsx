@@ -24,6 +24,8 @@ import EditarDatosScreen from '../screens/EditarDatosScreen';
 
 import InformeScreen from '../screens/InformeScreen';
 
+import AlarmScreen from '../screens/AlarmScreen';
+
 import { ProgressProvider } from '../components/ProgressContext';
 
 const Stack = createNativeStackNavigator();
@@ -57,6 +59,8 @@ const AppNavigator = () => {
         <Stack.Screen name="Rutina" component={RutinaScreen} options={{ headerShown: false }} />
 
         <Stack.Screen name="Informe" component={InformeScreen} options={{ headerShown: false }} />
+
+        <Stack.Screen name="Alarm" component={AlarmScreen} options={{ headerShown: false }} />
 
       </Stack.Navigator>
 

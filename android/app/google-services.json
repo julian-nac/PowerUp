@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "142391244346",
+    "firebase_url": "https://powerup-46206-default-rtdb.firebaseio.com",
+    "project_id": "powerup-46206",
+    "storage_bucket": "powerup-46206.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142391244346:android:3bde3c2df376d560f42703",
+        "android_client_info": {
+          "package_name": "com.powerup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142391244346-gn6oqm9di767g057c9hq557uajelpiqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3SRa5v-MPVDK5L2EmMvj5ViquD5W_8x4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142391244346-gn6oqm9di767g057c9hq557uajelpiqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

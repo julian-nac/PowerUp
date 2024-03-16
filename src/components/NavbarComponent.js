@@ -64,6 +64,15 @@ const fetchUserData = async () => {
 
   };
 
+  const handleAlarm = () => {
+
+    navigation.navigate('Alarm');
+
+    setMenuVisible(false);
+
+  };
+
+
   return (
     
     <View style={styles.navbar}>
@@ -176,7 +185,7 @@ const fetchUserData = async () => {
 
           <View style={styles.userDataContainer}>
     
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleAlarm}>
     
               <Text style={styles.editUserDataText}>Alarmas</Text>
     
