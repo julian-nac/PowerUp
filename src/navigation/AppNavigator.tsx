@@ -26,6 +26,10 @@ import InformeScreen from '../screens/InformeScreen';
 
 import AlarmScreen from '../screens/AlarmScreen';
 
+import VolumenScreen from '../screens/VolumenScreen';
+
+import { SoundVolumeProvider } from '../components/SoundContext';
+
 import { ProgressProvider } from '../components/ProgressContext';
 
 const Stack = createNativeStackNavigator();
@@ -35,6 +39,8 @@ const AppNavigator = () => {
   return (
 
 <NavigationContainer>
+
+  <SoundVolumeProvider>
 
   <ProgressProvider>
 
@@ -62,9 +68,13 @@ const AppNavigator = () => {
 
         <Stack.Screen name="Alarm" component={AlarmScreen} options={{ headerShown: false }} />
 
+        <Stack.Screen name="Volumen" component={VolumenScreen} options={{ headerShown: false }} />
+
       </Stack.Navigator>
 
   </ProgressProvider>
+  
+  </SoundVolumeProvider>
 
 </NavigationContainer>
 

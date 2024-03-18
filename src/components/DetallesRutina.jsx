@@ -13,6 +13,8 @@ import 'moment/locale/es';
 
 import { useProgress } from './ProgressContext';
 
+import { useSoundVolume } from './SoundContext';
+
 
 const DetallesRutina = ({ route, navigation }) => {
 
@@ -23,6 +25,9 @@ const DetallesRutina = ({ route, navigation }) => {
   const [showCongratsModal, setShowCongratsModal] = useState(false)
 
   const { progreso, actualizarProgreso, marcarRutinaCompletadaDiaria} = useProgress()
+
+  const { volume } = useSoundVolume()
+
 
   moment.locale('es'); 
 
@@ -54,6 +59,8 @@ const DetallesRutina = ({ route, navigation }) => {
     if (indiceEjercicio < rutina.ejercicios.length - 1) {
   
       setIndiceEjercicio(indiceEjercicio + 1);
+
+      sound.setVolume(volume)
 
       sound.play()
   

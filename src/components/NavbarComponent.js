@@ -72,6 +72,13 @@ const fetchUserData = async () => {
 
   };
 
+  const handleVolumen = () => {
+
+    navigation.navigate('Volumen');
+
+    setMenuVisible(false);
+
+  };
 
   return (
     
@@ -191,7 +198,7 @@ const fetchUserData = async () => {
     
             </TouchableOpacity>
     
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleVolumen}>
     
               <Text style={styles.editUserDataText}>Sonido</Text>
     
