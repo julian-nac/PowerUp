@@ -19,40 +19,40 @@ const Calendario = () => {
   }, [rutinaCompletadaDiaria]);
 
   useEffect(() => {
-
+  
     const reiniciarRutina = () => {
-
+  
       const ahora = new Date();
-
+  
       const diaSemana = ahora.getDay();
-
-      if (diaSemana === 1) {
-
+  
+      if (diaSemana === 1 && !rutinaCompletadaDiaria.lunes) {
+  
         setEstadoRutina({
-
+  
           lunes: false,
-
+  
           martes: false,
-
+  
           miércoles: false,
-
+  
           jueves: false,
-
+  
           viernes: false,
-
+  
           sábado: false,
-
+  
           domingo: false,
-
-        })
-
+  
+        });
+  
       }
-
-    }
-
-    reiniciarRutina()
-
-  }, [])
+  
+    };
+  
+    reiniciarRutina();
+ 
+  }, [rutinaCompletadaDiaria]);
 
   console.log('Estado actual de rutinaCompletadaDiaria:', estadoRutina);
 

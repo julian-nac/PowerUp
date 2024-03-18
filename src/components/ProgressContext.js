@@ -118,59 +118,85 @@ export const ProgressProvider = ({ children }) => {
   
   };
 
-
-  const cargarRutinaCompletadaDiaria = async () => {
+  const getWeek = (date) => {
   
-    try {
+    const onejan = new Date(date.getFullYear(), 0, 1);
   
-      const datosGuardados = await AsyncStorage.getItem('rutinaCompletadaDiaria');
+    const millisecsInDay = 86400000;
   
-      if (datosGuardados) {
-  
-        const parsedData = JSON.parse(datosGuardados);
-
-        const ahora = new Date();
-
-        const diaSemana = ahora.getDay();
-
-        if (diaSemana === 1) {
-          
-          setRutinaCompletadaDiaria({
-          
-            Lunes: false,
-          
-            Martes: false,
-          
-            Miércoles: false,
-          
-            Jueves: false,
-          
-            Viernes: false,
-          
-            Sábado: false,
-          
-            Domingo: false,
-         
-          });
-        } else {
-            
-        console.log('Datos cargados desde AsyncStorage:', parsedData);
-  
-        setRutinaCompletadaDiaria(parsedData);
-        
-      }
-  
-      }
-  
-    } catch (error) {
-  
-      console.error('Error al cargar datos desde AsyncStorage:', error);
-  
-    }
+    return Math.ceil(((date - onejan) / millisecsInDay + onejan.getDay() + 1) / 7);
   
   };
 
-  useEffect(() => {
+const cargarRutinaCompletadaDiaria = async () => {
+
+  try {
+
+    const datosGuardados = await AsyncStorage.getItem('rutinaCompletadaDiaria');
+
+    if (datosGuardados) {
+
+      const parsedData = JSON.parse(datosGuardados);
+
+      const ahora = new Date();
+
+      const diaSemana = ahora.getDay();
+
+      const diaActual = ahora.toLocaleDateString('es-ES', { weekday: 'long' });
+
+      const semanaActual = getWeek(ahora);
+
+      const añoActual = ahora.getFullYear();
+
+      const rutinaCompletadaHoy = parsedData[diaActual];
+
+      const ultimaSemanaRegistrada = parsedData['semana'] || 0;
+
+      const ultimoAñoRegistrado = parsedData['año'] || 0;
+
+      if ((semanaActual !== ultimaSemanaRegistrada || añoActual !== ultimoAñoRegistrado) && diaSemana === 1) {
+
+        setRutinaCompletadaDiaria({
+
+          semana: semanaActual,
+
+          año: añoActual,
+
+          Lunes: false,
+
+          Martes: false,
+
+          Miércoles: false,
+
+          Jueves: false,
+
+          Viernes: false,
+
+          Sábado: false,
+
+          Domingo: false,
+
+        });
+
+      } else {
+
+        console.log('Datos cargados desde AsyncStorage:', parsedData);
+
+        setRutinaCompletadaDiaria(parsedData);
+
+      }
+
+    }
+
+  } catch (error) {
+
+    console.error('Error al cargar datos desde AsyncStorage:', error);
+
+  }
+
+};
+
+useEffect(() => {
   
     cargarRutinaCompletadaDiaria();
   

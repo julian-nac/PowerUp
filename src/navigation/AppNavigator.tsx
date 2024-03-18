@@ -39,10 +39,10 @@ const AppNavigator = () => {
   return (
 
 <NavigationContainer>
+  
+    <ProgressProvider>
 
-  <SoundVolumeProvider>
-
-  <ProgressProvider>
+    <SoundVolumeProvider>
 
       <Stack.Navigator initialRouteName="Login">
 
@@ -71,10 +71,11 @@ const AppNavigator = () => {
         <Stack.Screen name="Volumen" component={VolumenScreen} options={{ headerShown: false }} />
 
       </Stack.Navigator>
+      
+    
+    </SoundVolumeProvider>
 
   </ProgressProvider>
-  
-  </SoundVolumeProvider>
 
 </NavigationContainer>
 
