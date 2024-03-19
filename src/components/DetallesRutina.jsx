@@ -1,7 +1,7 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-import { View, Text, TouchableOpacity, Image, StyleSheet, ImageBackground, Modal, TouchableHighlight } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet, ImageBackground, Modal, TouchableHighlight} from 'react-native';
 
 import moment from 'moment'; 
 
@@ -28,6 +28,12 @@ const DetallesRutina = ({ route, navigation }) => {
 
   const { volume } = useSoundVolume()
 
+  const [showRestModal, setShowRestModal] = useState(false);
+
+  const [restTime, setRestTime] = useState(15); // Tiempo de descanso en segundos
+  
+  let restInterval; 
+
 
   moment.locale('es'); 
 
@@ -44,6 +50,36 @@ const DetallesRutina = ({ route, navigation }) => {
     }
   
   })
+
+  useEffect(() => {
+    if (showRestModal) {
+      setRestTime(15); // Reiniciar el tiempo de descanso cada vez que se muestra el modal
+      startRestTimer(); // Comenzar el temporizador de descanso al mostrar el modal
+    } else {
+      clearInterval(restInterval); // Limpiar el intervalo cuando el modal se oculta
+    }
+    // Función de limpieza para detener el temporizador cuando el componente se desmonta
+    return () => clearInterval(restInterval);
+  }, [showRestModal]);
+
+  const startRestTimer = () => {
+    restInterval = setInterval(() => {
+      setRestTime(prevRestTime => {
+        if (prevRestTime > 0) {
+          return prevRestTime - 1; // Reducir el tiempo de descanso cada segundo
+        } else {
+          handleCloseRestModal(); // Cerrar el modal cuando el tiempo de descanso llegue a cero
+          return prevRestTime;
+        }
+      });
+    }, 1000);
+  };
+
+  const handleCloseRestModal = () => {
+    clearInterval(restInterval); // Limpiar el intervalo
+    setShowRestModal(false); // Ocultar el modal de descanso
+    // Realizar las acciones necesarias para avanzar al siguiente ejercicio
+  };
 
   const handleEjercicioSiguiente = () => {
     
@@ -63,6 +99,8 @@ const DetallesRutina = ({ route, navigation }) => {
       sound.setVolume(volume)
 
       sound.play()
+
+      setShowRestModal(true);
   
     } else {
   
@@ -148,6 +186,19 @@ const DetallesRutina = ({ route, navigation }) => {
         style={styles.backgroundImage}
 
     >
+<Modal animationType="slide" transparent={true} visible={showRestModal}>
+  <View style={styles.modalContainerTimer}>
+    <View style={styles.modalContentTimer}>
+    <Text style={styles.counterTextTimer}>{restTime.toString().padStart(2, '0')}</Text>
+      <View style={styles.circleContainer}>
+        <View style={[styles.circleProgress, { borderBottomColor: restTime > 0 ? 'black' : 'transparent', borderBottomWidth: restTime > 0 ? restTime * 10 : 0 }]} />
+      </View>
+      <TouchableOpacity onPress={handleCloseRestModal} style={styles.closeButtonTimer}>
+        <Text style={styles.closeButtonTextTimer}>Continuar</Text>
+      </TouchableOpacity>
+    </View>
+  </View>
+</Modal>
 
     <Modal
  
@@ -330,6 +381,60 @@ const styles = StyleSheet.create({
   
   },
 
+  modalContainerTimer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Fondo oscuro semi-transparente
+  },
+  modalContentTimer: {
+    backgroundColor: '#fff', // Fondo blanco para el contenido del modal
+    padding: 20,
+    alignItems: 'center',
+    borderRadius: 20, // Borde redondeado para el contenido del modal
+  },
+  counterTextTimer: {
+    zIndex: 1000,
+    fontSize: 50,
+    color: '#fff', // Color blanco para el texto
+    fontWeight: 'bold', // Texto en negrita
+    position: 'absolute', // Posición absoluta para superponer el texto
+    top: '40%', // Centrar verticalmente
+    left: '33%', // Centrar horizontalmente
+    transform: [{ translateX: -25 }, { translateY: -25 }], // Centrar exactamente
+    textShadowColor: '#000', // Sombra del texto en negro
+    textShadowOffset: { width: 1, height: 1 }, // Desplazamiento de la sombra del texto
+    textShadowRadius: 5, // Radio de la sombra del texto
+  },
+  circleContainer: {
+    width: 200,
+    height: 200,
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 20,
+    backgroundColor: '#f8c836', // Fondo amarillo para el círculo
+    borderWidth: 5, // Grosor del borde del círculo
+    borderColor: '#fff', // Color del borde del círculo (blanco)
+    position: 'relative', // Asegurar que los elementos absolutos se posicionen en relación con este contenedor
+  },
+  circleProgress: {
+    width: 160,
+    height: 160,
+    borderRadius: 80,
+    backgroundColor: '#fff', // Fondo blanco para el progreso del círculo
+  },
+  closeButtonTimer: {
+    backgroundColor: '#f8c836',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 20,
+    marginTop: 20,
+  },
+  closeButtonTextTimer: {
+    color: '#000',
+    fontSize: 16,
+  },
   arrowButtonLeft: {
   
     position: 'absolute',
