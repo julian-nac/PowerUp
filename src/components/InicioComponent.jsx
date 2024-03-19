@@ -109,7 +109,7 @@ const InicioComponente = () => {
   
         <View style={styles.encabezado}>
   
-        <Text style={styles.encabezadoTexto}>Progreso General: {progreso} experiencia</Text>
+        <Text style={styles.encabezadoTexto}>Progreso General: {progreso} exp.</Text>
     
         </View>
 

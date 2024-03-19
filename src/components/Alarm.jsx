@@ -12,80 +12,96 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const ExerciseAlarmComponent = () => {
-
+  
   const [alarmTime, setAlarmTime] = useState(new Date());
-
+  
   const [showPicker, setShowPicker] = useState(false);
-
+  
   const navigation = useNavigation();
 
-
   useEffect(() => {
-
+  
     retrieveAlarmTime();
-
+  
   }, []);
 
   const retrieveAlarmTime = async () => {
-
+  
     try {
-
+  
       const value = await AsyncStorage.getItem('alarmTime');
-
+  
       if (value !== null) {
-
+  
         setAlarmTime(new Date(value));
-
+  
       }
-
+  
     } catch (error) {
-
+  
       console.error('Error al obtener la hora de la alarma:', error);
-
+  
     }
-
+  
   };
 
   const handleTimeChange = (event, selectedTime) => {
-
+  
     setShowPicker(false);
-
+  
     if (selectedTime) {
-
+  
+      cancelAllNotifications();
+  
       setAlarmTime(selectedTime);
-
+  
       scheduleNotification(selectedTime);
-
+  
       storeAlarmTime(selectedTime);
-
+  
     }
+  
+  };
 
+  const cancelAllNotifications = async () => {
+  
+    try {
+  
+      PushNotification.cancelAllLocalNotifications(); 
+  
+    } catch (error) {
+  
+      console.error('Error al cancelar las notificaciones anteriores:', error);
+  
+    }
+  
   };
 
   const storeAlarmTime = async (selectedTime) => {
-
+  
     try {
-
+  
       await AsyncStorage.setItem('alarmTime', selectedTime.toString());
-
+  
     } catch (error) {
-
+  
       console.error('Error al almacenar la hora de la alarma:', error);
-
+  
     }
-
+  
   };
 
   const scheduleNotification = (selectedTime) => {
-
+  
     const selectedHour = selectedTime.getHours();
-
+  
     const selectedMinute = selectedTime.getMinutes();
-
+  
     const currentTime = new Date();
 
+
     let notificationDate;
-    
+
     if (
     
       selectedHour < currentTime.getHours() ||
@@ -93,63 +109,63 @@ const ExerciseAlarmComponent = () => {
       (selectedHour === currentTime.getHours() && selectedMinute <= currentTime.getMinutes())
     
       ) {
-
+    
         const tomorrow = new Date(currentTime);
-
+    
         tomorrow.setDate(currentTime.getDate() + 1);
-
+    
         notificationDate = new Date(
-
+    
           tomorrow.getFullYear(),
-
+    
           tomorrow.getMonth(),
-
+    
           tomorrow.getDate(),
-
+    
           selectedHour,
-
+    
           selectedMinute
-
+    
           );
-
+    
         } else {
-
+    
           notificationDate = new Date(
-
+    
             currentTime.getFullYear(),
-
+    
             currentTime.getMonth(),
-
+    
             currentTime.getDate(),
-
+    
             selectedHour,
-
+    
             selectedMinute
-
+    
             );
-
+    
           }
 
     PushNotification.localNotificationSchedule({
-   
+    
       message: '¡Es hora de hacer ejercicio!',
-
+    
       date: notificationDate,
-   
+    
       allowWhileIdle: true,
-   
-      repeatType: 'day', 
+    
+      repeatType: 'day',
    
     });
   
   };
 
   const formatTime = (date) => {
-   
+  
     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   
   };
-
+  
   return (
   
   <View style={styles.container}>
