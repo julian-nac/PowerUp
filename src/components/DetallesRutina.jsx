@@ -30,7 +30,7 @@ const DetallesRutina = ({ route, navigation }) => {
 
   const [showRestModal, setShowRestModal] = useState(false);
 
-  const [restTime, setRestTime] = useState(15); // Tiempo de descanso en segundos
+  const [restTime, setRestTime] = useState(15);
   
   let restInterval; 
 
@@ -52,33 +52,54 @@ const DetallesRutina = ({ route, navigation }) => {
   })
 
   useEffect(() => {
+ 
     if (showRestModal) {
-      setRestTime(15); // Reiniciar el tiempo de descanso cada vez que se muestra el modal
-      startRestTimer(); // Comenzar el temporizador de descanso al mostrar el modal
+ 
+      setRestTime(15);
+ 
+      startRestTimer();
+ 
     } else {
-      clearInterval(restInterval); // Limpiar el intervalo cuando el modal se oculta
+ 
+      clearInterval(restInterval);
+ 
     }
-    // Función de limpieza para detener el temporizador cuando el componente se desmonta
+
     return () => clearInterval(restInterval);
+ 
   }, [showRestModal]);
 
+ 
   const startRestTimer = () => {
+ 
     restInterval = setInterval(() => {
+ 
       setRestTime(prevRestTime => {
+ 
         if (prevRestTime > 0) {
-          return prevRestTime - 1; // Reducir el tiempo de descanso cada segundo
+ 
+          return prevRestTime - 1;
+ 
         } else {
-          handleCloseRestModal(); // Cerrar el modal cuando el tiempo de descanso llegue a cero
+ 
+          handleCloseRestModal();
+ 
           return prevRestTime;
+ 
         }
+ 
       });
+ 
     }, 1000);
+ 
   };
 
   const handleCloseRestModal = () => {
-    clearInterval(restInterval); // Limpiar el intervalo
-    setShowRestModal(false); // Ocultar el modal de descanso
-    // Realizar las acciones necesarias para avanzar al siguiente ejercicio
+   
+    clearInterval(restInterval); 
+   
+    setShowRestModal(false); 
+  
   };
 
   const handleEjercicioSiguiente = () => {
@@ -186,19 +207,33 @@ const DetallesRutina = ({ route, navigation }) => {
         style={styles.backgroundImage}
 
     >
-<Modal animationType="slide" transparent={true} visible={showRestModal}>
-  <View style={styles.modalContainerTimer}>
-    <View style={styles.modalContentTimer}>
-    <Text style={styles.counterTextTimer}>{restTime.toString().padStart(2, '0')}</Text>
+  <Modal animationType="slide" transparent={true} visible={showRestModal}>
+    
+    <View style={styles.modalContainerTimer}>
+    
+      <View style={styles.modalContentTimer}>
+    
+        <Text style={styles.counterTextTimer}>{restTime.toString().padStart(2, '0')}</Text>
+      
       <View style={styles.circleContainer}>
+      
         <View style={[styles.circleProgress, { borderBottomColor: restTime > 0 ? 'black' : 'transparent', borderBottomWidth: restTime > 0 ? restTime * 10 : 0 }]} />
+      
       </View>
+      
+        <Text style={styles.text}>Respira hondo. Prepárate para el siguiente ejercicio!</Text>
+      
       <TouchableOpacity onPress={handleCloseRestModal} style={styles.closeButtonTimer}>
+      
         <Text style={styles.closeButtonTextTimer}>Continuar</Text>
+      
       </TouchableOpacity>
+   
+      </View>
+  
     </View>
-  </View>
-</Modal>
+
+  </Modal>
 
     <Modal
  
@@ -381,60 +416,133 @@ const styles = StyleSheet.create({
   
   },
 
+  text: {
+
+  fontSize: 18,
+
+  color: 'white',
+
+  fontWeight: 'bold',
+
+  textAlign: 'center'
+
+  },
+
+
   modalContainerTimer: {
+   
     flex: 1,
+   
     justifyContent: 'center',
+   
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Fondo oscuro semi-transparente
+   
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+  
   },
+  
   modalContentTimer: {
-    backgroundColor: '#fff', // Fondo blanco para el contenido del modal
-    padding: 20,
+  
+    backgroundColor: 'black',
+  
+    padding: 60,
+  
     alignItems: 'center',
-    borderRadius: 20, // Borde redondeado para el contenido del modal
-  },
-  counterTextTimer: {
-    zIndex: 1000,
-    fontSize: 50,
-    color: '#fff', // Color blanco para el texto
-    fontWeight: 'bold', // Texto en negrita
-    position: 'absolute', // Posición absoluta para superponer el texto
-    top: '40%', // Centrar verticalmente
-    left: '33%', // Centrar horizontalmente
-    transform: [{ translateX: -25 }, { translateY: -25 }], // Centrar exactamente
-    textShadowColor: '#000', // Sombra del texto en negro
-    textShadowOffset: { width: 1, height: 1 }, // Desplazamiento de la sombra del texto
-    textShadowRadius: 5, // Radio de la sombra del texto
-  },
-  circleContainer: {
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 20,
-    backgroundColor: '#f8c836', // Fondo amarillo para el círculo
-    borderWidth: 5, // Grosor del borde del círculo
-    borderColor: '#fff', // Color del borde del círculo (blanco)
-    position: 'relative', // Asegurar que los elementos absolutos se posicionen en relación con este contenedor
-  },
-  circleProgress: {
-    width: 160,
-    height: 160,
-    borderRadius: 80,
-    backgroundColor: '#fff', // Fondo blanco para el progreso del círculo
-  },
-  closeButtonTimer: {
-    backgroundColor: '#f8c836',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
+
+    borderWidth: 5,
+    
+    borderColor: '#fff',
+  
     borderRadius: 20,
+  
+  },
+  
+  counterTextTimer: {
+  
+    zIndex: 1000,
+  
+    fontSize: 50,
+  
+    color: 'yellow',
+  
+    fontWeight: 'bold',
+  
+    position: 'absolute',
+  
+    top: '46%',
+  
+    left: '71%',
+  
+    transform: [{ translateX: -25 }, { translateY: -25 }],
+  
+    textShadowColor: '#000',
+  
+    textShadowOffset: { width: 1, height: 1 },
+  
+    textShadowRadius: 8, 
+  
+  },
+  
+  circleContainer: {
+  
+    width: 200,
+  
+    height: 200,
+  
+    borderRadius: 100,
+  
+    justifyContent: 'center',
+  
+    alignItems: 'center',
+  
+    marginBottom: 20,
+  
+    backgroundColor: 'yellow',
+  
+    borderWidth: 5,
+  
+    borderColor: '#fff',
+  
+    position: 'relative', 
+  
+  },
+  
+  circleProgress: {
+  
+    width: 160,
+  
+    height: 160,
+  
+    borderRadius: 80,
+  
+    backgroundColor: 'white',
+  
+  },
+  
+  closeButtonTimer: {
+  
+    backgroundColor: 'yellow',
+  
+    paddingVertical: 10,
+  
+    paddingHorizontal: 20,
+  
+    borderRadius: 20,
+  
     marginTop: 20,
+  
   },
+  
   closeButtonTextTimer: {
+  
     color: '#000',
+  
+    fontWeight: 'bold',
+  
     fontSize: 16,
+  
   },
+  
   arrowButtonLeft: {
   
     position: 'absolute',
