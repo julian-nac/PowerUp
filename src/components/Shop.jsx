@@ -25,7 +25,7 @@ const PromotionsComponent = () => {
   
     Linking.openURL(url);
     
-    firebase.analytics().logEvent('promotion_click_test', { promotion_url: url });
+    firebase.analytics().logEvent('promotion_click', { promotion_url: url });
   };
 
   useEffect(() => {

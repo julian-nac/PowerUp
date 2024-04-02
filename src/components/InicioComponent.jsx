@@ -104,7 +104,9 @@ const InicioComponente = () => {
       >
 
         <NavbarComponent activeSection={activeSection} handleSectionPress={handleSectionPress} />
-                    <BannerCarousel/>
+          
+          <BannerCarousel/>
+        
         <View style={styles.banner}>
   
         <View style={styles.encabezado}>

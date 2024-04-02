@@ -145,7 +145,7 @@ const fetchUserData = async () => {
     
           <Image source={require('../../assets/images/stats.png')} style={styles.logo} />
     
-            <Text style={styles.menuItem}>Avances</Text>
+            <Text style={styles.menuItem}>Progreso</Text>
     
             <View style={styles.line} />
     
@@ -155,7 +155,7 @@ const fetchUserData = async () => {
     
             <TouchableOpacity onPress={handleInforme}>
     
-              <Text style={styles.editUserDataText}>Informe</Text>
+              <Text style={styles.editUserDataText}>Gráfica</Text>
     
             </TouchableOpacity>
     
@@ -263,6 +263,8 @@ const styles = StyleSheet.create({
   },
   
   editUserDataText: {
+
+    color: 'white',
   
     fontSize: 18,
   
@@ -321,10 +323,8 @@ const styles = StyleSheet.create({
   },
   
   menuItem: {
-  
-    color: 'white',
-  
-    fontSize: 20,
+    
+    fontSize: 19,
   
     marginVertical: 10,
   
