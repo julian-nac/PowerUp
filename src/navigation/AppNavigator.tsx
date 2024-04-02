@@ -28,6 +28,8 @@ import AlarmScreen from '../screens/AlarmScreen';
 
 import VolumenScreen from '../screens/VolumenScreen';
 
+import ShopScreen from '../screens/ShopScreen';
+
 import { SoundVolumeProvider } from '../components/SoundContext';
 
 import { ProgressProvider } from '../components/ProgressContext';
@@ -70,8 +72,9 @@ const AppNavigator = () => {
 
         <Stack.Screen name="Volumen" component={VolumenScreen} options={{ headerShown: false }} />
 
+        <Stack.Screen name="Shop" component={ShopScreen} options={{ headerShown: false }} />
+
       </Stack.Navigator>
-      
     
     </SoundVolumeProvider>
 

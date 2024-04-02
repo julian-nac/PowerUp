@@ -80,6 +80,14 @@ const fetchUserData = async () => {
 
   };
 
+  const handleShop = () => {
+
+    navigation.navigate('Shop');
+
+    setMenuVisible(false);
+
+  };
+
   return (
     
     <View style={styles.navbar}>
@@ -172,7 +180,7 @@ const fetchUserData = async () => {
 
           <View style={styles.userDataContainer}>
     
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleShop}>
     
               <Text style={styles.editUserDataText}>Comprar</Text>
     
