@@ -101,6 +101,10 @@ const showDetails = (info) => {
 
 };
 
+const progresoMaximo = Math.max(progresoBrazos, progresoPierna, progresoCuerpo, progresoPecho, progresoEspalda, progresoAbdomen);
+
+const maxBarPosition = `${100 - progresoMaximo}%`;
+
   return (
   
   <View style={styles.container}>
@@ -122,8 +126,13 @@ const showDetails = (info) => {
         </View>
         
           <View style={styles.columnaBarras}>
-            
+
+          <View style={[styles.barraMaxima, { height: `${progresoMaximo}%` }]} />
+
+          <View style={[styles.barraMaximaProm, { height: `${promedioGeneralNecesario}%` }]} />
+
             <View style={styles.barraContainer}>
+
 
               <View style={[styles.barra, { height: `${progresoCuerpo}%` }]} />
         
@@ -189,32 +198,36 @@ const showDetails = (info) => {
      
       </View>
      
-      <View style={styles.informeContainer}>
+      <View>
+     
+      <TouchableOpacity onPress={() => showDetails('La línea verde marca la región de tu cuerpo con el mayor avance o progreso.')} style={{ flexDirection: 'row', alignItems: 'center' }}>
      
         <Text style={styles.labelt}>
-     
-          Progreso recomendado para todas las partes del cuerpo: {promedioGeneralNecesario.toFixed(2)}%
-     
-          <TouchableOpacity onPress={() => showDetails('El Progreso Recomendado es el promedio del porcentaje de todas las zonas de tu cuerpo trabajadas en tus rutinas. Este porcentaje refleja el nivel de equilibrio recomendado para tu progreso físico. Si el porcentaje de una zona del cuerpo está por debajo del promedio recomendado, considera priorizar esa zona en tus rutinas para lograr un desarrollo corporal más equilibrado y completo.')}>
-     
-            <Image source={require('../../assets/images/info_icon.png')} style={styles.icon} />
-     
-          </TouchableOpacity>
-     
+    
+          Línea Verde:
+        
         </Text>
+      
+        <Image source={require('../../assets/images/info_icon.png')} style={styles.icon} />
+      
+      </TouchableOpacity>
+        
+      </View>
+     
+      <View>
+     
+      <TouchableOpacity onPress={() => showDetails('La línea roja indica el nivel recomendado para las distintas zonas de tu cuerpo. Si alguna parte de tu cuerpo se encuentra por debajo de esta línea, considera darle más atención y realizar más ejercicios para lograr un desarrollo equilibrado.')} style={{ flexDirection: 'row', alignItems: 'center' }}>
      
         <Text style={styles.labelt}>
-     
-          Promedio actual de progreso: {promedioGeneralActual.toFixed(2)}%
-     
-          <TouchableOpacity onPress={() => showDetails('El Promedio Actual es el cálculo del porcentaje promedio de progreso en cada zona del cuerpo. Proporciona una visión general de cómo estás progresando en tus rutinas de ejercicio en todas las áreas específicas del cuerpo. Si el promedio actual es bajo, puede indicar que hay áreas específicas del cuerpo que necesitan más atención o enfoque en tus rutinas de ejercicio. Utiliza este promedio para evaluar tu avance general y ajustar tu entrenamiento según sea necesario.')}>
-     
-            <Image source={require('../../assets/images/info_icon.png')} style={styles.icon} />
-     
-          </TouchableOpacity>
-     
+    
+          Línea Roja:
+        
         </Text>
-     
+      
+        <Image source={require('../../assets/images/info_icon.png')} style={styles.icon} />
+      
+      </TouchableOpacity>
+        
       </View>
      
       <Modal
@@ -307,7 +320,7 @@ const styles = StyleSheet.create({
   
     height: '70%',
   
-    marginTop: 0,
+    marginTop: 20,
   
     backgroundColor: '#0D0D0D',
   
@@ -366,29 +379,36 @@ const styles = StyleSheet.create({
   },
   
   labelt: {
-  
-    fontSize: 15,
-  
-    color: 'white',
-  
-    marginTop: 10,
-  
-    marginLeft: 10,
-  
-    flexDirection: 'row',
-  
-    alignItems: 'center',
-  
+    fontSize: 16,
+    marginTop: 15,
+    marginLeft: 15,
+    fontWeight: 'bold',
+    marginRight: 5, // Espacio entre el texto y el icono
   },
-  
   icon: {
-  
-    width: 14,
-  
-    height: 14,
-  
-    marginLeft: 5,
-  
+    marginTop: 15,
+    width: 20,
+    height: 20,
+  },
+
+  barraMaxima: {
+    position: 'absolute',
+    bottom: 46,
+    left: 0,
+    borderTopColor: 'green',
+    borderWidth: 1,
+    width: '100%',
+    zIndex: -1,
+  },
+
+  barraMaximaProm: {
+    position: 'absolute',
+    bottom: 46,
+    left: 0,
+    borderTopColor: 'red',
+    borderWidth: 1,
+    width: '100%',
+    zIndex: -1,
   },
   
   valor: {
@@ -404,8 +424,12 @@ const styles = StyleSheet.create({
   modalView: {
   
     margin: 20,
+
+    borderColor: 'black',
+
+    borderWidth: 10, 
   
-    backgroundColor: '#FFFFFF',
+    backgroundColor: 'white',
   
     borderRadius: 20,
   
